@@ -1,0 +1,6 @@
+D:\GitHub\DesignPatterns\ISP\bin\Debug\ISP.exe.config
+D:\GitHub\DesignPatterns\ISP\bin\Debug\ISP.exe
+D:\GitHub\DesignPatterns\ISP\bin\Debug\ISP.pdb
+D:\GitHub\DesignPatterns\ISP\obj\Debug\ISP.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatterns\ISP\obj\Debug\ISP.exe
+D:\GitHub\DesignPatterns\ISP\obj\Debug\ISP.pdb
