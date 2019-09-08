@@ -1,0 +1,6 @@
+D:\GitHub\DesignPatterns\Singleton\obj\Debug\Singleton.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatterns\Singleton\bin\Debug\Singleton.exe.config
+D:\GitHub\DesignPatterns\Singleton\bin\Debug\Singleton.exe
+D:\GitHub\DesignPatterns\Singleton\bin\Debug\Singleton.pdb
+D:\GitHub\DesignPatterns\Singleton\obj\Debug\Singleton.exe
+D:\GitHub\DesignPatterns\Singleton\obj\Debug\Singleton.pdb
