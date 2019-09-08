@@ -1,0 +1,6 @@
+D:\GitHub\DesignPatterns\DelegateTest\bin\Debug\DelegateTest.exe.config
+D:\GitHub\DesignPatterns\DelegateTest\bin\Debug\DelegateTest.exe
+D:\GitHub\DesignPatterns\DelegateTest\bin\Debug\DelegateTest.pdb
+D:\GitHub\DesignPatterns\DelegateTest\obj\Debug\DelegateTest.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatterns\DelegateTest\obj\Debug\DelegateTest.exe
+D:\GitHub\DesignPatterns\DelegateTest\obj\Debug\DelegateTest.pdb
