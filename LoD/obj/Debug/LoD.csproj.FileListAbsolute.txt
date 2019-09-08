@@ -4,3 +4,4 @@ D:\GitHub\DesignPatterns\LoD\bin\Debug\LoD.pdb
 D:\GitHub\DesignPatterns\LoD\obj\Debug\LoD.csproj.CoreCompileInputs.cache
 D:\GitHub\DesignPatterns\LoD\obj\Debug\LoD.exe
 D:\GitHub\DesignPatterns\LoD\obj\Debug\LoD.pdb
+D:\GitHub\DesignPatterns\LoD\obj\Debug\LoD.csprojAssemblyReference.cache
