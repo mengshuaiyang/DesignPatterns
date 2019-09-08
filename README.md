@@ -1,4 +1,4 @@
-# [Design Patterns](http://www.oodesign.com/)
+# [设计模式](http://www.oodesign.com/)
 
 软件设计需满足SOLID软件设计原则
 
@@ -35,3 +35,14 @@ S.O.L.I.D.是一组面对面向对象设计的最佳实践的设计原则。代�
 * 构造函数传递依赖对象
 * Setter方法传递依赖对象
 * 接口声明依赖对象
+
+---
+
+## 设计模式分为三类：创建型、结构性、行为型
+
+创建型模式都涉及到创建对象实例的方式
+
+创建型模式：工厂方法模式(Factory Method Pattern)、抽象工厂模式(Abstract Factory Pattern)、单例模式(Singleton Pattern)、生成器模式(Builder Pattern)、原型模式(Prototype Pattern)
+
+
+
