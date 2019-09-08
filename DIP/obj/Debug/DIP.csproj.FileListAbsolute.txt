@@ -1,0 +1,6 @@
+D:\GitHub\DesignPatterns\DIP\bin\Debug\DIP.exe.config
+D:\GitHub\DesignPatterns\DIP\bin\Debug\DIP.exe
+D:\GitHub\DesignPatterns\DIP\bin\Debug\DIP.pdb
+D:\GitHub\DesignPatterns\DIP\obj\Debug\DIP.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatterns\DIP\obj\Debug\DIP.exe
+D:\GitHub\DesignPatterns\DIP\obj\Debug\DIP.pdb
