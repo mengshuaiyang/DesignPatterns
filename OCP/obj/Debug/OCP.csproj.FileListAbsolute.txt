@@ -1,7 +1,0 @@
-D:\GitHub\DesignPatterns\OCP\bin\Debug\OCP.exe.config
-D:\GitHub\DesignPatterns\OCP\bin\Debug\OCP.exe
-D:\GitHub\DesignPatterns\OCP\bin\Debug\OCP.pdb
-D:\GitHub\DesignPatterns\OCP\obj\Debug\OCP.csproj.CoreCompileInputs.cache
-D:\GitHub\DesignPatterns\OCP\obj\Debug\OCP.exe
-D:\GitHub\DesignPatterns\OCP\obj\Debug\OCP.pdb
-D:\GitHub\DesignPatterns\OCP\obj\Debug\OCP.csprojAssemblyReference.cache

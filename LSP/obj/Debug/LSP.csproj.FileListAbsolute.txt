@@ -1,7 +1,0 @@
-D:\GitHub\DesignPatterns\LSP\bin\Debug\LSP.exe.config
-D:\GitHub\DesignPatterns\LSP\bin\Debug\LSP.exe
-D:\GitHub\DesignPatterns\LSP\bin\Debug\LSP.pdb
-D:\GitHub\DesignPatterns\LSP\obj\Debug\LSP.csproj.CoreCompileInputs.cache
-D:\GitHub\DesignPatterns\LSP\obj\Debug\LSP.exe
-D:\GitHub\DesignPatterns\LSP\obj\Debug\LSP.pdb
-D:\GitHub\DesignPatterns\LSP\obj\Debug\LSP.csprojAssemblyReference.cache

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29230.47
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP", "LSP\LSP.csproj", "{99939CE7-BD3F-4A97-96EE-4A603E2B719E}"
 EndProject
@@ -30,9 +30,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "{4ADEBD81-B3B5-4684-A9A5-FB28E9B60C37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.设计模式", "2.设计模式", "{E0F6CDD3-8088-40E4-ADAC-65D5942DE2EE}"
-	ProjectSection(SolutionItems) = preProject
-		singleton-pattern.md = singleton-pattern.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.文档", "3.文档", "{71BBE2CA-8562-4C7A-A20D-C4A4905AB03A}"
 	ProjectSection(SolutionItems) = preProject
@@ -58,6 +55,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.简单工厂模式", "2.�
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "SimpleFactory\SimpleFactory.csproj", "{0FD25E84-8C5F-423C-A295-133CEC71BC2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.工厂方法模式", "3.工厂方法模式", "{551DEC74-BDF3-467E-8AA4-D02BBC6CBEB0}"
+	ProjectSection(SolutionItems) = preProject
+		factory-method-pattern.md = factory-method-pattern.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{ED7CE58A-5C4D-44FF-AB2F-1056FDC10368}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +105,10 @@ Global
 		{0FD25E84-8C5F-423C-A295-133CEC71BC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FD25E84-8C5F-423C-A295-133CEC71BC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FD25E84-8C5F-423C-A295-133CEC71BC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7CE58A-5C4D-44FF-AB2F-1056FDC10368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7CE58A-5C4D-44FF-AB2F-1056FDC10368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7CE58A-5C4D-44FF-AB2F-1056FDC10368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7CE58A-5C4D-44FF-AB2F-1056FDC10368}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +130,8 @@ Global
 		{79835CF0-48B3-49DD-860E-495301D2D721} = {E0F6CDD3-8088-40E4-ADAC-65D5942DE2EE}
 		{03943A86-28BC-4FE2-9439-426C25F584CD} = {CED93EB7-FD7B-43AC-847C-DDE42AFFDEDB}
 		{0FD25E84-8C5F-423C-A295-133CEC71BC2E} = {03943A86-28BC-4FE2-9439-426C25F584CD}
+		{551DEC74-BDF3-467E-8AA4-D02BBC6CBEB0} = {CED93EB7-FD7B-43AC-847C-DDE42AFFDEDB}
+		{ED7CE58A-5C4D-44FF-AB2F-1056FDC10368} = {551DEC74-BDF3-467E-8AA4-D02BBC6CBEB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818C37D-216A-4538-96A3-217C85DC0D67}
