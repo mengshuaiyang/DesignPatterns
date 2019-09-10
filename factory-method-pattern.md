@@ -1,8 +1,8 @@
 ## 工厂方法模式
-[^_^]: ## Factory Method Pattern --!>
+[^_^]: ## Factory Method Pattern 
 
 ### 动机
-[^_^]: ### Motivation--!>
+[^_^]: ### Motivation
 
 工厂方法也称为虚拟构造函数，它与库工作的思想有关：库使用抽象类来定义和维护对象之间的关系。一种责任是创建这样的对象。库知道何时需要创建对象，但不知道它应该创建什么类型的对象，这是特定于使用库的应用程序。
 [^_^]: Also known as Virtual Constructor, the Factory Method is related to the idea on which libraries work: a library uses abstract classes for defining and maintaining relations between objects. One type of responsibility is creating such objects. The library knows when an object needs to be created, but not what kind of object it should create, this being specific to the application using the library.
