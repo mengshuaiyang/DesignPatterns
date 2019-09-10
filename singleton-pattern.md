@@ -1,35 +1,35 @@
-## [µ¥ÀıÄ£Ê½](https://www.oodesign.com/singleton-pattern.html)
+## [å•ä¾‹æ¨¡å¼](https://www.oodesign.com/singleton-pattern.html)
 [^_^]: ## Singleton Pattern
 
-### ¶¯»ú
-[^_^]:### Motivation
+### åŠ¨æœº
+[^_^]: ### Motivation
 
-ÓĞÊ±ºîÀàÖ»ÓĞÒ»¸öÊµÀıÊÇºÜÖØÒªµÄ¡£ÀıÈç£ºÔÚÏµÍ³ÖĞÓ¦¸ÃÖ»ÓĞÒ»¸ö´°¿Ú¹ÜÀíÆ÷£¨»òÖ»ÓĞÒ»¸öÎÄ¼şÏµÍ³»òÖ»ÓĞÒ»¸ö´òÓ¡¼ÙÍÑ»ú³ÌĞò£©¡£Í¨³£µ¥ÀıÄ£Ê½±»ÓÃÓÚ¼¯ÖĞ¹ÜÀíÄÚ²¿»òÍâ²¿×ÊÔ´£¬ÎªËûÃÇ×Ô¼ºÌá¹©È«¾Ö·ÃÎÊµã¡£
-[^_^]:Sometimes it's important to have only one instance for a class. For example, in a system there should be only one window manager (or only a file system or only a print spooler). Usually singletons are used for centralized management of internal or external resources and they provide a global point of access to themselves.
+æœ‰æ—¶ä¾¯ç±»åªæœ‰ä¸€ä¸ªå®ä¾‹æ˜¯å¾ˆé‡è¦çš„ã€‚ä¾‹å¦‚ï¼šåœ¨ç³»ç»Ÿä¸­åº”è¯¥åªæœ‰ä¸€ä¸ªçª—å£ç®¡ç†å™¨ï¼ˆæˆ–åªæœ‰ä¸€ä¸ªæ–‡ä»¶ç³»ç»Ÿæˆ–åªæœ‰ä¸€ä¸ªæ‰“å°å‡è„±æœºç¨‹åºï¼‰ã€‚é€šå¸¸å•ä¾‹æ¨¡å¼è¢«ç”¨äºé›†ä¸­ç®¡ç†å†…éƒ¨æˆ–å¤–éƒ¨èµ„æºï¼Œä¸ºä»–ä»¬è‡ªå·±æä¾›å…¨å±€è®¿é—®ç‚¹ã€‚
+[^_^]: Sometimes it's important to have only one instance for a class. For example, in a system there should be only one window manager (or only a file system or only a print spooler). Usually singletons are used for centralized management of internal or external resources and they provide a global point of access to themselves.
 
-µ¥ÀıÄ£Ê½ÊÇ×î¼òµ¥µÄÉè¼ÆÄ£Ê½Ö®Ò»£ºËüÖ»Éæ¼°Ò»¸ö¸ºÔğÊµÀı»¯×ÔÉíµÄÀà£¬ÒÔÈ·±£Ëü´´½¨µÄÊµÀı²»³¬¹ıÒ»¸ö; Í¬Ê±£¬ËüÌá¹©ÁË¶Ô¸ÃÊµÀıµÄÈ«¾Ö·ÃÎÊµã¡£ÔÚÕâÖÖÇé¿öÏÂ£¬¿ÉÒÔ´ÓÈÎºÎµØ·½Ê¹ÓÃÏàÍ¬µÄÊµÀı£¬Ã¿´Î¶¼ÊÇÎŞ·¨Ö±½Óµ÷ÓÃ¹¹Ôìº¯Êı¡£
-[^_^]:The singleton pattern is one of the simplest design patterns: it involves only one class which is responsible to instantiate itself, to make sure it creates not more than one instance; in the same time it provides a global point of access to that instance. In this case the same instance can be used from everywhere, being impossible to invoke directly the constructor each time.
+å•ä¾‹æ¨¡å¼æ˜¯æœ€ç®€å•çš„è®¾è®¡æ¨¡å¼ä¹‹ä¸€ï¼šå®ƒåªæ¶‰åŠä¸€ä¸ªè´Ÿè´£å®ä¾‹åŒ–è‡ªèº«çš„ç±»ï¼Œä»¥ç¡®ä¿å®ƒåˆ›å»ºçš„å®ä¾‹ä¸è¶…è¿‡ä¸€ä¸ª; åŒæ—¶ï¼Œå®ƒæä¾›äº†å¯¹è¯¥å®ä¾‹çš„å…¨å±€è®¿é—®ç‚¹ã€‚åœ¨è¿™ç§æƒ…å†µä¸‹ï¼Œå¯ä»¥ä»ä»»ä½•åœ°æ–¹ä½¿ç”¨ç›¸åŒçš„å®ä¾‹ï¼Œæ¯æ¬¡éƒ½æ˜¯æ— æ³•ç›´æ¥è°ƒç”¨æ„é€ å‡½æ•°ã€‚
+[^_^]: The singleton pattern is one of the simplest design patterns: it involves only one class which is responsible to instantiate itself, to make sure it creates not more than one instance; in the same time it provides a global point of access to that instance. In this case the same instance can be used from everywhere, being impossible to invoke directly the constructor each time.
 
-###  ÒâÍ¼
-[^_^]:### Intent
-[^_^]:Ensure that only one instance of a class is created.
-[^_^]:Provide a global point of access to the object.
+###  æ„å›¾
+[^_^]: ### Intent
+[^_^]: Ensure that only one instance of a class is created.
+[^_^]: Provide a global point of access to the object.
 
-* È·±£Ò»¸öÀàÖ»´´½¨Ò»¸öÊµÀı¡£
-* ¶ÔÏµÍ³Ìá¹©Ò»¸öÈ«¾Ö·ÃÎÊµÄÊµÀı¶ÔÏó¡£
+* ç¡®ä¿ä¸€ä¸ªç±»åªåˆ›å»ºä¸€ä¸ªå®ä¾‹ã€‚
+* å¯¹ç³»ç»Ÿæä¾›ä¸€ä¸ªå…¨å±€è®¿é—®çš„å®ä¾‹å¯¹è±¡ã€‚
 
-### ÊµÏÖ
-[^_^]:### Implementation
+### å®ç°
+[^_^]: ### Implementation
 
-ÊµÏÖ°üÀ¨¡°µ¥Àı¡±ÀàµÄ¾²Ì¬³ÉÔ±,Ò»¸öË½ÓĞ¹¹Ôìº¯ÊıºÍ¾²Ì¬¹«¹²¾²Ì¬³ÉÔ±·½·¨·µ»ØÒ»¸öÒıÓÃ¡£
-[^_^]:The implementation involves a static member in the "Singleton" class, a private constructor and a static public method that returns a reference to the static member.
+å®ç°åŒ…æ‹¬â€œå•ä¾‹â€ç±»çš„é™æ€æˆå‘˜,ä¸€ä¸ªç§æœ‰æ„é€ å‡½æ•°å’Œé™æ€å…¬å…±é™æ€æˆå‘˜æ–¹æ³•è¿”å›ä¸€ä¸ªå¼•ç”¨ã€‚
+[^_^]: The implementation involves a static member in the "Singleton" class, a private constructor and a static public method that returns a reference to the static member.
 
-![µ¥ÀıÊµÏÖ¡ª¡ªUMLÀàÍ¼](imgaes/singleton_implementation_-_uml_class_diagram.gif)
-[^_^]:Singleton Implementation - UML Class Diagram
+![å•ä¾‹å®ç°â€”â€”UMLç±»å›¾](imgaes/singleton_implementation_-_uml_class_diagram.gif)
+[^_^]: Singleton Implementation - UML Class Diagram
 
 
-µ¥ÀıÄ£Ê½¶¨ÒåÁËÒ»¸ögetInstance²Ù×÷±©Â¶ÁË¶ÀÌØµÄÊµÀı·ÃÎÊµÄ¿Í»§¡£getInstance()ÊÇ¸ºÔğ´´½¨ÀàµÄÊµÀıµÄÇé¿öÏÂ,»¹Ã»ÓĞ´´½¨ºÍ·µ»ØÊµÀı¡£
-[^_^]:The Singleton Pattern defines a getInstance operation which exposes the unique instance which is accessed by the clients. getInstance() is is responsible for creating its class unique instance in case it is not created yet and to return that instance.
+å•ä¾‹æ¨¡å¼å®šä¹‰äº†ä¸€ä¸ªgetInstanceæ“ä½œæš´éœ²äº†ç‹¬ç‰¹çš„å®ä¾‹è®¿é—®çš„å®¢æˆ·ã€‚getInstance()æ˜¯è´Ÿè´£åˆ›å»ºç±»çš„å®ä¾‹çš„æƒ…å†µä¸‹,è¿˜æ²¡æœ‰åˆ›å»ºå’Œè¿”å›å®ä¾‹ã€‚
+[^_^]: The Singleton Pattern defines a getInstance operation which exposes the unique instance which is accessed by the clients. getInstance() is is responsible for creating its class unique instance in case it is not created yet and to return that instance.
 
 ```java
 class Singleton {
@@ -56,64 +56,64 @@ class Singleton {
 }
 ```
 
-×¢Òâ,ÔÚÉÏÃæµÄ´úÂëÖĞgetInstance·½·¨¿ÉÒÔÈ·±£Ö»ÓĞ´´½¨ÀàµÄÒ»¸öÊµÀı¡£¹¹Ôìº¯Êı²»Ó¦¸Ã´ÓÍâ²¿ÀàµÄ·ÃÎÊ,ÒÔÈ·±£ÊµÀı»¯ÀàµÄÎ¨Ò»·½·¨Ö»ÓĞÍ¨¹ıgetInstance·½·¨¡£
-[^_^]:You can notice in the above code that getInstance method ensures that only one instance of the class is created. The constructor should not be accessible from the outside of the class to ensure the only way of instantiating the class would be only through the getInstance method.
+æ³¨æ„,åœ¨ä¸Šé¢çš„ä»£ç ä¸­getInstanceæ–¹æ³•å¯ä»¥ç¡®ä¿åªæœ‰åˆ›å»ºç±»çš„ä¸€ä¸ªå®ä¾‹ã€‚æ„é€ å‡½æ•°ä¸åº”è¯¥ä»å¤–éƒ¨ç±»çš„è®¿é—®,ä»¥ç¡®ä¿å®ä¾‹åŒ–ç±»çš„å”¯ä¸€æ–¹æ³•åªæœ‰é€šè¿‡getInstanceæ–¹æ³•ã€‚
+[^_^]: You can notice in the above code that getInstance method ensures that only one instance of the class is created. The constructor should not be accessible from the outside of the class to ensure the only way of instantiating the class would be only through the getInstance method.
 
-getInstance·½·¨Ò²Ìá¹©Ò»¸öÈ«¾ÖµÄ·ÃÎÊ¶ÔÏó,Ëü¿ÉÒÔÓÃÔÚÒÔÏÂ·½Ê½:
-[^_^]:The getInstance method is used also to provide a global point of access to the object and it can be used in the following manner:
+getInstanceæ–¹æ³•ä¹Ÿæä¾›ä¸€ä¸ªå…¨å±€çš„è®¿é—®å¯¹è±¡,å®ƒå¯ä»¥ç”¨åœ¨ä»¥ä¸‹æ–¹å¼:
+[^_^]: The getInstance method is used also to provide a global point of access to the object and it can be used in the following manner:
 
 ```java
 Singleton.getInstance().doSomething();
 ```
 
-### ÊÊÓÃĞÔºÍÀı×Ó
-[^_^]:### Applicability & Examples
+### é€‚ç”¨æ€§å’Œä¾‹å­
+[^_^]: ### Applicability & Examples
 
-¸ù¾İ¶¨Òå£¬µ±±ØĞëÖ»ÓĞÒ»¸öÀàµÄÊµÀı£¬²¢ÇÒ±ØĞë¿ÉÒÔ´ÓÈ«¾Ö·ÃÎÊµã·ÃÎÊ¿Í»§¶ËÊ±£¬²ÅÓ¦Ê¹ÓÃµ¥ÀıÄ£Ê½¡£ÒÔÏÂÊÇÊ¹ÓÃµ¥ÀıµÄÒ»Ğ©Êµ¼ÊÇé¿ö:
-[^_^]:According to the definition the singleton pattern should be used when there must be exactly one instance of a class, and when it must be accessible to clients from a global access point. Here are some real situations where the singleton is used:
+æ ¹æ®å®šä¹‰ï¼Œå½“å¿…é¡»åªæœ‰ä¸€ä¸ªç±»çš„å®ä¾‹ï¼Œå¹¶ä¸”å¿…é¡»å¯ä»¥ä»å…¨å±€è®¿é—®ç‚¹è®¿é—®å®¢æˆ·ç«¯æ—¶ï¼Œæ‰åº”ä½¿ç”¨å•ä¾‹æ¨¡å¼ã€‚ä»¥ä¸‹æ˜¯ä½¿ç”¨å•ä¾‹çš„ä¸€äº›å®é™…æƒ…å†µ:
+[^_^]: According to the definition the singleton pattern should be used when there must be exactly one instance of a class, and when it must be accessible to clients from a global access point. Here are some real situations where the singleton is used:
 
-#### Ê¾Àı1 - LoggerÀà
-[^_^]:#### Example 1 - Logger Classes
+#### ç¤ºä¾‹1 - Loggerç±»
+[^_^]: #### Example 1 - Logger Classes
 
-µ¥ÀıÄ£Ê½±»ÓÃÓÚloggerÀàµÄÉè¼Æ¡£ÕâĞ©ÀàÊÇ×÷Îªµ¥ÀıÊµÏÖµÄ£¬²¢ÇÒÔÚËùÓĞÓ¦ÓÃ³ÌĞò×é¼şÖĞÌá¹©È«¾ÖÈÕÖ¾¼ÇÂ¼·ÃÎÊµã£¬¶øÎŞĞèÔÚÃ¿´ÎÖ´ĞĞÈÕÖ¾¼ÇÂ¼²Ù×÷Ê±´´½¨¶ÔÏó¡£
-[^_^]:The Singleton pattern is used in the design of logger classes. This classes are ussualy implemented as a singletons, and provides a global logging access point in all the application components without being necessary to create an object each time a logging operations is performed.
+å•ä¾‹æ¨¡å¼è¢«ç”¨äºloggerç±»çš„è®¾è®¡ã€‚è¿™äº›ç±»æ˜¯ä½œä¸ºå•ä¾‹å®ç°çš„ï¼Œå¹¶ä¸”åœ¨æ‰€æœ‰åº”ç”¨ç¨‹åºç»„ä»¶ä¸­æä¾›å…¨å±€æ—¥å¿—è®°å½•è®¿é—®ç‚¹ï¼Œè€Œæ— éœ€åœ¨æ¯æ¬¡æ‰§è¡Œæ—¥å¿—è®°å½•æ“ä½œæ—¶åˆ›å»ºå¯¹è±¡ã€‚
+[^_^]: The Singleton pattern is used in the design of logger classes. This classes are ussualy implemented as a singletons, and provides a global logging access point in all the application components without being necessary to create an object each time a logging operations is performed.
 
-#### Ê¾Àı2 -ConfigurationÀà
-[^_^]:#### Example 2 - Configuration Classes
+#### ç¤ºä¾‹2 -Configurationç±»
+[^_^]: #### Example 2 - Configuration Classes
 
-µ¥ÀıÄ£Ê½±»ÓÃÓÚÉè¼ÆÌá¹©Ó¦ÓÃ³ÌĞòÅäÖÃÉèÖÃµÄÀà¡£Í¨¹ı½«ÅäÖÃÀàÊµÏÖÎªµ¥ÀıÄ£Ê½£¬ÎÒÃÇ²»½öÌá¹©Ò»¸öÈ«¾Ö·ÃÎÊµã,¶øÇÒ»¹±£ÁôÁËÎÒÃÇÓÃ×÷»º´æ¶ÔÏóµÄÊµÀı¡£µ±ÊµÀı»¯ÀàÊ±£¨»ò¶ÁÈ¡ÖµÊ±£©£¬µ¥Àı½«±£³ÖÆäÄÚ²¿½á¹¹ÖĞµÄÖµ¡£Èç¹û´ÓÊı¾İ¿â»òÎÄ¼şÖĞ¶ÁÈ¡Öµ£¬Ôò¿ÉÒÔ±ÜÃâÃ¿´ÎÊ¹ÓÃÅäÖÃ²ÎÊıÊ±ÖØĞÂ¼ÓÔØÖµ¡£
-[^_^]:The Singleton pattern is used to design the classes which provides the configuration settings for an application. By implementing configuration classes as Singleton not only that we provide a global access point, but we also keep the instance we use as a cache object. When the class is instantiated( or when a value is read ) the singleton will keep the values in its internal structure. If the values are read from the database or from files this avoids the reloading the values each time the configuration parameters are used.
+å•ä¾‹æ¨¡å¼è¢«ç”¨äºè®¾è®¡æä¾›åº”ç”¨ç¨‹åºé…ç½®è®¾ç½®çš„ç±»ã€‚é€šè¿‡å°†é…ç½®ç±»å®ç°ä¸ºå•ä¾‹æ¨¡å¼ï¼Œæˆ‘ä»¬ä¸ä»…æä¾›ä¸€ä¸ªå…¨å±€è®¿é—®ç‚¹,è€Œä¸”è¿˜ä¿ç•™äº†æˆ‘ä»¬ç”¨ä½œç¼“å­˜å¯¹è±¡çš„å®ä¾‹ã€‚å½“å®ä¾‹åŒ–ç±»æ—¶ï¼ˆæˆ–è¯»å–å€¼æ—¶ï¼‰ï¼Œå•ä¾‹å°†ä¿æŒå…¶å†…éƒ¨ç»“æ„ä¸­çš„å€¼ã€‚å¦‚æœä»æ•°æ®åº“æˆ–æ–‡ä»¶ä¸­è¯»å–å€¼ï¼Œåˆ™å¯ä»¥é¿å…æ¯æ¬¡ä½¿ç”¨é…ç½®å‚æ•°æ—¶é‡æ–°åŠ è½½å€¼ã€‚
+[^_^]: The Singleton pattern is used to design the classes which provides the configuration settings for an application. By implementing configuration classes as Singleton not only that we provide a global access point, but we also keep the instance we use as a cache object. When the class is instantiated( or when a value is read ) the singleton will keep the values in its internal structure. If the values are read from the database or from files this avoids the reloading the values each time the configuration parameters are used.
 
-#### Ê¾Àı3 - ÒÔ¹²ÏíÄ£Ê½·ÃÎÊ×ÊÔ´
-[^_^]:#### Example 3 - Accesing resources in shared mode
+#### ç¤ºä¾‹3 - ä»¥å…±äº«æ¨¡å¼è®¿é—®èµ„æº
+[^_^]: #### Example 3 - Accesing resources in shared mode
 
-Ëü¿ÉÓÃÓÚÉè¼ÆĞèÒªÊ¹ÓÃ´®ĞĞ¶Ë¿ÚµÄÓ¦ÓÃ³ÌĞò¡£¼ÙÉèÓ¦ÓÃ³ÌĞòÖĞÓĞĞí¶àÀà£¬ÔÚ¶àÏß³Ì»·¾³ÖĞ¹¤×÷£¬ĞèÒªÔÚ´®ĞĞ¶Ë¿ÚÉÏ²Ù×÷²Ù×÷¡£ÔÚÕâÖÖÇé¿öÏÂ£¬¿ÉÒÔÊ¹ÓÃ¾ßÓĞÍ¬²½·½·¨µÄµ¥ÀıÀ´¹ÜÀí´®ĞĞ¶Ë¿ÚÉÏµÄËùÓĞ²Ù×÷¡£
-[^_^]:It can be used in the design of an application that needs to work with the serial port. Let's say that there are many classes in the application, working in an multi-threading environment, which needs to operate actions on the serial port. In this case a singleton with synchronized methods could be used to be used to manage all the operations on the serial port.
+å®ƒå¯ç”¨äºè®¾è®¡éœ€è¦ä½¿ç”¨ä¸²è¡Œç«¯å£çš„åº”ç”¨ç¨‹åºã€‚å‡è®¾åº”ç”¨ç¨‹åºä¸­æœ‰è®¸å¤šç±»ï¼Œåœ¨å¤šçº¿ç¨‹ç¯å¢ƒä¸­å·¥ä½œï¼Œéœ€è¦åœ¨ä¸²è¡Œç«¯å£ä¸Šæ“ä½œæ“ä½œã€‚åœ¨è¿™ç§æƒ…å†µä¸‹ï¼Œå¯ä»¥ä½¿ç”¨å…·æœ‰åŒæ­¥æ–¹æ³•çš„å•ä¾‹æ¥ç®¡ç†ä¸²è¡Œç«¯å£ä¸Šçš„æ‰€æœ‰æ“ä½œã€‚
+[^_^]: It can be used in the design of an application that needs to work with the serial port. Let's say that there are many classes in the application, working in an multi-threading environment, which needs to operate actions on the serial port. In this case a singleton with synchronized methods could be used to be used to manage all the operations on the serial port.
 
-#### Ê¾Àı4 - ¹¤³§ÊµÏÖÎªµ¥Àı
-[^_^]:#### Example 4 - Factories implemented as Singletons
+#### ç¤ºä¾‹4 - å·¥å‚å®ç°ä¸ºå•ä¾‹
+[^_^]: #### Example 4 - Factories implemented as Singletons
 
-¼ÙÉèÎÒÃÇÉè¼ÆÒ»¸ö´øÓĞ¹¤³§µÄÓ¦ÓÃ³ÌĞò£¬ÒÔ±ãÔÚ¶àÏß³Ì»·¾³ÖĞÊ¹ÓÃËüÃÇµÄidÉú³ÉĞÂ¶ÔÏó£¨Acount£¬Customer£¬Site£¬Address£©¡£Èç¹û¹¤³§ÔÚ2¸ö²»Í¬µÄÏß³ÌÖĞÊµÀı»¯Á½´Î£¬Ôò¿ÉÄÜÓĞ2¸öÖØµşµÄIDÓÃÓÚ2¸ö²»Í¬µÄ¶ÔÏó¡£Èç¹ûÎÒÃÇ½«Factory×÷Îªµ¥ÀıÊµÏÖ£¬ÎÒÃÇ¾Í±ÜÃâÁËÕâ¸öÎÊÌâ¡£½áºÏ³éÏó¹¤³§»ò¹¤³§·½·¨ºÍµ¥ÀıÉè¼ÆÄ£Ê½ÊÇÒ»ÖÖ³£¼ûµÄ×ö·¨¡£
-[^_^]:Let's assume that we design an application with a factory to generate new objects(Acount, Customer, Site, Address objects) with their ids, in an multithreading environment. If the factory is instantiated twice in 2 different threads then is possible to have 2 overlapping ids for 2 different objects. If we implement the Factory as a singleton we avoid this problem. Combining Abstract Factory or Factory Method and Singleton design patterns is a common practice.
+å‡è®¾æˆ‘ä»¬è®¾è®¡ä¸€ä¸ªå¸¦æœ‰å·¥å‚çš„åº”ç”¨ç¨‹åºï¼Œä»¥ä¾¿åœ¨å¤šçº¿ç¨‹ç¯å¢ƒä¸­ä½¿ç”¨å®ƒä»¬çš„idç”Ÿæˆæ–°å¯¹è±¡ï¼ˆAcountï¼ŒCustomerï¼ŒSiteï¼ŒAddressï¼‰ã€‚å¦‚æœå·¥å‚åœ¨2ä¸ªä¸åŒçš„çº¿ç¨‹ä¸­å®ä¾‹åŒ–ä¸¤æ¬¡ï¼Œåˆ™å¯èƒ½æœ‰2ä¸ªé‡å çš„IDç”¨äº2ä¸ªä¸åŒçš„å¯¹è±¡ã€‚å¦‚æœæˆ‘ä»¬å°†Factoryä½œä¸ºå•ä¾‹å®ç°ï¼Œæˆ‘ä»¬å°±é¿å…äº†è¿™ä¸ªé—®é¢˜ã€‚ç»“åˆæŠ½è±¡å·¥å‚æˆ–å·¥å‚æ–¹æ³•å’Œå•ä¾‹è®¾è®¡æ¨¡å¼æ˜¯ä¸€ç§å¸¸è§çš„åšæ³•ã€‚
+[^_^]: Let's assume that we design an application with a factory to generate new objects(Acount, Customer, Site, Address objects) with their ids, in an multithreading environment. If the factory is instantiated twice in 2 different threads then is possible to have 2 overlapping ids for 2 different objects. If we implement the Factory as a singleton we avoid this problem. Combining Abstract Factory or Factory Method and Singleton design patterns is a common practice.
 
-### ¾ßÌåÎÊÌâºÍÊµÏÖ
-[^_^]:### Specific problems and implementation
+### å…·ä½“é—®é¢˜å’Œå®ç°
+[^_^]: ### Specific problems and implementation
 
-#### ÓÃÓÚ¶àÏß³ÌµÄÏß³Ì°²È«ÊµÏÖ
-[^_^]:#### Thread-safe implementation for multi-threading use.
+#### ç”¨äºå¤šçº¿ç¨‹çš„çº¿ç¨‹å®‰å…¨å®ç°
+[^_^]: #### Thread-safe implementation for multi-threading use.
 
-Ò»¸ö½¡×³µÄµ¥ÀıÊµÏÖÓ¦¸ÃÊÊÓÃÓÚÈÎºÎÌõ¼ş¡£Õâ¾ÍÊÇÎªÊ²Ã´ÎÒÃÇĞèÒªÈ·±£ËüÔÚ¶àÏß³ÌÊ¹ÓÃËüÊ±¹¤×÷µÄÔ­Òò¡£ÈçÇ°ÃæµÄÊ¾ÀıËùÊ¾£¬µ¥Àı¿ÉÒÔ×¨ÃÅÓÃÓÚ¶àÏß³ÌÓ¦ÓÃ³ÌĞò£¬ÒÔÈ·±£¶Á/Ğ´Í¬²½¡£
+ä¸€ä¸ªå¥å£®çš„å•ä¾‹å®ç°åº”è¯¥é€‚ç”¨äºä»»ä½•æ¡ä»¶ã€‚è¿™å°±æ˜¯ä¸ºä»€ä¹ˆæˆ‘ä»¬éœ€è¦ç¡®ä¿å®ƒåœ¨å¤šçº¿ç¨‹ä½¿ç”¨å®ƒæ—¶å·¥ä½œçš„åŸå› ã€‚å¦‚å‰é¢çš„ç¤ºä¾‹æ‰€ç¤ºï¼Œå•ä¾‹å¯ä»¥ä¸“é—¨ç”¨äºå¤šçº¿ç¨‹åº”ç”¨ç¨‹åºï¼Œä»¥ç¡®ä¿è¯»/å†™åŒæ­¥ã€‚
 
-[^_^]:A robust singleton implementation should work in any conditions. This is why we need to ensure it works when multiple threads uses it. As seen in the previous examples singletons can be used specifically in multi-threaded application to make sure the reads/writes are synchronized.
+[^_^]: A robust singleton implementation should work in any conditions. This is why we need to ensure it works when multiple threads uses it. As seen in the previous examples singletons can be used specifically in multi-threaded application to make sure the reads/writes are synchronized.
 
-Ê¹ÓÃË«Ëø»úÖÆµÄÑÓ³ÙÊµÀı»¯¡£
-[^_^]:Lazy instantiation using double locking mechanism.
+ä½¿ç”¨åŒé”æœºåˆ¶çš„å»¶è¿Ÿå®ä¾‹åŒ–ã€‚
+[^_^]: Lazy instantiation using double locking mechanism.
 
-ÉÏÃæ´úÂëÖĞÏÔÊ¾µÄ±ê×¼ÊµÏÖÊÇÒ»¸öÏß³Ì°²È«µÄÊµÏÖ£¬µ«Ëü²»ÊÇ×îºÃµÄÏß³Ì°²È«ÊµÏÖ£¬ÒòÎªµ±ÎÒÃÇÌ¸ÂÛĞÔÄÜÊ±£¬Í¬²½·Ç³£°º¹ó¡£ÎÒÃÇ¿ÉÒÔ¿´µ½£¬ÔÚ³õÊ¼»¯¶ÔÏóºó£¬²»ĞèÒª¼ì²éÍ¬²½·½·¨getInstanceµÄÍ¬²½¡£Èç¹ûÎÒÃÇ¿´µ½µ¥Àı¶ÔÏóÒÑ¾­´´½¨£¬ÎÒÃÇÖ»ĞèÒªÔÚ²»Ê¹ÓÃÈÎºÎÍ¬²½¿éµÄÇé¿öÏÂ·µ»ØËü¡£Èç¹û¶ÔÏóÎª¿Õ£¬Èç¹û²»ÔÙ¼ì²é²¢ÔÚÍ¬²½¿éÖĞ´´½¨Ëü£¬Ôò´ËÓÅ»¯°üÀ¨¼ìÈë·ÇÍ¬²½¿é¡£Õâ³ÆÎªË«ÖØËø¶¨»úÖÆ¡£
-[^_^]:The standard implementation shown in the above code is a thread safe implementation, but it's not the best thread-safe implementation beacuse synchronization is very expensive when we are talking about the performance. We can see that the synchronized method getInstance does not need to be checked for syncronization after the object is initialized. If we see that the singleton object is already created we just have to return it without using any syncronized block. This optimization consist in checking in an unsynchronized block if the object is null and if not to check again and create it in an syncronized block. This is called double locking mechanism.
+ä¸Šé¢ä»£ç ä¸­æ˜¾ç¤ºçš„æ ‡å‡†å®ç°æ˜¯ä¸€ä¸ªçº¿ç¨‹å®‰å…¨çš„å®ç°ï¼Œä½†å®ƒä¸æ˜¯æœ€å¥½çš„çº¿ç¨‹å®‰å…¨å®ç°ï¼Œå› ä¸ºå½“æˆ‘ä»¬è°ˆè®ºæ€§èƒ½æ—¶ï¼ŒåŒæ­¥éå¸¸æ˜‚è´µã€‚æˆ‘ä»¬å¯ä»¥çœ‹åˆ°ï¼Œåœ¨åˆå§‹åŒ–å¯¹è±¡åï¼Œä¸éœ€è¦æ£€æŸ¥åŒæ­¥æ–¹æ³•getInstanceçš„åŒæ­¥ã€‚å¦‚æœæˆ‘ä»¬çœ‹åˆ°å•ä¾‹å¯¹è±¡å·²ç»åˆ›å»ºï¼Œæˆ‘ä»¬åªéœ€è¦åœ¨ä¸ä½¿ç”¨ä»»ä½•åŒæ­¥å—çš„æƒ…å†µä¸‹è¿”å›å®ƒã€‚å¦‚æœå¯¹è±¡ä¸ºç©ºï¼Œå¦‚æœä¸å†æ£€æŸ¥å¹¶åœ¨åŒæ­¥å—ä¸­åˆ›å»ºå®ƒï¼Œåˆ™æ­¤ä¼˜åŒ–åŒ…æ‹¬æ£€å…¥éåŒæ­¥å—ã€‚è¿™ç§°ä¸ºåŒé‡é”å®šæœºåˆ¶ã€‚
+[^_^]: The standard implementation shown in the above code is a thread safe implementation, but it's not the best thread-safe implementation beacuse synchronization is very expensive when we are talking about the performance. We can see that the synchronized method getInstance does not need to be checked for syncronization after the object is initialized. If we see that the singleton object is already created we just have to return it without using any syncronized block. This optimization consist in checking in an unsynchronized block if the object is null and if not to check again and create it in an syncronized block. This is called double locking mechanism.
 
-ÔÚÕâÖÖÇé¿öÏÂÇé¿öÏÂ´´½¨µ¥ÀıÊµÀıµ÷ÓÃgetInstance()·½·¨Ê±µÚÒ»´Î¡£Õâ½Ğ×öÑÓ³ÙÊµÀı»¯,ËüÈ·±£ÁËÖ»ÓĞÔÚĞèÒªÊ±´´½¨µ¥ÀıÊµÀı¡£
-[^_^]:In this case case the singleton instance is created when the getInstance() method is called for the first time. This is called lazy instantiation and it ensures that the singleton instance is created only when it is needed.
+åœ¨è¿™ç§æƒ…å†µä¸‹æƒ…å†µä¸‹åˆ›å»ºå•ä¾‹å®ä¾‹è°ƒç”¨getInstance()æ–¹æ³•æ—¶ç¬¬ä¸€æ¬¡ã€‚è¿™å«åšå»¶è¿Ÿå®ä¾‹åŒ–,å®ƒç¡®ä¿äº†åªæœ‰åœ¨éœ€è¦æ—¶åˆ›å»ºå•ä¾‹å®ä¾‹ã€‚
+[^_^]: In this case case the singleton instance is created when the getInstance() method is called for the first time. This is called lazy instantiation and it ensures that the singleton instance is created only when it is needed.
 
 ```java
 //Lazy instantiation using double locking mechanism.
@@ -150,17 +150,17 @@ class Singleton
 }
 ```
 
-¿ÉÒÔÔÚ[https://www.ibm.com/developerworks/java/library/j-dcl/index.html](https://www.ibm.com/developerworks/java/library/j-dcl/index.html)ÉÏÕÒµ½Ò»¸öÌÖÂÛË«ÖØËø¶¨»úÖÆµÄÎÄÕÂ¡£
-[^_^]:A detialed discussion(double locking mechanism) can be found on http://www-128.ibm.com/developerworks/java/library/j-dcl.html?loc=j
+å¯ä»¥åœ¨[https://www.ibm.com/developerworks/java/library/j-dcl/index.html](https://www.ibm.com/developerworks/java/library/j-dcl/index.html)ä¸Šæ‰¾åˆ°ä¸€ä¸ªè®¨è®ºåŒé‡é”å®šæœºåˆ¶çš„æ–‡ç« ã€‚
+[^_^]: A detialed discussion(double locking mechanism) can be found on http://www-128.ibm.com/developerworks/java/library/j-dcl.html?loc=j
 
-##### ÔçÆÚµÄÊµÀı»¯Í¨¹ıÊ¹ÓÃ¾²Ì¬×Ö¶ÎÀ´ÊµÏÖ
-[^_^]:#####Early instantiation using implementation with static field
+##### æ—©æœŸçš„å®ä¾‹åŒ–é€šè¿‡ä½¿ç”¨é™æ€å­—æ®µæ¥å®ç°
+[^_^]: #####Early instantiation using implementation with static field
 
-ÔÚÏÂÃæµÄÊµÏÖÖĞ£¬µ¥Àı¶ÔÏóÔÚ¼ÓÔØÀàÊ±ÊµÀı»¯£¬¶ø²»ÊÇÔÚµÚÒ»´ÎÊ¹ÓÃÊ±ÊµÀı»¯£¬ÒòÎªÊµÀı³ÉÔ±±»ÉùÃ÷Îªstatic¡£Õâ¾ÍÊÇÎªÊ²Ã´ÔÚÕâÖÖÇé¿öÏÂÎÒÃÇ²»ĞèÒªÍ¬²½´úÂëµÄÈÎºÎ²¿·Ö¡£Ò»µ©Õâ±£Ö¤ÁË¶ÔÏóµÄÎ¨Ò»ĞÔ£¬¾Í»á¼ÓÔØ¸ÃÀà¡£
-[^_^]:In the following implementattion the singleton object is instantiated when the class is loaded and not when it is first used, due to the fact that the instance member is declared static. This is why in we don't need to synchronize any portion of the code in this case. The class is loaded once this guarantee the uniquity of the object.
+åœ¨ä¸‹é¢çš„å®ç°ä¸­ï¼Œå•ä¾‹å¯¹è±¡åœ¨åŠ è½½ç±»æ—¶å®ä¾‹åŒ–ï¼Œè€Œä¸æ˜¯åœ¨ç¬¬ä¸€æ¬¡ä½¿ç”¨æ—¶å®ä¾‹åŒ–ï¼Œå› ä¸ºå®ä¾‹æˆå‘˜è¢«å£°æ˜ä¸ºstaticã€‚è¿™å°±æ˜¯ä¸ºä»€ä¹ˆåœ¨è¿™ç§æƒ…å†µä¸‹æˆ‘ä»¬ä¸éœ€è¦åŒæ­¥ä»£ç çš„ä»»ä½•éƒ¨åˆ†ã€‚ä¸€æ—¦è¿™ä¿è¯äº†å¯¹è±¡çš„å”¯ä¸€æ€§ï¼Œå°±ä¼šåŠ è½½è¯¥ç±»ã€‚
+[^_^]: In the following implementattion the singleton object is instantiated when the class is loaded and not when it is first used, due to the fact that the instance member is declared static. This is why in we don't need to synchronize any portion of the code in this case. The class is loaded once this guarantee the uniquity of the object.
 
-µ¥Àı£ºÒ»¸ö¼òµ¥µÄÀı×Ó(java)
-[^_^]:Singleton - A simple example (java)
+å•ä¾‹ï¼šä¸€ä¸ªç®€å•çš„ä¾‹å­(java)
+[^_^]: Singleton - A simple example (java)
 
 ```java
 //Early instantiation using implementation with static field.
@@ -185,29 +185,29 @@ class Singleton
 }
 ```
 
-#### ÊÜ±£»¤µÄ¹¹Ôìº¯Êı
-[^_^]:#### Protected constructor
-[^_^]:It is possible to use a protected constructor to in order to permit the subclassing of the singeton. This techique has 2 drawbacks that makes singleton inheritance impractical:
+#### å—ä¿æŠ¤çš„æ„é€ å‡½æ•°
+[^_^]: #### Protected constructor
+[^_^]: It is possible to use a protected constructor to in order to permit the subclassing of the singeton. This techique has 2 drawbacks that makes singleton inheritance impractical:
 [^_^]: *First of all, if the constructor is protected, it means that the class can be instantiated by calling the constructor from another class in the same package. A possible solution to avoid it is to create a separate package for the singleton.
 [^_^]: *Second of all, in order to use the derived class all the getInstance calls should be changed in the existing code from Singleton.getInstance() to NewSingleton.getInstance().
 
-¿ÉÒÔÊ¹ÓÃÊÜ±£»¤µÄ¹¹Ôìº¯ÊıÒÔÔÊĞísingetonµÄ×ÓÀà»¯¡£ÕâÖÖ¼¼ÊõÓĞ2µÄÈ±µã,Ê¹µÃµ¥Àı¼Ì³Ğ²»ÇĞÊµ¼ÊµÄ£º
-* Ê×ÏÈ,Èç¹û¹¹Ôìº¯ÊıÊÜµ½±£»¤£¬ÔòÒâÎ¶×Å¿ÉÒÔÍ¨¹ı´ÓÍ¬Ò»¸ö°üÖĞµÄÁíÒ»¸öÀàµ÷ÓÃ¹¹Ôìº¯ÊıÀ´ÊµÀı»¯¸ÃÀà¡£±ÜÃâËüµÄ¿ÉÄÜ½â¾ö·½°¸ÊÇÎªµ¥Àı´´½¨µ¥¶ÀµÄ°ü¡£
-* Æä´Î£¬ÎªÁËÊ¹ÓÃÅÉÉúÀà£¬ËùÓĞgetInstanceµ÷ÓÃ¶¼Ó¦¸ÃÔÚÏÖÓĞ´úÂëÖĞ´ÓSingleton.getInstance()¸ü¸ÄÎªNewSingleton.getInstance()¡£
+å¯ä»¥ä½¿ç”¨å—ä¿æŠ¤çš„æ„é€ å‡½æ•°ä»¥å…è®¸singetonçš„å­ç±»åŒ–ã€‚è¿™ç§æŠ€æœ¯æœ‰2çš„ç¼ºç‚¹,ä½¿å¾—å•ä¾‹ç»§æ‰¿ä¸åˆ‡å®é™…çš„ï¼š
+* é¦–å…ˆ,å¦‚æœæ„é€ å‡½æ•°å—åˆ°ä¿æŠ¤ï¼Œåˆ™æ„å‘³ç€å¯ä»¥é€šè¿‡ä»åŒä¸€ä¸ªåŒ…ä¸­çš„å¦ä¸€ä¸ªç±»è°ƒç”¨æ„é€ å‡½æ•°æ¥å®ä¾‹åŒ–è¯¥ç±»ã€‚é¿å…å®ƒçš„å¯èƒ½è§£å†³æ–¹æ¡ˆæ˜¯ä¸ºå•ä¾‹åˆ›å»ºå•ç‹¬çš„åŒ…ã€‚
+* å…¶æ¬¡ï¼Œä¸ºäº†ä½¿ç”¨æ´¾ç”Ÿç±»ï¼Œæ‰€æœ‰getInstanceè°ƒç”¨éƒ½åº”è¯¥åœ¨ç°æœ‰ä»£ç ä¸­ä»Singleton.getInstance()æ›´æ”¹ä¸ºNewSingleton.getInstance()ã€‚
 
 
 
-#### Èç¹ûÓÉ²»Í¬Àà¼ÓÔØÆ÷¼ÓÔØµÄÀà·ÃÎÊµ¥Àı£¬Ôò»á³öÏÖ¶à¸öµ¥ÀıÊµÀı¡£
-[^_^]:#### Multiple singleton instances if classes loaded by different classloaders access a singleton.
+#### å¦‚æœç”±ä¸åŒç±»åŠ è½½å™¨åŠ è½½çš„ç±»è®¿é—®å•ä¾‹ï¼Œåˆ™ä¼šå‡ºç°å¤šä¸ªå•ä¾‹å®ä¾‹ã€‚
+[^_^]: #### Multiple singleton instances if classes loaded by different classloaders access a singleton.
 
-Èç¹ûÒ»¸öÀà(Í¬ÑùµÄÃû×Ö,Í¬ÑùµÄ°ü)ÊÇÓÉÁ½¸ö²»Í¬µÄÀà¼ÓÔØÆ÷¼ÓÔØËüÃÇ´ú±íÁËÁ½ÖÖ²»Í¬clasessÔÚÄÚ´æÖĞ¡£
-[^_^]:If a class(same name, same package) is loaded by 2 diferent classloaders they represent 2 different clasess in memory.
+å¦‚æœä¸€ä¸ªç±»(åŒæ ·çš„åå­—,åŒæ ·çš„åŒ…)æ˜¯ç”±ä¸¤ä¸ªä¸åŒçš„ç±»åŠ è½½å™¨åŠ è½½å®ƒä»¬ä»£è¡¨äº†ä¸¤ç§ä¸åŒclasessåœ¨å†…å­˜ä¸­ã€‚
+[^_^]: If a class(same name, same package) is loaded by 2 diferent classloaders they represent 2 different clasess in memory.
 
-#### ĞòÁĞ»¯
-[^_^]:#### Serialization
+#### åºåˆ—åŒ–
+[^_^]: #### Serialization
 
-ÔÚjavaÖĞ£¬Èç¹ûSingletonÀàÊµÏÖjava.io.Serializable½Ó¿Ú£¬µ±µ¥ÀıĞòÁĞ»¯È»ºó·´ĞòÁĞ»¯¶à´ÎÊ±£¬½«»á´´½¨SingletonÀàµÄ¶à¸öÊµÀı¡£ÎªÁË±ÜÃâÕâÖÖÇé¿ö£¬Ó¦¸ÃÊµÏÖreadResolve·½·¨¡£Çë²ÎÔÄjavadocsÖĞµÄSerializable()ºÍreadResolve() ·½·¨¡£
-[^_^]:In java, if a Singleton class implements the java.io.Serializable interface, when the singleton is serialized and then deserialized more than once, there will be multiple instances of the Singleton class created. In order to avoid this the readResolve method should be implemented. See Serializable () and readResolve Method () in javadocs.
+åœ¨javaä¸­ï¼Œå¦‚æœSingletonç±»å®ç°java.io.Serializableæ¥å£ï¼Œå½“å•ä¾‹åºåˆ—åŒ–ç„¶åååºåˆ—åŒ–å¤šæ¬¡æ—¶ï¼Œå°†ä¼šåˆ›å»ºSingletonç±»çš„å¤šä¸ªå®ä¾‹ã€‚ä¸ºäº†é¿å…è¿™ç§æƒ…å†µï¼Œåº”è¯¥å®ç°readResolveæ–¹æ³•ã€‚è¯·å‚é˜…javadocsä¸­çš„Serializable()å’ŒreadResolve() æ–¹æ³•ã€‚
+[^_^]: In java, if a Singleton class implements the java.io.Serializable interface, when the singleton is serialized and then deserialized more than once, there will be multiple instances of the Singleton class created. In order to avoid this the readResolve method should be implemented. See Serializable () and readResolve Method () in javadocs.
 
 ```java
 public class Singleton implements Serializable {
@@ -223,21 +223,21 @@ public class Singleton implements Serializable {
 	...
 ```
 
-#### ³éÏó¹¤³§ºÍ¹¤³§·½·¨×÷Îªµ¥ÀıÊµÏÖ¡£
-[^_^]:#### Abstract Factory and Factory Methods implemented as singletons.
+#### æŠ½è±¡å·¥å‚å’Œå·¥å‚æ–¹æ³•ä½œä¸ºå•ä¾‹å®ç°ã€‚
+[^_^]: #### Abstract Factory and Factory Methods implemented as singletons.
 
-ÔÚÄ³Ğ©Çé¿öÏÂ,¹¤³§Ó¦¸ÃÊÇÎ¨Ò»µÄ¡£´´½¨¶ÔÏóÊ±£¬ÓĞ2¸ö¹¤³§¿ÉÄÜ»á²úÉú²»Á¼Ó°Ïì¡£È·±£¹¤³§ÊÇ¶ÀÒ»ÎŞ¶şµÄÓ¦¸ÃÊÇ×÷ÎªÒ»¸öµ¥ÀıÊµÏÖ¡£Í¨¹ıÕâÑù×ö£¬ÎÒÃÇ»¹±ÜÃâÔÚÊ¹ÓÃËüÖ®Ç°ÊµÀı»¯¸ÃÀà¡£
-[^_^]:There are certain situations when the a factory should be unique. Having 2 factories might have undesired effects when objects are created. To ensure that a factory is unique it should be implemented as a singleton. By doing so we also avoid to instantiate the class before using it.
+åœ¨æŸäº›æƒ…å†µä¸‹,å·¥å‚åº”è¯¥æ˜¯å”¯ä¸€çš„ã€‚åˆ›å»ºå¯¹è±¡æ—¶ï¼Œæœ‰2ä¸ªå·¥å‚å¯èƒ½ä¼šäº§ç”Ÿä¸è‰¯å½±å“ã€‚ç¡®ä¿å·¥å‚æ˜¯ç‹¬ä¸€æ— äºŒçš„åº”è¯¥æ˜¯ä½œä¸ºä¸€ä¸ªå•ä¾‹å®ç°ã€‚é€šè¿‡è¿™æ ·åšï¼Œæˆ‘ä»¬è¿˜é¿å…åœ¨ä½¿ç”¨å®ƒä¹‹å‰å®ä¾‹åŒ–è¯¥ç±»ã€‚
+[^_^]: There are certain situations when the a factory should be unique. Having 2 factories might have undesired effects when objects are created. To ensure that a factory is unique it should be implemented as a singleton. By doing so we also avoid to instantiate the class before using it.
 
-#### ÈÈµã:
-[^_^]:#### Hot Spot:
+#### çƒ­ç‚¹:
+[^_^]: #### Hot Spot:
 
 [^_^]: Multithreading - A special care should be taken when singleton has to be used in a multithreading application.
 Serialization - When Singletons are implementing Serializable interface they have to implement readResolve method in order to avoid having 2 different objects.
 [^_^]: Classloaders - If the Singleton class is loaded by 2 different class loaders we'll have 2 different classes, one for each class loader.
 [^_^]: Global Access Point represented by the class name - The singleton instance is obtained using the class name. At the first view this is an easy way to access it, but it is not very flexible. If we need to replace the Sigleton class, all the references in the code should be changed accordinglly.
 
-* ¶àÏß³Ì - µ±µ¥Àı±ØĞëÔÚ¶àÏß³ÌÓ¦ÓÃ³ÌĞòÖĞÊ¹ÓÃÊ±£¬Ó¦ÌØ±ğĞ¡ĞÄ¡£
-* ĞòÁĞ»¯ - µ±SingletonsÊµÏÖSerializable½Ó¿ÚÊ±£¬ËûÃÇ±ØĞëÊµÏÖreadResolve·½·¨£¬ÒÔ±ÜÃâÓĞ2¸ö²»Í¬µÄ¶ÔÏó¡£
-* Àà¼ÓÔØÆ÷ - Èç¹ûSingletonÀàÓÉ2¸ö²»Í¬µÄÀà¼ÓÔØÆ÷¼ÓÔØ£¬ÎÒÃÇ½«ÓĞ2¸ö²»Í¬µÄÀà£¬Ã¿¸öÀà¼ÓÔØÆ÷Ò»¸ö¡£
-* ÓÉÀàÃû±íÊ¾µÄÈ«¾Ö·ÃÎÊµã - Ê¹ÓÃÀàÃû»ñÈ¡µ¥ÀıÊµÀı¡£ÔÚµÚÒ»¸öÊÓÍ¼ÖĞ£¬ÕâÊÇÒ»ÖÖ·ÃÎÊËüµÄ¼òµ¥·½·¨£¬µ«Ëü²»ÊÇºÜÁé»î¡£Èç¹ûÎÒÃÇĞèÒªÌæ»»SigletonÀà£¬ÔòÓ¦¸Ã¸ù¾İ´úÂë¸ü¸Ä´úÂëÖĞµÄËùÓĞÒıÓÃ¡£
+* å¤šçº¿ç¨‹ - å½“å•ä¾‹å¿…é¡»åœ¨å¤šçº¿ç¨‹åº”ç”¨ç¨‹åºä¸­ä½¿ç”¨æ—¶ï¼Œåº”ç‰¹åˆ«å°å¿ƒã€‚
+* åºåˆ—åŒ– - å½“Singletonså®ç°Serializableæ¥å£æ—¶ï¼Œä»–ä»¬å¿…é¡»å®ç°readResolveæ–¹æ³•ï¼Œä»¥é¿å…æœ‰2ä¸ªä¸åŒçš„å¯¹è±¡ã€‚
+* ç±»åŠ è½½å™¨ - å¦‚æœSingletonç±»ç”±2ä¸ªä¸åŒçš„ç±»åŠ è½½å™¨åŠ è½½ï¼Œæˆ‘ä»¬å°†æœ‰2ä¸ªä¸åŒçš„ç±»ï¼Œæ¯ä¸ªç±»åŠ è½½å™¨ä¸€ä¸ªã€‚
+* ç”±ç±»åè¡¨ç¤ºçš„å…¨å±€è®¿é—®ç‚¹ - ä½¿ç”¨ç±»åè·å–å•ä¾‹å®ä¾‹ã€‚åœ¨ç¬¬ä¸€ä¸ªè§†å›¾ä¸­ï¼Œè¿™æ˜¯ä¸€ç§è®¿é—®å®ƒçš„ç®€å•æ–¹æ³•ï¼Œä½†å®ƒä¸æ˜¯å¾ˆçµæ´»ã€‚å¦‚æœæˆ‘ä»¬éœ€è¦æ›¿æ¢Sigletonç±»ï¼Œåˆ™åº”è¯¥æ ¹æ®ä»£ç æ›´æ”¹ä»£ç ä¸­çš„æ‰€æœ‰å¼•ç”¨ã€‚

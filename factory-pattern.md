@@ -1,65 +1,65 @@
-## [¹¤³§Ä£Ê½](https://www.oodesign.com/factory-pattern.html)
-[^_^]:## Factory Pattern
+## [å·¥å‚æ¨¡å¼](https://www.oodesign.com/factory-pattern.html)
+[^_^]: ## Factory Pattern
 
-### ¶¯»ú
-[^_^]:### Motivation
+### åŠ¨æœº
+[^_^]: ### Motivation
 
-¹¤³§Éè¼ÆÄ£Ê½¿ÉÄÜÊÇJavaºÍC££µÈÏÖ´ú±à³ÌÓïÑÔÖĞ×î³£ÓÃµÄÉè¼ÆÄ£Ê½¡£ËüÓĞ²»Í¬µÄ±äÌåºÍÊµÏÖ¡£Èç¹ûÄúÕıÔÚËÑË÷Ëü£¬ºÜ¿ÉÄÜ»áÕÒµ½ÓĞ¹ØGoFÄ£Ê½µÄ²Î¿¼£º¹¤³§·½·¨Ä£Ê½ºÍ³éÏó¹¤³§Ä£Ê½¡£
-[^_^]:The Factory Design Pattern is probably the most used design pattern in modern programming languages like Java and C#. It comes in different variants and implementations. If you are searching for it, most likely, you'll find references about the GoF patterns: Factory Method and Abstract Factory.
+å·¥å‚è®¾è®¡æ¨¡å¼å¯èƒ½æ˜¯Javaå’ŒCï¼ƒç­‰ç°ä»£ç¼–ç¨‹è¯­è¨€ä¸­æœ€å¸¸ç”¨çš„è®¾è®¡æ¨¡å¼ã€‚å®ƒæœ‰ä¸åŒçš„å˜ä½“å’Œå®ç°ã€‚å¦‚æœæ‚¨æ­£åœ¨æœç´¢å®ƒï¼Œå¾ˆå¯èƒ½ä¼šæ‰¾åˆ°æœ‰å…³GoFæ¨¡å¼çš„å‚è€ƒï¼šå·¥å‚æ–¹æ³•æ¨¡å¼å’ŒæŠ½è±¡å·¥å‚æ¨¡å¼ã€‚
+[^_^]: The Factory Design Pattern is probably the most used design pattern in modern programming languages like Java and C#. It comes in different variants and implementations. If you are searching for it, most likely, you'll find references about the GoF patterns: Factory Method and Abstract Factory.
 
  
-ÔÚ±¾ÎÄÖĞ,ÎÒÃÇ½«ÃèÊöÒ»¸öÏÖÔÚ¹¤³§Ä£Ê½³£ÓÃµÄ·ç¸ñ¡£Äú»¹¿ÉÒÔ¼ì²é·Ç³£ÏàËÆµÄÔ­Ê¼Factory MethodÄ£Ê½¡£
-[^_^]:In this article we'll describe a flavor of factory pattern commonly used nowdays. You can also check the original Factory Method pattern which is very similar.
+åœ¨æœ¬æ–‡ä¸­,æˆ‘ä»¬å°†æè¿°ä¸€ä¸ªç°åœ¨å·¥å‚æ¨¡å¼å¸¸ç”¨çš„é£æ ¼ã€‚æ‚¨è¿˜å¯ä»¥æ£€æŸ¥éå¸¸ç›¸ä¼¼çš„åŸå§‹Factory Methodæ¨¡å¼ã€‚
+[^_^]: In this article we'll describe a flavor of factory pattern commonly used nowdays. You can also check the original Factory Method pattern which is very similar.
 
 
-### ÒâÍ¼
-[^_^]:### Intent
-[^_^]:creates objects without exposing the instantiation logic to the client.
-[^_^]:refers to the newly created object through a common interface
+### æ„å›¾
+[^_^]: ### Intent
+[^_^]: creates objects without exposing the instantiation logic to the client.
+[^_^]: refers to the newly created object through a common interface
 
-* ´´½¨¶ÔÏó¶ø²»½«ÊµÀı»¯Âß¼­±©Â¶¸ø¿Í»§¶Ë¡£
-* Í¨¹ı¹«¹²½Ó¿ÚÒıÓÃĞÂ´´½¨µÄ¶ÔÏó
+* åˆ›å»ºå¯¹è±¡è€Œä¸å°†å®ä¾‹åŒ–é€»è¾‘æš´éœ²ç»™å®¢æˆ·ç«¯ã€‚
+* é€šè¿‡å…¬å…±æ¥å£å¼•ç”¨æ–°åˆ›å»ºçš„å¯¹è±¡
 
-### ÊµÏÖ
-[^_^]:### Implementation
+### å®ç°
+[^_^]: ### Implementation
 
-![¹¤³§ÊµÏÖ¡ª¡ªUMLÀàÍ¼](imgaes/factory%20implementation.gif)
-[^_^]:Factory Implementation - UML Class Diagram
+![å·¥å‚å®ç°â€”â€”UMLç±»å›¾](imgaes/factory%20implementation.gif)
+[^_^]: Factory Implementation - UML Class Diagram
 
-ÊµÏÖ·Ç³£¼òµ¥
-[^_^]:The implementation is really simple
-[^_^]:The client needs a product, but instead of creating it directly using the new operator, it asks the factory object for a new product, providing the information about the type of object it needs.
-[^_^]:The factory instantiates a new concrete product and then returns to the client the newly created product(casted to abstract product class).
-[^_^]:The client uses the products as abstract products without being aware about their concrete implementation.
+å®ç°éå¸¸ç®€å•
+[^_^]: The implementation is really simple
+[^_^]: The client needs a product, but instead of creating it directly using the new operator, it asks the factory object for a new product, providing the information about the type of object it needs.
+[^_^]: The factory instantiates a new concrete product and then returns to the client the newly created product(casted to abstract product class).
+[^_^]: The client uses the products as abstract products without being aware about their concrete implementation.
 
-* ¿Í»§¶ËĞèÒªÒ»¸ö²úÆ·£¬µ«²»ÊÇÖ±½ÓÊ¹ÓÃnewÔËËã·û´´½¨Ëü£¬¶øÊÇÏò¹¤³§¶ÔÏóÇëÇóĞÂ²úÆ·£¬Ìá¹©ÓĞ¹ØËùĞè¶ÔÏóÀàĞÍµÄĞÅÏ¢¡£
-* ¹¤³§ÊµÀı»¯Ò»¸öĞÂµÄ¾ßÌå²úÆ·£¬È»ºó½«ĞÂ´´½¨µÄ²úÆ··µ»Ø¸ø¿Í»§¶Ë£¨×ª»»Îª³éÏó²úÆ·Àà£©¡£
-* ¿Í»§½«²úÆ·ÓÃ×÷³éÏó²úÆ·£¬¶ø²»ÁË½âÆä¾ßÌåÈçºÎÊµÏÖ¡£
+* å®¢æˆ·ç«¯éœ€è¦ä¸€ä¸ªäº§å“ï¼Œä½†ä¸æ˜¯ç›´æ¥ä½¿ç”¨newè¿ç®—ç¬¦åˆ›å»ºå®ƒï¼Œè€Œæ˜¯å‘å·¥å‚å¯¹è±¡è¯·æ±‚æ–°äº§å“ï¼Œæä¾›æœ‰å…³æ‰€éœ€å¯¹è±¡ç±»å‹çš„ä¿¡æ¯ã€‚
+* å·¥å‚å®ä¾‹åŒ–ä¸€ä¸ªæ–°çš„å…·ä½“äº§å“ï¼Œç„¶åå°†æ–°åˆ›å»ºçš„äº§å“è¿”å›ç»™å®¢æˆ·ç«¯ï¼ˆè½¬æ¢ä¸ºæŠ½è±¡äº§å“ç±»ï¼‰ã€‚
+* å®¢æˆ·å°†äº§å“ç”¨ä½œæŠ½è±¡äº§å“ï¼Œè€Œä¸äº†è§£å…¶å…·ä½“å¦‚ä½•å®ç°ã€‚
 
-### ÊÊÓÃĞÔºÍÀı×Ó
-[^_^]:### Applicability & Examples
+### é€‚ç”¨æ€§å’Œä¾‹å­
+[^_^]: ### Applicability & Examples
 
-¹¤³§Ä£Ê½¿ÉÄÜÊÇ×î³£ÓÃµÄÄ£Ê½Ö®Ò»¡£
-[^_^]:Probably the factory pattern is one of the most used patterns.
+å·¥å‚æ¨¡å¼å¯èƒ½æ˜¯æœ€å¸¸ç”¨çš„æ¨¡å¼ä¹‹ä¸€ã€‚
+[^_^]: Probably the factory pattern is one of the most used patterns.
 
-ÀıÈç£¬Í¼ĞÎÓ¦ÓÃ³ÌĞòÊ¹ÓÃĞÎ×´¡£ÔÚÎÒÃÇµÄÊµÏÖÖĞ£¬»æÍ¼¿ò¼ÜÊÇ¿Í»§¶Ë£¬ĞÎ×´ÊÇ²úÆ·¡£ËùÓĞĞÎ×´¶¼À´×Ô³éÏóĞÎ×´Àà£¨»ò½Ó¿Ú£©¡£ShapeÀà¶¨Òå±ØĞëÓÉ¾ßÌåĞÎ×´ÊµÏÖµÄ»æÖÆºÍÒÆ¶¯²Ù×÷¡£¼ÙÉè´Ó²Ëµ¥ÖĞÑ¡ÔñÒ»¸öÃüÁîÀ´´´½¨Ò»¸öĞÂµÄÔ²¡£¿ò¼Ü½ÓÊÕĞÎ×´ÀàĞÍ×÷Îª×Ö·û´®²ÎÊı£¬ËüÒªÇó¹¤³§´´½¨·¢ËÍ´Ó²Ëµ¥½ÓÊÕµÄ²ÎÊıµÄĞÂĞÎ×´¡£¹¤³§´´½¨Ò»¸öĞÂµÄÔ²È¦²¢½«Æä·µ»Øµ½¿ò¼Ü£¬ÖıÔì³É³éÏóµÄĞÎ×´¡£È»ºó¿ò¼Ü½«¶ÔÏóÓÃ×÷³éÏóÀà£¬¶ø²»ĞèÒªÖªµÀ¾ßÌåµÄ¶ÔÏóÀàĞÍ¡£
-[^_^]:For example a graphical application works with shapes. In our implementation the drawing framework is the client and the shapes are the products. All the shapes are derived from an abstract shape class (or interface). The Shape class defines the draw and move operations which must be implemented by the concrete shapes. Let's assume a command is selected from the menu to create a new Circle. The framework receives the shape type as a string parameter, it asks the factory to create a new shape sending the parameter received from menu. The factory creates a new circle and returns it to the framework, casted to an abstract shape. Then the framework uses the object as casted to the abstract class without being aware of the concrete object type.
+ä¾‹å¦‚ï¼Œå›¾å½¢åº”ç”¨ç¨‹åºä½¿ç”¨å½¢çŠ¶ã€‚åœ¨æˆ‘ä»¬çš„å®ç°ä¸­ï¼Œç»˜å›¾æ¡†æ¶æ˜¯å®¢æˆ·ç«¯ï¼Œå½¢çŠ¶æ˜¯äº§å“ã€‚æ‰€æœ‰å½¢çŠ¶éƒ½æ¥è‡ªæŠ½è±¡å½¢çŠ¶ç±»ï¼ˆæˆ–æ¥å£ï¼‰ã€‚Shapeç±»å®šä¹‰å¿…é¡»ç”±å…·ä½“å½¢çŠ¶å®ç°çš„ç»˜åˆ¶å’Œç§»åŠ¨æ“ä½œã€‚å‡è®¾ä»èœå•ä¸­é€‰æ‹©ä¸€ä¸ªå‘½ä»¤æ¥åˆ›å»ºä¸€ä¸ªæ–°çš„åœ†ã€‚æ¡†æ¶æ¥æ”¶å½¢çŠ¶ç±»å‹ä½œä¸ºå­—ç¬¦ä¸²å‚æ•°ï¼Œå®ƒè¦æ±‚å·¥å‚åˆ›å»ºå‘é€ä»èœå•æ¥æ”¶çš„å‚æ•°çš„æ–°å½¢çŠ¶ã€‚å·¥å‚åˆ›å»ºä¸€ä¸ªæ–°çš„åœ†åœˆå¹¶å°†å…¶è¿”å›åˆ°æ¡†æ¶ï¼Œé“¸é€ æˆæŠ½è±¡çš„å½¢çŠ¶ã€‚ç„¶åæ¡†æ¶å°†å¯¹è±¡ç”¨ä½œæŠ½è±¡ç±»ï¼Œè€Œä¸éœ€è¦çŸ¥é“å…·ä½“çš„å¯¹è±¡ç±»å‹ã€‚
+[^_^]: For example a graphical application works with shapes. In our implementation the drawing framework is the client and the shapes are the products. All the shapes are derived from an abstract shape class (or interface). The Shape class defines the draw and move operations which must be implemented by the concrete shapes. Let's assume a command is selected from the menu to create a new Circle. The framework receives the shape type as a string parameter, it asks the factory to create a new shape sending the parameter received from menu. The factory creates a new circle and returns it to the framework, casted to an abstract shape. Then the framework uses the object as casted to the abstract class without being aware of the concrete object type.
 
 
-ÓÅÊÆÏÔ¶øÒ×¼û£º¿ÉÒÔÌí¼ÓĞÂĞÎ×´¶øÎŞĞè¸ü¸Ä¿ò¼ÜÖĞµÄÈÎºÎ´úÂë£¨Ê¹ÓÃ¹¤³§ĞÎ×´µÄ¿Í»§¶Ë´úÂë£©¡£ÈçÏÂÒ»½ÚËùÊ¾£¬Ä³Ğ©¹¤³§ÊµÏÖÔÊĞíÌí¼ÓĞÂ²úÆ·£¬ÉõÖÁÎŞĞèĞŞ¸Ä¹¤³§Àà¡£
-[^_^]:The advantage is obvious: New shapes can be added without changing a single line of code in the framework(the client code that uses the shapes from the factory). As it is shown in the next sections, there are certain factory implementations that allow adding new products without even modifying the factory class.
+ä¼˜åŠ¿æ˜¾è€Œæ˜“è§ï¼šå¯ä»¥æ·»åŠ æ–°å½¢çŠ¶è€Œæ— éœ€æ›´æ”¹æ¡†æ¶ä¸­çš„ä»»ä½•ä»£ç ï¼ˆä½¿ç”¨å·¥å‚å½¢çŠ¶çš„å®¢æˆ·ç«¯ä»£ç ï¼‰ã€‚å¦‚ä¸‹ä¸€èŠ‚æ‰€ç¤ºï¼ŒæŸäº›å·¥å‚å®ç°å…è®¸æ·»åŠ æ–°äº§å“ï¼Œç”šè‡³æ— éœ€ä¿®æ”¹å·¥å‚ç±»ã€‚
+[^_^]: The advantage is obvious: New shapes can be added without changing a single line of code in the framework(the client code that uses the shapes from the factory). As it is shown in the next sections, there are certain factory implementations that allow adding new products without even modifying the factory class.
 
-### ¾ßÌåÎÊÌâºÍÊµÏÖ
-[^_^]:### Specific problems and implementation
+### å…·ä½“é—®é¢˜å’Œå®ç°
+[^_^]: ### Specific problems and implementation
 
-#### ³ÌĞò½â¾ö·½°¸- switch/case ĞÂÊÖÊµÀı»¯¡£
-[^_^]:#### Procedural Solution - switch/case noob instantiation.
+#### ç¨‹åºè§£å†³æ–¹æ¡ˆ- switch/case æ–°æ‰‹å®ä¾‹åŒ–ã€‚
+[^_^]: #### Procedural Solution - switch/case noob instantiation.
 
-![¹¤³§ĞÂÊÖÊµÏÖ¡ª¡ªUMLÀàÍ¼](imgaes/factory%20noob%20implementation.gif)
-[^_^]:Factory Noob Implementation - UML Class Diagram
+![å·¥å‚æ–°æ‰‹å®ç°â€”â€”UMLç±»å›¾](imgaes/factory%20noob%20implementation.gif)
+[^_^]: Factory Noob Implementation - UML Class Diagram
 
-ÕâĞ©Ò²±»³ÆÎª²ÎÊı»¯µÄ¹¤³§¡£¿ÉÒÔ±àĞ´Éú³É·½·¨£¬ÒÔ±ãËü¿ÉÒÔÊ¹ÓÃÌõ¼ş£¨×÷Îª·½·¨²ÎÊıÊäÈë»ò´ÓÄ³Ğ©È«¾ÖÅäÖÃ²ÎÊı¶ÁÈ¡ - Çë²ÎÔÄ³éÏó¹¤³§Ä£Ê½£©Éú³É¸ü¶àÀàĞÍµÄProduct¶ÔÏó£¬ÒÔ±êÊ¶Ó¦´´½¨µÄ¶ÔÏóµÄÀàĞÍ£¬ ÈçÏÂ£º
-[^_^]:Those are also known as parameterized Factories. The generating method can be written so that it can generate more types of Product objects, using a condition (entered as a method parameter or read from some global configuration parameters - see abstract factory pattern) to identify the type of the object that should be created, as below:
+è¿™äº›ä¹Ÿè¢«ç§°ä¸ºå‚æ•°åŒ–çš„å·¥å‚ã€‚å¯ä»¥ç¼–å†™ç”Ÿæˆæ–¹æ³•ï¼Œä»¥ä¾¿å®ƒå¯ä»¥ä½¿ç”¨æ¡ä»¶ï¼ˆä½œä¸ºæ–¹æ³•å‚æ•°è¾“å…¥æˆ–ä»æŸäº›å…¨å±€é…ç½®å‚æ•°è¯»å– - è¯·å‚é˜…æŠ½è±¡å·¥å‚æ¨¡å¼ï¼‰ç”Ÿæˆæ›´å¤šç±»å‹çš„Productå¯¹è±¡ï¼Œä»¥æ ‡è¯†åº”åˆ›å»ºçš„å¯¹è±¡çš„ç±»å‹ï¼Œ å¦‚ä¸‹ï¼š
+[^_^]: Those are also known as parameterized Factories. The generating method can be written so that it can generate more types of Product objects, using a condition (entered as a method parameter or read from some global configuration parameters - see abstract factory pattern) to identify the type of the object that should be created, as below:
 
 ```java
 public class ProductFactory{
@@ -76,14 +76,14 @@ public class ProductFactory{
 }
 ```
 
-Õâ¸öÊµÏÖÊÇ×î¼òµ¥ºÍÖ±¹ÛµÄ(ÎÒÃÇ³ÆÖ®ÎªĞÂÊÖÊµÏÖ)¡£ÕâÀïµÄÎÊÌâÊÇ£¬Ò»µ©ÎÒÃÇÌí¼ÓĞÂµÄ¾ßÌå²úÆ·µ÷ÓÃ£¬ÎÒÃÇÓ¦¸ÃĞŞ¸ÄFactoryÀà¡£Ëü²»ÊÇºÜÁé»î£¬Î¥·´ÁË¿ª·ÅÔ­Ôò¡£µ±È»ÎÒÃÇ¿ÉÒÔ×ÓÀà»¯¹¤³§Àà£¬µ«ÊÇ²»ÒªÍü¼Ç¹¤³§ÀàÍ¨³£ÓÃ×÷µ¥Àı¡£¶ÔËü½øĞĞ×ÓÀà»¯ÒâÎ¶×ÅÍ¨¹ı´úÂëÌæ»»ËùÓĞ¹¤³§ÀàÒıÓÃ¡£
-[^_^]:This implementation is the most simple and intuitive (Let's call it noob implementation). The problem here is that once we add a new concrete product call we should modify the Factory class. It is not very flexible and it violates open close principle. Of course we can subclass the factory class, but let's not forget that the factory class is usually used as a singleton. Subclassing it means replacing all the factory class references everywhere through the code.
+è¿™ä¸ªå®ç°æ˜¯æœ€ç®€å•å’Œç›´è§‚çš„(æˆ‘ä»¬ç§°ä¹‹ä¸ºæ–°æ‰‹å®ç°)ã€‚è¿™é‡Œçš„é—®é¢˜æ˜¯ï¼Œä¸€æ—¦æˆ‘ä»¬æ·»åŠ æ–°çš„å…·ä½“äº§å“è°ƒç”¨ï¼Œæˆ‘ä»¬åº”è¯¥ä¿®æ”¹Factoryç±»ã€‚å®ƒä¸æ˜¯å¾ˆçµæ´»ï¼Œè¿åäº†å¼€æ”¾åŸåˆ™ã€‚å½“ç„¶æˆ‘ä»¬å¯ä»¥å­ç±»åŒ–å·¥å‚ç±»ï¼Œä½†æ˜¯ä¸è¦å¿˜è®°å·¥å‚ç±»é€šå¸¸ç”¨ä½œå•ä¾‹ã€‚å¯¹å®ƒè¿›è¡Œå­ç±»åŒ–æ„å‘³ç€é€šè¿‡ä»£ç æ›¿æ¢æ‰€æœ‰å·¥å‚ç±»å¼•ç”¨ã€‚
+[^_^]: This implementation is the most simple and intuitive (Let's call it noob implementation). The problem here is that once we add a new concrete product call we should modify the Factory class. It is not very flexible and it violates open close principle. Of course we can subclass the factory class, but let's not forget that the factory class is usually used as a singleton. Subclassing it means replacing all the factory class references everywhere through the code.
 
-### Àà×¢²á,Ê¹ÓÃ·´Éä
-[^_^]:### Class Registration - using reflection
+### ç±»æ³¨å†Œ,ä½¿ç”¨åå°„
+[^_^]: ### Class Registration - using reflection
 
-Èç¹ûÄú¿ÉÒÔÊ¹ÓÃ·´Éä£¨ÀıÈç£¬Ê¹ÓÃJava»ò.NETÓïÑÔ£©£¬Ôò¿ÉÒÔ½«ĞÂ²úÆ·Àà×¢²áµ½¹¤³§£¬¶øÎŞĞè¸ü¸Ä¹¤³§±¾Éí¡£ÒªÔÚ²»ÖªµÀ¶ÔÏóÀàĞÍµÄÇé¿öÏÂÔÚ¹¤³§ÀàÖĞ´´½¨¶ÔÏó£¬ÎÒÃÇÔÚproductIDºÍ²úÆ·µÄÀàÀàĞÍÖ®¼ä±£ÁôÒ»¸öÓ³Éä¡£ÔÚÕâÖÖÇé¿öÏÂ£¬µ±½«ĞÂ²úÆ·Ìí¼Óµ½Ó¦ÓÃ³ÌĞòÊ±£¬±ØĞë½«Æä×¢²áµ½¹¤³§¡£´Ë²Ù×÷²»ĞèÒª¸ü¸Ä¹¤³§Àà´úÂë¡£
-[^_^]:If you can use reflection, for example in Java or .NET languages, you can register new product classes to the factory without even changing the factory itself. For creating objects inside the factory class without knowing the object type we keep a map between the productID and the class type of the product. In this case when a new product is added to the application it has to be registered to the factory. This operation doesn't require any change in the factory class code.
+å¦‚æœæ‚¨å¯ä»¥ä½¿ç”¨åå°„ï¼ˆä¾‹å¦‚ï¼Œä½¿ç”¨Javaæˆ–.NETè¯­è¨€ï¼‰ï¼Œåˆ™å¯ä»¥å°†æ–°äº§å“ç±»æ³¨å†Œåˆ°å·¥å‚ï¼Œè€Œæ— éœ€æ›´æ”¹å·¥å‚æœ¬èº«ã€‚è¦åœ¨ä¸çŸ¥é“å¯¹è±¡ç±»å‹çš„æƒ…å†µä¸‹åœ¨å·¥å‚ç±»ä¸­åˆ›å»ºå¯¹è±¡ï¼Œæˆ‘ä»¬åœ¨productIDå’Œäº§å“çš„ç±»ç±»å‹ä¹‹é—´ä¿ç•™ä¸€ä¸ªæ˜ å°„ã€‚åœ¨è¿™ç§æƒ…å†µä¸‹ï¼Œå½“å°†æ–°äº§å“æ·»åŠ åˆ°åº”ç”¨ç¨‹åºæ—¶ï¼Œå¿…é¡»å°†å…¶æ³¨å†Œåˆ°å·¥å‚ã€‚æ­¤æ“ä½œä¸éœ€è¦æ›´æ”¹å·¥å‚ç±»ä»£ç ã€‚
+[^_^]: If you can use reflection, for example in Java or .NET languages, you can register new product classes to the factory without even changing the factory itself. For creating objects inside the factory class without knowing the object type we keep a map between the productID and the class type of the product. In this case when a new product is added to the application it has to be registered to the factory. This operation doesn't require any change in the factory class code.
 
 ```java
 class ProductFactory
@@ -104,11 +104,11 @@ class ProductFactory
 }
 ```
 
-ÎÒÃÇ¿ÉÒÔ½«×¢²á´úÂë·ÅÔÚ´úÂëÖĞµÄÈÎºÎÎ»ÖÃ£¬µ«ÊÇÔÚ¾²Ì¬¹¹Ôìº¯ÊıÖĞµÄ²úÆ·ÀàÖĞÓĞÒ»¸ö·½±ãµÄÎ»ÖÃ¡£¿´ÏÂÃæµÄÀı×Ó£º
-[^_^]:We can put the registration code anywhere in our code, but a convenient place is inside the product class in a static constructor. Look at the example below:
+æˆ‘ä»¬å¯ä»¥å°†æ³¨å†Œä»£ç æ”¾åœ¨ä»£ç ä¸­çš„ä»»ä½•ä½ç½®ï¼Œä½†æ˜¯åœ¨é™æ€æ„é€ å‡½æ•°ä¸­çš„äº§å“ç±»ä¸­æœ‰ä¸€ä¸ªæ–¹ä¾¿çš„ä½ç½®ã€‚çœ‹ä¸‹é¢çš„ä¾‹å­ï¼š
+[^_^]: We can put the registration code anywhere in our code, but a convenient place is inside the product class in a static constructor. Look at the example below:
 
-1.ÔÚ²úÆ·Àà±ğÖ®ÍâÍê³É×¢²á£º
-[^_^]:1. Registration done outside of product classes:
+1.åœ¨äº§å“ç±»åˆ«ä¹‹å¤–å®Œæˆæ³¨å†Œï¼š
+[^_^]: 1. Registration done outside of product classes:
 
 ```java
 	public static void main(String args[]){
@@ -116,8 +116,8 @@ class ProductFactory
 	}
 ```
 
-2.ÔÚ²úÆ·Àà±ğÄÚÍê³É×¢²á£º
-[^_^]:2. Registration done inside the product classes:
+2.åœ¨äº§å“ç±»åˆ«å†…å®Œæˆæ³¨å†Œï¼š
+[^_^]: 2. Registration done inside the product classes:
 
 ```java
 class OneProduct extends Product
@@ -129,8 +129,8 @@ class OneProduct extends Product
 }
 ```
 
-ÎÒÃÇ±ØĞëÈ·±£ÔÚ¹¤³§ÒªÇó×¢²áÖ®Ç°¼ÓÔØ¾ßÌåµÄ²úÆ·Àà£¨Èç¹ûËüÃÇÎ´¼ÓÔØ£¬ËüÃÇ½«²»»áÔÚ¹¤³§ÖĞ×¢²á£¬createProduct½«·µ»Ønull£©¡£ÎªÁËÈ·±£Ëü£¬ÎÒÃÇ½«ÔÚÖ÷ÀàµÄ¾²Ì¬²¿·ÖÖĞÊ¹ÓÃClass.forName·½·¨¡£ÔÚ¼ÓÔØÖ÷ÀàÖ®ºóÁ¢¼´Ö´ĞĞ´Ë²¿·Ö¡£Class.forNameÓ¦¸Ã·µ»ØÖ¸¶¨ÀàµÄClassÊµÀı¡£Èç¹û±àÒëÆ÷ÉĞÎ´¼ÓÔØ¸ÃÀà£¬ÔòÔÚµ÷ÓÃClass.forNameÊ±½«¼ÓÔØ¸ÃÀà¡£Òò´Ë£¬Ã¿¸öÀà¼ÓÔØÊ±£¬½«Ö´ĞĞÃ¿¸öÀàÖĞµÄ¾²Ì¬¿é£º
-[^_^]:We have to make sure that the concrete product classes are loaded before they are required by the factory for registration(if they are not loaded they will not be registered in the factory and createProduct will return null). To ensure it we are going to use the Class.forName method right in the static section of the main class. This section is executed right after the main class is loaded. Class.forName is supposed to return a Class instance of the indicated class. If the class is not loaded by the compiler yet, it will be loaded when the Class.forName is invoked. Consequently the static block in each class will be executed when each class is loaded:
+æˆ‘ä»¬å¿…é¡»ç¡®ä¿åœ¨å·¥å‚è¦æ±‚æ³¨å†Œä¹‹å‰åŠ è½½å…·ä½“çš„äº§å“ç±»ï¼ˆå¦‚æœå®ƒä»¬æœªåŠ è½½ï¼Œå®ƒä»¬å°†ä¸ä¼šåœ¨å·¥å‚ä¸­æ³¨å†Œï¼ŒcreateProductå°†è¿”å›nullï¼‰ã€‚ä¸ºäº†ç¡®ä¿å®ƒï¼Œæˆ‘ä»¬å°†åœ¨ä¸»ç±»çš„é™æ€éƒ¨åˆ†ä¸­ä½¿ç”¨Class.forNameæ–¹æ³•ã€‚åœ¨åŠ è½½ä¸»ç±»ä¹‹åç«‹å³æ‰§è¡Œæ­¤éƒ¨åˆ†ã€‚Class.forNameåº”è¯¥è¿”å›æŒ‡å®šç±»çš„Classå®ä¾‹ã€‚å¦‚æœç¼–è¯‘å™¨å°šæœªåŠ è½½è¯¥ç±»ï¼Œåˆ™åœ¨è°ƒç”¨Class.forNameæ—¶å°†åŠ è½½è¯¥ç±»ã€‚å› æ­¤ï¼Œæ¯ä¸ªç±»åŠ è½½æ—¶ï¼Œå°†æ‰§è¡Œæ¯ä¸ªç±»ä¸­çš„é™æ€å—ï¼š
+[^_^]: We have to make sure that the concrete product classes are loaded before they are required by the factory for registration(if they are not loaded they will not be registered in the factory and createProduct will return null). To ensure it we are going to use the Class.forName method right in the static section of the main class. This section is executed right after the main class is loaded. Class.forName is supposed to return a Class instance of the indicated class. If the class is not loaded by the compiler yet, it will be loaded when the Class.forName is invoked. Consequently the static block in each class will be executed when each class is loaded:
 
 ```java
 class Main
@@ -154,21 +154,21 @@ class Main
 }
 ```
 
-Õâ¸ö·´ÉäÊµÏÖÓĞ×Ô¼ºµÄÈ±µã¡£×îÖ÷ÒªµÄÊÇĞÔÄÜ¡£Éæ¼°·´ÉäµÄ´úÂëµÄĞÔÄÜÉõÖÁ¿ÉÒÔ½µµÍµ½·Ç·´Éä´úÂëµÄ¼«ÏŞµÄ10£¥¡£ÁíÒ»¸öÎÊÌâÊÇ²¢·ÇËùÓĞ±à³ÌÓïÑÔ¶¼Ìá¹©·´Éä»úÖÆ¡£
-[^_^]:This reflection implementation has its own drawbacks. The main one is performance. When the reflection is used the performance on code involving reflection can decrease even to 10% of the poerfomance of a non reflection code. Another issue is that not all the programming languages provide reflection mechanism.
+è¿™ä¸ªåå°„å®ç°æœ‰è‡ªå·±çš„ç¼ºç‚¹ã€‚æœ€ä¸»è¦çš„æ˜¯æ€§èƒ½ã€‚æ¶‰åŠåå°„çš„ä»£ç çš„æ€§èƒ½ç”šè‡³å¯ä»¥é™ä½åˆ°éåå°„ä»£ç çš„æé™çš„10ï¼…ã€‚å¦ä¸€ä¸ªé—®é¢˜æ˜¯å¹¶éæ‰€æœ‰ç¼–ç¨‹è¯­è¨€éƒ½æä¾›åå°„æœºåˆ¶ã€‚
+[^_^]: This reflection implementation has its own drawbacks. The main one is performance. When the reflection is used the performance on code involving reflection can decrease even to 10% of the poerfomance of a non reflection code. Another issue is that not all the programming languages provide reflection mechanism.
 
-#### Àà×¢²á¡ª¡ª±ÜÃâ·´Éä
-[^_^]:#### Class Registration - avoiding reflection
+#### ç±»æ³¨å†Œâ€”â€”é¿å…åå°„
+[^_^]: #### Class Registration - avoiding reflection
 
-ÕıÈçÎÒÃÇÔÚÉÏÒ»¶ÎÖĞ¿´µ½µÄÄÇÑù£¬¹¤³§¶ÔÏóÔÚÄÚ²¿Ê¹ÓÃHashMapÀ´±£³Ö²ÎÊı£¨ÔÚÎÒÃÇµÄÀı×ÓÖĞÊÇ×Ö·û´®£©ºÍ¾ßÌå²úÆ·ÀàÖ®¼äµÄÓ³Éä¡£×¢²áÊÇ´Ó¹¤³§Íâ²¿½øĞĞµÄ£¬ÒòÎª¶ÔÏóÊÇÊ¹ÓÃ·´Éä´´½¨µÄ£¬ËùÒÔ¹¤³§²»ÖªµÀ¶ÔÏóÀàĞÍ¡£
-[^_^]:As we saw in the previous paragraph the factory object uses internally a HashMap to keep the mapping between parameters (in our case Strings) and concrete products class. The registration is made from outside of the factory and because the objects are created using reflection the factory is not aware of the objects types.
+æ­£å¦‚æˆ‘ä»¬åœ¨ä¸Šä¸€æ®µä¸­çœ‹åˆ°çš„é‚£æ ·ï¼Œå·¥å‚å¯¹è±¡åœ¨å†…éƒ¨ä½¿ç”¨HashMapæ¥ä¿æŒå‚æ•°ï¼ˆåœ¨æˆ‘ä»¬çš„ä¾‹å­ä¸­æ˜¯å­—ç¬¦ä¸²ï¼‰å’Œå…·ä½“äº§å“ç±»ä¹‹é—´çš„æ˜ å°„ã€‚æ³¨å†Œæ˜¯ä»å·¥å‚å¤–éƒ¨è¿›è¡Œçš„ï¼Œå› ä¸ºå¯¹è±¡æ˜¯ä½¿ç”¨åå°„åˆ›å»ºçš„ï¼Œæ‰€ä»¥å·¥å‚ä¸çŸ¥é“å¯¹è±¡ç±»å‹ã€‚
+[^_^]: As we saw in the previous paragraph the factory object uses internally a HashMap to keep the mapping between parameters (in our case Strings) and concrete products class. The registration is made from outside of the factory and because the objects are created using reflection the factory is not aware of the objects types.
 
-ÎÒÃÇ²»ÏëÊ¹ÓÃ·´Éä,µ«Í¬Ê±ÎÒÃÇÏ£Íû¼õÉÙ¹¤³§ºÍ¾ßÌå²úÆ·Ö®¼äµÄñîºÏ¡£ÓÉÓÚ¹¤³§Ó¦¸Ã²»ÖªµÀ²úÆ·£¬ÎÒÃÇ±ØĞë½«¹¤³§ÍâµÄ¶ÔÏóµÄ´´½¨ÒÆ¶¯µ½ÁË½â¾ßÌå²úÆ·ÀàµÄ¶ÔÏó¡£ÄÇ½«ÊÇ¾ßÌåµÄÀà¼¶±¾Éí¡£
-[^_^]:We don't want to use reflection but in the same time we want to have a reduced coupling between the factory and concrete products. Since the factory should be unaware of products we have to move the creation of objects outside of the factory to an object aware of the concrete products classes. That would be the concrete class itself.
+æˆ‘ä»¬ä¸æƒ³ä½¿ç”¨åå°„,ä½†åŒæ—¶æˆ‘ä»¬å¸Œæœ›å‡å°‘å·¥å‚å’Œå…·ä½“äº§å“ä¹‹é—´çš„è€¦åˆã€‚ç”±äºå·¥å‚åº”è¯¥ä¸çŸ¥é“äº§å“ï¼Œæˆ‘ä»¬å¿…é¡»å°†å·¥å‚å¤–çš„å¯¹è±¡çš„åˆ›å»ºç§»åŠ¨åˆ°äº†è§£å…·ä½“äº§å“ç±»çš„å¯¹è±¡ã€‚é‚£å°†æ˜¯å…·ä½“çš„ç±»çº§æœ¬èº«ã€‚
+[^_^]: We don't want to use reflection but in the same time we want to have a reduced coupling between the factory and concrete products. Since the factory should be unaware of products we have to move the creation of objects outside of the factory to an object aware of the concrete products classes. That would be the concrete class itself.
 
 
-ÎÒÃÇÔÚ²úÆ·³éÏóÀàÖĞÌí¼ÓÁËÒ»¸öĞÂµÄ³éÏó·½·¨¡£Ã¿¸ö¾ßÌåÀà¶¼½«ÊµÏÖ´Ë·½·¨ÒÔ´´½¨ÓëÆä×ÔÉíÏàÍ¬ÀàĞÍµÄĞÂ¶ÔÏó¡£ÎÒÃÇ»¹±ØĞë¸ü¸Ä×¢²á·½·¨£¬ÒÔ±ãÎÒÃÇ×¢²á¾ßÌåµÄ²úÆ·¶ÔÏó¶ø²»ÊÇClass¶ÔÏó¡£
-[^_^]:We add a new abstract method in the product abstract class. Each concrete class will implement this method to create a new object of the same type as itself. We also have to change the registration method such that we'll register concrete product objects instead of Class objects.
+æˆ‘ä»¬åœ¨äº§å“æŠ½è±¡ç±»ä¸­æ·»åŠ äº†ä¸€ä¸ªæ–°çš„æŠ½è±¡æ–¹æ³•ã€‚æ¯ä¸ªå…·ä½“ç±»éƒ½å°†å®ç°æ­¤æ–¹æ³•ä»¥åˆ›å»ºä¸å…¶è‡ªèº«ç›¸åŒç±»å‹çš„æ–°å¯¹è±¡ã€‚æˆ‘ä»¬è¿˜å¿…é¡»æ›´æ”¹æ³¨å†Œæ–¹æ³•ï¼Œä»¥ä¾¿æˆ‘ä»¬æ³¨å†Œå…·ä½“çš„äº§å“å¯¹è±¡è€Œä¸æ˜¯Classå¯¹è±¡ã€‚
+[^_^]: We add a new abstract method in the product abstract class. Each concrete class will implement this method to create a new object of the same type as itself. We also have to change the registration method such that we'll register concrete product objects instead of Class objects.
 
 ```java
 abstract class Product
@@ -204,46 +204,46 @@ class ProductFactory
 }
 ```
 
-#### ¸ü¸ß¼¶µÄ½â¾ö·½°¸ - ´ø³éÏóµÄ¹¤³§Éè¼ÆÄ£Ê½£¨¹¤³§·½·¨£©
-[^_^]:#### A more advanced solution - Factory design pattern with abstractions(Factory Method)
+#### æ›´é«˜çº§çš„è§£å†³æ–¹æ¡ˆ - å¸¦æŠ½è±¡çš„å·¥å‚è®¾è®¡æ¨¡å¼ï¼ˆå·¥å‚æ–¹æ³•ï¼‰
+[^_^]: #### A more advanced solution - Factory design pattern with abstractions(Factory Method)
 
-![³éÏó¹¤³§Éè¼ÆÄ£Ê½¡ª¡ªUMLÀàÍ¼](imgaes/factory%20design%20pattern%20with%20abstractions.gif)
-[^_^]:Factory Design Pattern With Abstractions - UML Class Diagram
+![æŠ½è±¡å·¥å‚è®¾è®¡æ¨¡å¼â€”â€”UMLç±»å›¾](imgaes/factory%20design%20pattern%20with%20abstractions.gif)
+[^_^]: Factory Design Pattern With Abstractions - UML Class Diagram
 
-´ËÊµÏÖ´ú±íÁËÀà×¢²áÊµÏÖµÄÌæ´ú·½°¸¡£ÎÒÃÇ¼ÙÉèÎÒÃÇĞèÒªÏòÓ¦ÓÃ³ÌĞòÌí¼ÓĞÂ²úÆ·¡£¶ÔÓÚ³ÌĞòÇĞ»»°¸ÀıÊµÏÖ£¬ÎÒÃÇĞèÒª¸ü¸ÄFactoryÀà£¬¶øÔÚÀà×¢²áÊµÏÖÖĞ£¬ÎÒÃÇĞèÒªµÄÊÇ½«Àà×¢²áµ½¹¤³§¶ø²»Êµ¼ÊĞŞ¸Ä¹¤³§Àà¡£µ±È»ÕâÊÇÒ»¸öÁé»îµÄ½â¾ö·½°¸¡£
-[^_^]:This implementation represents an alternative for the class registration implementation. Let's assume we need to add a new product to the application. For the procedural switch-case implementation we need to change the Factory class, while in the class registration implementation all we need is to register the class to the factory without actually modifying the factory class. For sure this is a flexible solution.
+æ­¤å®ç°ä»£è¡¨äº†ç±»æ³¨å†Œå®ç°çš„æ›¿ä»£æ–¹æ¡ˆã€‚æˆ‘ä»¬å‡è®¾æˆ‘ä»¬éœ€è¦å‘åº”ç”¨ç¨‹åºæ·»åŠ æ–°äº§å“ã€‚å¯¹äºç¨‹åºåˆ‡æ¢æ¡ˆä¾‹å®ç°ï¼Œæˆ‘ä»¬éœ€è¦æ›´æ”¹Factoryç±»ï¼Œè€Œåœ¨ç±»æ³¨å†Œå®ç°ä¸­ï¼Œæˆ‘ä»¬éœ€è¦çš„æ˜¯å°†ç±»æ³¨å†Œåˆ°å·¥å‚è€Œä¸å®é™…ä¿®æ”¹å·¥å‚ç±»ã€‚å½“ç„¶è¿™æ˜¯ä¸€ä¸ªçµæ´»çš„è§£å†³æ–¹æ¡ˆã€‚
+[^_^]: This implementation represents an alternative for the class registration implementation. Let's assume we need to add a new product to the application. For the procedural switch-case implementation we need to change the Factory class, while in the class registration implementation all we need is to register the class to the factory without actually modifying the factory class. For sure this is a flexible solution.
 
-³ÌĞòÊµÏÖÊÇ¿ª·Å - ±ÕºÏÔ­ÔòµÄµäĞÍ»µÀı×Ó¡£ÎÒÃÇ¿ÉÒÔ¿´µ½£¬±ÜÃâĞŞ¸ÄFactoryÀàµÄ×îÖ±¹ÛµÄ½â¾ö·½°¸ÊÇÀ©Õ¹Ëü¡£
-[^_^]:The procedural implementation is the classical bad example for the Open-Close Principle. As we can see there the most intuitive solution to avoid modifying the Factory class is to extend it.
+ç¨‹åºå®ç°æ˜¯å¼€æ”¾ - é—­åˆåŸåˆ™çš„å…¸å‹åä¾‹å­ã€‚æˆ‘ä»¬å¯ä»¥çœ‹åˆ°ï¼Œé¿å…ä¿®æ”¹Factoryç±»çš„æœ€ç›´è§‚çš„è§£å†³æ–¹æ¡ˆæ˜¯æ‰©å±•å®ƒã€‚
+[^_^]: The procedural implementation is the classical bad example for the Open-Close Principle. As we can see there the most intuitive solution to avoid modifying the Factory class is to extend it.
 
-ÕâÊÇ¹¤³§·½·¨Ä£Ê½µÄ¾­µäÊµÏÖ¡£Àà×¢²áÊµÏÖÓĞÒ»Ğ©È±µã£¬Ã»ÓĞÌ«¶àµÄÓÅµã£º
+è¿™æ˜¯å·¥å‚æ–¹æ³•æ¨¡å¼çš„ç»å…¸å®ç°ã€‚ç±»æ³¨å†Œå®ç°æœ‰ä¸€äº›ç¼ºç‚¹ï¼Œæ²¡æœ‰å¤ªå¤šçš„ä¼˜ç‚¹ï¼š
 
-[^_^]:This is the classic implementation of the factory method pattern. There are some drawbacks over the class registration implementation and not so many advantages
-[^_^]:The derived factory method can be changed to perform additional operations when the objects are created (maybe some initialization based on some global parameters ...).
-[^_^]:The factory can not be used as a singleton.
-[^_^]:Each factory has to be initialized before using it.
-[^_^]:More difficult to implement.
-[^_^]:If a new object has to be added a new factory has to be created.
+[^_^]: This is the classic implementation of the factory method pattern. There are some drawbacks over the class registration implementation and not so many advantages
+[^_^]: The derived factory method can be changed to perform additional operations when the objects are created (maybe some initialization based on some global parameters ...).
+[^_^]: The factory can not be used as a singleton.
+[^_^]: Each factory has to be initialized before using it.
+[^_^]: More difficult to implement.
+[^_^]: If a new object has to be added a new factory has to be created.
 
-* \+ ¿ÉÒÔ¸ü¸ÄÅÉÉúµÄ¹¤³§·½·¨£¬ÒÔ±ãÔÚ´´½¨¶ÔÏóÊ±Ö´ĞĞÆäËû²Ù×÷£¨¿ÉÄÜÊÇ»ùÓÚÄ³Ğ©È«¾Ö²ÎÊıµÄÄ³Ğ©³õÊ¼»¯...£©¡£
-* \- ¹¤³§²»ÄÜÓÃ×÷µ¥Àı¡£
-* \- Ã¿¸ö¹¤³§ÔÚÊ¹ÓÃÇ°¶¼±ØĞë½øĞĞ³õÊ¼»¯¡£
-* \- ¸üÄÑÊµÊ©¡£
-* \- Èç¹û±ØĞëÌí¼ÓĞÂ¶ÔÏó£¬Ôò±ØĞë´´½¨ĞÂ¹¤³§¡£
+* \+ å¯ä»¥æ›´æ”¹æ´¾ç”Ÿçš„å·¥å‚æ–¹æ³•ï¼Œä»¥ä¾¿åœ¨åˆ›å»ºå¯¹è±¡æ—¶æ‰§è¡Œå…¶ä»–æ“ä½œï¼ˆå¯èƒ½æ˜¯åŸºäºæŸäº›å…¨å±€å‚æ•°çš„æŸäº›åˆå§‹åŒ–...ï¼‰ã€‚
+* \- å·¥å‚ä¸èƒ½ç”¨ä½œå•ä¾‹ã€‚
+* \- æ¯ä¸ªå·¥å‚åœ¨ä½¿ç”¨å‰éƒ½å¿…é¡»è¿›è¡Œåˆå§‹åŒ–ã€‚
+* \- æ›´éš¾å®æ–½ã€‚
+* \- å¦‚æœå¿…é¡»æ·»åŠ æ–°å¯¹è±¡ï¼Œåˆ™å¿…é¡»åˆ›å»ºæ–°å·¥å‚ã€‚
 
-ÎŞÂÛÈçºÎ£¬Õâ¸ö¾­µäÊµÏÖµÄÓÅÊÆÔÚÓÚËü½«°ïÖúÎÒÃÇÀí½â³éÏó¹¤³§µÄÉè¼ÆÄ£Ê½¡£
-[^_^]:Anyway, this classic implementation has the advantage that it will help us understanding the Abstract Factory design pattern.
+æ— è®ºå¦‚ä½•ï¼Œè¿™ä¸ªç»å…¸å®ç°çš„ä¼˜åŠ¿åœ¨äºå®ƒå°†å¸®åŠ©æˆ‘ä»¬ç†è§£æŠ½è±¡å·¥å‚çš„è®¾è®¡æ¨¡å¼ã€‚
+[^_^]: Anyway, this classic implementation has the advantage that it will help us understanding the Abstract Factory design pattern.
 
-#### ½áÂÛ£º
-[^_^]:#### Conclusion:
+#### ç»“è®ºï¼š
+[^_^]: #### Conclusion:
 
-µ±ÄãÉè¼ÆÒ»¸öÓ¦ÓÃ³ÌĞòÊ±£¬Ö»ÒªÏëÏëÄãÊÇ·ñÕæµÄĞèÒªÒ»¸ö¹¤³§À´´´½¨¶ÔÏó¡£Ê¹ÓÃËü¿ÉÄÜ»á¸øÄúµÄÓ¦ÓÃ´øÀ´²»±ØÒªµÄ¸´ÔÓĞÔ¡£Èç¹ûÄúÓĞĞí¶àÏàÍ¬»ùÀàĞÍµÄ¶ÔÏó£¬²¢ÇÒÄú²Ù×÷ËüÃÇÖ÷ÒªÊÇ×ª»»Îª³éÏóÀàĞÍ£¬ÄÇÃ´ÄúĞèÒªÒ»¸ö¹¤³§¡£Èç¹ûÄãµÄ´úÂëÓ¦¸Ã°üº¬ÈçÏÂ´úÂëµÄ´óÁ¿´úÂë£¬ÄãÓ¦¸ÃÖØĞÂ¿¼ÂÇËü£º
-[^_^]:When you design an application just think if you really need it a factory to create objects. Maybe using it will bring unnecessary complexity in your application. If you have many objects of the same base type and you manipulate them mostly casted to abstract types, then you need a factory. If you're code should have a lot of code like the following, you should reconsider it:
+å½“ä½ è®¾è®¡ä¸€ä¸ªåº”ç”¨ç¨‹åºæ—¶ï¼Œåªè¦æƒ³æƒ³ä½ æ˜¯å¦çœŸçš„éœ€è¦ä¸€ä¸ªå·¥å‚æ¥åˆ›å»ºå¯¹è±¡ã€‚ä½¿ç”¨å®ƒå¯èƒ½ä¼šç»™æ‚¨çš„åº”ç”¨å¸¦æ¥ä¸å¿…è¦çš„å¤æ‚æ€§ã€‚å¦‚æœæ‚¨æœ‰è®¸å¤šç›¸åŒåŸºç±»å‹çš„å¯¹è±¡ï¼Œå¹¶ä¸”æ‚¨æ“ä½œå®ƒä»¬ä¸»è¦æ˜¯è½¬æ¢ä¸ºæŠ½è±¡ç±»å‹ï¼Œé‚£ä¹ˆæ‚¨éœ€è¦ä¸€ä¸ªå·¥å‚ã€‚å¦‚æœä½ çš„ä»£ç åº”è¯¥åŒ…å«å¦‚ä¸‹ä»£ç çš„å¤§é‡ä»£ç ï¼Œä½ åº”è¯¥é‡æ–°è€ƒè™‘å®ƒï¼š
+[^_^]: When you design an application just think if you really need it a factory to create objects. Maybe using it will bring unnecessary complexity in your application. If you have many objects of the same base type and you manipulate them mostly casted to abstract types, then you need a factory. If you're code should have a lot of code like the following, you should reconsider it:
 
 ```java
 (if (ConcreteProduct)genericProduct typeof )
 	((ConcreteProduct)genericProduct).doSomeConcreteOperation().
 ```
 
-Èç¹ûÄã¾ö¶¨È¥Ê¹ÓÃ¹¤³§Ä£Ê½,ÎÒ½¨ÒéÊ¹ÓÃÒ»¸öÀà×¢²áÊµÏÖ(ÓĞ»òÃ»ÓĞ·´Éä),²¢±ÜÃâ¹¤³§·½·¨(´ø³éÏóµÄ¹¤³§Éè¼ÆÄ£Ê½)¡£Çë×¢ÒâÊ¹ÓÃswitch-caseÊµÏÖÊÇ×î¼òµ¥,Î¥·´¿ª±ÕÔ­Ôò(OCP)ÀíÂÛ¡£Ê¹ÓÃËüµÄÎ¨Ò»Ã÷ÖÇµÄ·½·¨ÊÇÔö¼ÓÁÙÊ±Ä£¿é£¬Ö±µ½Ëü±»ÕæÕıµÄ¹¤³§È¡´ú¡£
-[^_^]:If you decided to go for a factory, I would recommend using one of class registration implementations(with or without reflection) and to avoid the Factory Method (Factory design pattern with abstractions). Please note the procedural switch-case (noob) implementation is the simplest, violates the OCP principle is used only to explain the theory. The only wise way to use it is for temporary modules until it is replaced with a real factory.
+å¦‚æœä½ å†³å®šå»ä½¿ç”¨å·¥å‚æ¨¡å¼,æˆ‘å»ºè®®ä½¿ç”¨ä¸€ä¸ªç±»æ³¨å†Œå®ç°(æœ‰æˆ–æ²¡æœ‰åå°„),å¹¶é¿å…å·¥å‚æ–¹æ³•(å¸¦æŠ½è±¡çš„å·¥å‚è®¾è®¡æ¨¡å¼)ã€‚è¯·æ³¨æ„ä½¿ç”¨switch-caseå®ç°æ˜¯æœ€ç®€å•,è¿åå¼€é—­åŸåˆ™(OCP)ç†è®ºã€‚ä½¿ç”¨å®ƒçš„å”¯ä¸€æ˜æ™ºçš„æ–¹æ³•æ˜¯å¢åŠ ä¸´æ—¶æ¨¡å—ï¼Œç›´åˆ°å®ƒè¢«çœŸæ­£çš„å·¥å‚å–ä»£ã€‚
+[^_^]: If you decided to go for a factory, I would recommend using one of class registration implementations(with or without reflection) and to avoid the Factory Method (Factory design pattern with abstractions). Please note the procedural switch-case (noob) implementation is the simplest, violates the OCP principle is used only to explain the theory. The only wise way to use it is for temporary modules until it is replaced with a real factory.
