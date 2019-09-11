@@ -20,7 +20,6 @@ namespace SimpleFactory
                     return new Square();
                 default:
                     throw new Exception("不存在此类型");
-                    break;
             }
         }
 
