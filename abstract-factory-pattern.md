@@ -203,7 +203,7 @@ AbstractFactory类仅声明用于创建产品的接口。ConcreteProduct类的�
 改变工厂以支持创造新产品的操作并不容易。解决此问题的方法是，使用单个Create方法代替每个产品的CreateProduct方法，该方法接受一个标识所需产品类型的参数。这种方法更灵活，但安全性更低。问题是Create方法返回的所有对象都将具有相同的接口，即与Create方法返回的类型相对应的接口，并且客户端将无法始终正确地检测实例实际所属的类。
 <!-- The operation of changing a factory in order for it to support the creation of new products is not easy. What can be done to solve this problem is, instead of a CreateProduct method for each product, to use a single Create method that takes a parameter that identifies the type of product needed. This approach is more flexible, but less secure. The problem is that all the objects returned by the Create method will have the same interface, that is the one corresponding to the type returned by the Create method and the client will not always be able to correctly detect to which class the instance actually belongs. -->
 
-## 热点： ##
+## 热点 ##
 <!-- ## Hot Points: ##-->
 
 * AbstractFactory类仅声明用于创建产品的接口。实际创建是ConcreteProduct类的任务，其中一个好方法是为该族的每个产品应用工厂方法设计模式。
