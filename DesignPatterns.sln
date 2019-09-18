@@ -70,7 +70,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.抽象工厂模式", "4.�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{8E79325F-69F7-4BD1-831F-E0AF466F038D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.生成器模式", "5.生成器模式", "{1C4227C6-27A0-4356-BF35-9630A555D426}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.建造者模式", "5.建造者模式", "{1C4227C6-27A0-4356-BF35-9630A555D426}"
 	ProjectSection(SolutionItems) = preProject
 		builder-pattern.md = builder-pattern.md
 	EndProjectSection

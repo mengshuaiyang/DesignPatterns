@@ -1,3 +1,44 @@
+*[设计原则](design-principles.md)*
+------
+- [ ] [开闭原则](open-close-principle.md)
+- [ ] [依赖性倒置原则](dependency-inversion-principle.md)
+- [ ] [接口隔离原则](interface-segregation-principle.md)
+- [ ] [单一职责原则](single-responsibility-principle.md)
+- [ ] [里氏替换原则](liskov-s-substitution-principle.md)
+
+*创建型模式*
+------
+- [x] [单例模式](singleton-pattern.md)
+- [x] [工厂模式](factory-pattern.md)
+- [x] [工厂方法模式](factory-method-pattern.md)
+- [x] [抽象工厂模式](abstract-factory-pattern.md)
+- [ ] [建造者模式](builder-pattern.md)
+- [ ] [原型模式](prototype-pattern.md)
+- [ ] [Object Pool](object-pool-pattern.md)
+
+*行为模式*
+------
+- [ ] [Chain of Responsibility](chain-of-responsibility-pattern.md)
+- [ ] [Command](command-pattern.md)
+- [ ] [Interpreter](interpreter-pattern.md)
+- [ ] [Iterator](iterator-pattern.md)
+- [ ] [Mediator](mediator-pattern.md)
+- [ ] [Memento](memento-pattern.md)
+- [ ] [Observer](observer-pattern.md)
+- [ ] [Strategy](strategy-pattern.md)
+- [ ] [Template Method](template-method-pattern.md)
+- [ ] [Visitor](visitor-pattern.md)
+- [ ] [Null Object](null-object-pattern)
+
+*[结构模式](structural-patterns.md)*
+------
+- [ ] [Adapter](adapter-pattern.md)
+- [ ] [Bridge](bridge-pattern.md)
+- [ ] [Composite](composite-pattern.md)
+- [ ] [Decorator](decorator-pattern.md)
+- [ ] [Flyweight](flyweight-pattern.md)
+- [ ] [Proxy](proxy-pattern.md)
+
 # [设计模式](http://www.oodesign.com/) #
 
 软件设计需满足SOLID软件设计原则
@@ -42,11 +83,32 @@ S.O.L.I.D.是一组面对面向对象设计的最佳实践的设计原则。代�
 
 ---
 
-## 设计模式分为三类：创建型、结构性、行为型 ##
+# 设计模式 #
 
-创建型设计模式都涉及到创建对象实例的方式
+## 设计模式分为三类：创建型(Creational)、结构型(Structural)、行为型(Behavioral) ##
+
+创建型模式与对象的创建有关，
 
 创建型设计模式：工厂方法模式(Factory Method Pattern)、抽象工厂模式(Abstract Factory Pattern)、单例模式(Singleton Pattern)、生成器模式(Builder Pattern)、原型模式(Prototype Pattern)
+
+结构型模式处理类或对象的组合
+
+结构型设计模式：适配器(Adapter)、
+
+行为型模式对类或对象怎样交互和怎样分配职责进行描述
+
+
+---
+
+抽象类(abstract class)主要目的是为它的子类定义公共接口
+
+在抽象类中定义却没有实现的操作被称为抽象操作(abstract operation)
+
+非抽象类称为具体类(concrete class)
+
+混入类(mixin class)是给其他类提供可选择的接口或功能的类，与抽象类一样不能实例化
+
+
 
 
 
