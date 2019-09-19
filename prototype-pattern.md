@@ -31,7 +31,7 @@
 参与原型模式的类:
 <!-- The classes participating to the Prototype Pattern are: -->
 
-* **客户端** ——通过要求原型克隆自身来创建新对象。
+* **Client** ——让原型克隆自身来创建一个新的对象。
 <!-- * **Client** - creates a new object by asking a prototype to clone itself. -->
 * **Prototype**——声明一个用于克隆自身的接口。
 <!-- * **Prototype** - declares an interface for cloning itself. -->
