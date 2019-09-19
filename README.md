@@ -13,7 +13,7 @@
 - [x] [工厂方法模式](factory-method-pattern.md)
 - [x] [抽象工厂模式](abstract-factory-pattern.md)
 - [ ] [建造者模式](builder-pattern.md)
-- [ ] [原型模式](prototype-pattern.md)
+- [x] [原型模式](prototype-pattern.md)
 - [ ] [Object Pool](object-pool-pattern.md)
 
 *行为模式*
