@@ -32,7 +32,7 @@
 
 *[结构模式](structural-patterns.md)*
 ------
-- [ ] [Adapter](adapter-pattern.md)
+- [x] [适配器模式](adapter-pattern.md)
 - [ ] [Bridge](bridge-pattern.md)
 - [ ] [Composite](composite-pattern.md)
 - [ ] [Decorator](decorator-pattern.md)
@@ -93,10 +93,11 @@ S.O.L.I.D.是一组面对面向对象设计的最佳实践的设计原则。代�
 
 结构型模式处理类或对象的组合
 
-结构型设计模式：适配器(Adapter)、
+结构型设计模式：适配器(Adapter)、桥接(Bridge)、组成(Composite)、装饰(Decorator)、外观(Facade)、享元(Flyweight)、代理(Proxy)
 
 行为型模式对类或对象怎样交互和怎样分配职责进行描述
 
+行为型设计模式：职责链(Chain of Responsibility)、命令(Command)、解释器(Interpreter)、迭代器(Iterator)、中介者(Mediator)、备忘录(Memento)、观察者(Observer)、状态(State)、策略(Strategy)、模版方法(Template method)、访问者(Visitor)
 
 ---
 

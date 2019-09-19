@@ -84,6 +84,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPattern", "Property
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{5B9F04F6-51EB-45DD-900C-2D0FD471C7CA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.适配器模式", "1.适配器模式", "{11C47C78-5DDE-4859-AADF-0EA9C7C80114}"
+	ProjectSection(SolutionItems) = preProject
+		adapter-pattern.md = adapter-pattern.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{68D39211-9A6B-4DB7-A15A-AC83AB9EA69D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -142,6 +149,10 @@ Global
 		{5B9F04F6-51EB-45DD-900C-2D0FD471C7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B9F04F6-51EB-45DD-900C-2D0FD471C7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B9F04F6-51EB-45DD-900C-2D0FD471C7CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D39211-9A6B-4DB7-A15A-AC83AB9EA69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D39211-9A6B-4DB7-A15A-AC83AB9EA69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D39211-9A6B-4DB7-A15A-AC83AB9EA69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D39211-9A6B-4DB7-A15A-AC83AB9EA69D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +182,8 @@ Global
 		{6B314D7F-1809-433C-BA74-2971D61475E4} = {CED93EB7-FD7B-43AC-847C-DDE42AFFDEDB}
 		{A27A6B6B-A22D-4EED-86F5-80D37DB23B45} = {6B314D7F-1809-433C-BA74-2971D61475E4}
 		{5B9F04F6-51EB-45DD-900C-2D0FD471C7CA} = {1C4227C6-27A0-4356-BF35-9630A555D426}
+		{11C47C78-5DDE-4859-AADF-0EA9C7C80114} = {C6EF936B-E206-4108-9B0C-DD7229001E1D}
+		{68D39211-9A6B-4DB7-A15A-AC83AB9EA69D} = {11C47C78-5DDE-4859-AADF-0EA9C7C80114}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818C37D-216A-4538-96A3-217C85DC0D67}
