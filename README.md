@@ -33,7 +33,7 @@
 *[结构模式](structural-patterns.md)*
 ------
 - [x] [适配器模式](adapter-pattern.md)
-- [ ] [Bridge](bridge-pattern.md)
+- [x] [桥接模式](bridge-pattern.md)
 - [ ] [Composite](composite-pattern.md)
 - [ ] [Decorator](decorator-pattern.md)
 - [ ] [Flyweight](flyweight-pattern.md)
