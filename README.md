@@ -93,7 +93,7 @@ S.O.L.I.D.是一组面对面向对象设计的最佳实践的设计原则。代�
 
 结构型模式处理类或对象的组合
 
-结构型设计模式：适配器(Adapter)、桥接(Bridge)、组成(Composite)、装饰(Decorator)、外观(Facade)、享元(Flyweight)、代理(Proxy)
+结构型设计模式：适配器(Adapter)、桥接(Bridge)、组合(Composite)、装饰(Decorator)、外观(Facade)、享元(Flyweight)、代理(Proxy)
 
 行为型模式对类或对象怎样交互和怎样分配职责进行描述
 
