@@ -1,22 +1,32 @@
-# Liskov's Substitution Principle(LSP) #
+# [里氏替换原则(LSP)](https://www.oodesign.com/liskov-s-substitution-principle.html) #
+<!-- # Liskov's Substitution Principle(LSP) # -->
 
-## Motivation ##
+## 动机 ##
+<!-- ## Motivation ## -->
 
-All the time we design a program module and we create some class hierarchies. Then we extend some classes creating some derived classes.
+一直以来，我们都设计一个程序模块，并创建一些类层次结构。然后我们扩展一些类，创建一些派生类。
+<!-- All the time we design a program module and we create some class hierarchies. Then we extend some classes creating some derived classes. -->
 
-We must make sure that the new derived classes just extend without replacing the functionality of old classes. Otherwise the new classes can produce undesired effects when they are used in existing program modules.
+我们必须确保新的派生类可以扩展而不替换旧类的功能。否则，当新类在现有程序模块中使用时，可能会产生不希望的效果。
+<!-- We must make sure that the new derived classes just extend without replacing the functionality of old classes. Otherwise the new classes can produce undesired effects when they are used in existing program modules. -->
 
-Likov's Substitution Principle states that if a program module is using a Base class, then the reference to the Base class can be replaced with a Derived class without affecting the functionality of the program module.
+里氏替换原则指如果程序模块使用基类，则可以用派生类替换对基类的引用，而不会影响程序模块的功能。
+<!-- Likov's Substitution Principle states that if a program module is using a Base class, then the reference to the Base class can be replaced with a Derived class without affecting the functionality of the program module. -->
 
-## Intent ##
+## 意图 ##
+<!-- ## Intent ## -->
 
-Derived types must be completely substitutable for their base types.
+派生类型必须完全可以替换为其基本类型。
+<!-- Derived types must be completely substitutable for their base types. -->
 
-## Example ##
+## 例子 ##
+<!-- ## Example ## -->
 
-Below is the classic example for which the Likov's Substitution Principle is violated. In the example 2 classes are used: Rectangle and Square. Let's assume that the Rectangle object is used somewhere in the application. We extend the application and add the Square class. The square class is returned by a factory pattern, based on some conditions and we don't know the exact what type of object will be returned. But we know it's a Rectangle. We get the rectangle object, set the width to 5 and height to 10 and get the area. For a rectangle with width 5 and height 10 the area should be 50. Instead the result will be 100
+以下是违反里氏替换原则的经典示例。在示例中，使用了2个类：矩形和正方形。假设Rectangle对象在应用程序中的某处使用。我们扩展应用程序并添加Square类。根据某些条件，正方形类是通过工厂模式返回的，我们不知道将返回哪种类型的对象。但是我们知道这是一个矩形。我们得到矩形对象，将宽度设置为5，将高度设置为10，并获得面积。对于宽度为5，高度为10的矩形，面积应为50。取而代之的是100
+<!-- Below is the classic example for which the Likov's Substitution Principle is violated. In the example 2 classes are used: Rectangle and Square. Let's assume that the Rectangle object is used somewhere in the application. We extend the application and add the Square class. The square class is returned by a factory pattern, based on some conditions and we don't know the exact what type of object will be returned. But we know it's a Rectangle. We get the rectangle object, set the width to 5 and height to 10 and get the area. For a rectangle with width 5 and height 10 the area should be 50. Instead the result will be 100 -->
 
 ```java
+// 违反里氏替换原则
 // Violation of Likov's Substitution Principle
 class Rectangle
 {
@@ -82,6 +92,8 @@ class LspTest
 }
 ```
 
-## Conclusion ##
+## 结论 ##
+<!-- ## Conclusion ## -->
 
-This principle is just an extension of the Open Close Principle and it means that we must make sure that new derived classes are extending the base classes without changing their behavior.
+该原理只是“打开关闭原理”的扩展，它意味着我们必须确保新的派生类在不改变其行为的情况下扩展了基类。
+<!-- This principle is just an extension of the Open Close Principle and it means that we must make sure that new derived classes are extending the base classes without changing their behavior. -->

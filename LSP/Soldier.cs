@@ -18,7 +18,7 @@ namespace LSP
         }
 
         //定义killEnemydelegate委托类型，其签名为AbstractGun类型参数
-        public delegate void killEnemydelegate(AbstractGun gun);
+        //public delegate void killEnemydelegate(AbstractGun gun);
 
 
         public void killEnemy(Handgun nandgun)

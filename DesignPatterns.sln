@@ -27,6 +27,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.开闭原则(Open Closed Principle)", "2.开闭原则(Open Closed Principle)", "{5D8F214B-6CFE-4BD7-9DF7-9844CDE6C5EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.里氏替换原则（Liskov Substitution Principle，LSP）", "3.里氏替换原则（Liskov Substitution Principle，LSP）", "{3B41B889-C644-4CF6-8383-96C4C07EC1F8}"
+	ProjectSection(SolutionItems) = preProject
+		LSP\liskov-s-substitution-principle.md = LSP\liskov-s-substitution-principle.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.接口隔离原则(Interface Segregation Principle，ISP)", "4.接口隔离原则(Interface Segregation Principle，ISP)", "{7768AA4C-040E-4B71-A7F0-6E8AA1625069}"
 EndProject
