@@ -20,6 +20,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.设计原则", "1.设计原则", "{72C22548-BF73-4D37-A01C-C15B6670D295}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.单一职责原则(Single Responsibility Principle)", "1.单一职责原则(Single Responsibility Principle)", "{9E485207-65E0-4F5B-BA1E-D0C518BDDE57}"
+	ProjectSection(SolutionItems) = preProject
+		single-responsibility-principle.md = single-responsibility-principle.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.开闭原则(Open Closed Principle)", "2.开闭原则(Open Closed Principle)", "{5D8F214B-6CFE-4BD7-9DF7-9844CDE6C5EF}"
 EndProject
@@ -105,6 +108,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.组合模式", "3.组合�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP", "SRP\SRP.csproj", "{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +180,10 @@ Global
 		{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -210,6 +219,7 @@ Global
 		{51303CC6-3F34-4AAC-A25C-D6E2A19379BB} = {0C2622EA-6B08-4CF7-8528-7E01E6700968}
 		{B1104630-2F66-4A62-986F-4F348F5ACD52} = {C6EF936B-E206-4108-9B0C-DD7229001E1D}
 		{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA} = {B1104630-2F66-4A62-986F-4F348F5ACD52}
+		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F} = {9E485207-65E0-4F5B-BA1E-D0C518BDDE57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818C37D-216A-4538-96A3-217C85DC0D67}

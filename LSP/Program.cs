@@ -27,6 +27,7 @@ namespace LSP
             //给李四一把机枪
             liSi.setGun(new AUG());
             liSi.killEnemy(new AUG());
+            Console.ReadKey();
         }
     }
 }
