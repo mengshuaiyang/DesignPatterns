@@ -8,36 +8,39 @@
 
 *创建型模式*
 ------
-- [x] [单例模式](document/singleton-pattern.md)
-- [x] [工厂模式](document/factory-pattern.md)
-- [x] [工厂方法模式](document/factory-method-pattern.md)
-- [x] [抽象工厂模式](document/abstract-factory-pattern.md)
-- [ ] [建造者模式](document/builder-pattern.md)
-- [x] [原型模式](document/prototype-pattern.md)
-- [ ] [Object Pool](document/object-pool-pattern.md)
+- [x] [1单例模式](document/singleton-pattern.md)
+- [x] [简单工厂模式](document/factory-pattern.md)
+- [x] [2工厂方法模式](document/factory-method-pattern.md)
+- [x] [3抽象工厂模式](document/abstract-factory-pattern.md)
+- [ ] [4建造者模式](document/builder-pattern.md)
+- [x] [5原型模式](document/prototype-pattern.md)
+- [ ] [对象池模式](document/object-pool-pattern.md)
 
 *行为模式*
 ------
-- [ ] [Chain of Responsibility](document/chain-of-responsibility-pattern.md)
-- [ ] [Command](document/command-pattern.md)
-- [ ] [Interpreter](document/interpreter-pattern.md)
-- [ ] [Iterator](document/iterator-pattern.md)
-- [ ] [Mediator](document/mediator-pattern.md)
-- [ ] [Memento](document/memento-pattern.md)
-- [ ] [Observer](document/observer-pattern.md)
-- [ ] [Strategy](document/strategy-pattern.md)
-- [ ] [模版方法](document/template-method-pattern.md)
-- [ ] [Visitor](document/visitor-pattern.md)
-- [ ] [Null Object](document/null-object-pattern)
+- [ ] [1职责链模式](document/chain-of-responsibility-pattern.md)
+- [ ] [2命令模式](document/command-pattern.md)
+- [ ] [3解释器模式](document/interpreter-pattern.md)
+- [ ] [4迭代器模式](document/iterator-pattern.md)
+- [ ] [5中介者模式](document/mediator-pattern.md)
+- [ ] [6备忘录模式](document/memento-pattern.md)
+- [ ] [7观察者模式](document/observer-pattern.md)
+- [ ] 8状态模式
+- [ ] [9策略模式](document/strategy-pattern.md)
+- [ ] [10模版方法模式](document/template-method-pattern.md)
+- [ ] [11访问者模式](document/visitor-pattern.md)
+- [ ] [空对象模式](document/null-object-pattern)
 
 *[结构模式](document/structural-patterns.md)*
 ------
-- [x] [适配器模式](document/adapter-pattern.md)
-- [x] [桥接模式](document/bridge-pattern.md)
-- [ ] [Composite](document/composite-pattern.md)
-- [ ] [Decorator](document/decorator-pattern.md)
-- [ ] [Flyweight](document/flyweight-pattern.md)
-- [ ] [Proxy](document/proxy-pattern.md)
+- [x] [1适配器模式](document/adapter-pattern.md)
+- [x] [2桥梁模式模式](document/bridge-pattern.md)
+- [ ] [3组合模式](document/composite-pattern.md)
+- [ ] [4装饰模式](document/decorator-pattern.md)
+- [ ] 5外观模式
+- [ ] [6享元模式](document/flyweight-pattern.md)
+- [ ] [7代理模式](document/proxy-pattern.md)
+- [ ] 门面模式
 
 # [设计模式](http://www.oodesign.com/) #
 
