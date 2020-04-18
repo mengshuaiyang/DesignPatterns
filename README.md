@@ -1,10 +1,10 @@
 *[设计原则](document/design-principles.md)*
 ------
 - [ ] [开闭原则](document/open-close-principle.md)
-- [ ] [依赖性倒置原则](document/dependency-inversion-principle.md)
-- [ ] [接口隔离原则](document/interface-segregation-principle.md)
-- [ ] [单一职责原则](document/single-responsibility-principle.md)
-- [ ] [里氏替换原则](document/liskov-s-substitution-principle.md)
+- [x] [依赖性倒置原则](document/dependency-inversion-principle.md)
+- [x] [接口隔离原则](document/interface-segregation-principle.md)
+- [x] [单一职责原则](document/single-responsibility-principle.md)
+- [x] [里氏替换原则](document/liskov-s-substitution-principle.md)
 
 *创建型模式*
 ------

@@ -32,6 +32,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.里氏替换原则（Lisk
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.接口隔离原则(Interface Segregation Principle，ISP)", "4.接口隔离原则(Interface Segregation Principle，ISP)", "{7768AA4C-040E-4B71-A7F0-6E8AA1625069}"
+	ProjectSection(SolutionItems) = preProject
+		document\interface-segregation-principle.md = document\interface-segregation-principle.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "{4ADEBD81-B3B5-4684-A9A5-FB28E9B60C37}"
 	ProjectSection(SolutionItems) = preProject
