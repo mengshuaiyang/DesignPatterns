@@ -34,6 +34,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.接口隔离原则(Interface Segregation Principle，ISP)", "4.接口隔离原则(Interface Segregation Principle，ISP)", "{7768AA4C-040E-4B71-A7F0-6E8AA1625069}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "{4ADEBD81-B3B5-4684-A9A5-FB28E9B60C37}"
+	ProjectSection(SolutionItems) = preProject
+		dependency-inversion-principle.md = dependency-inversion-principle.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.设计模式", "2.设计模式", "{E0F6CDD3-8088-40E4-ADAC-65D5942DE2EE}"
 EndProject

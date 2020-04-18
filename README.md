@@ -26,7 +26,7 @@
 - [ ] [Memento](memento-pattern.md)
 - [ ] [Observer](observer-pattern.md)
 - [ ] [Strategy](strategy-pattern.md)
-- [ ] [Template Method](template-method-pattern.md)
+- [ ] [模版方法](template-method-pattern.md)
 - [ ] [Visitor](visitor-pattern.md)
 - [ ] [Null Object](null-object-pattern)
 
