@@ -1,43 +1,43 @@
-*[设计原则](design-principles.md)*
+*[设计原则](document/design-principles.md)*
 ------
-- [ ] [开闭原则](open-close-principle.md)
-- [ ] [依赖性倒置原则](dependency-inversion-principle.md)
-- [ ] [接口隔离原则](interface-segregation-principle.md)
-- [ ] [单一职责原则](single-responsibility-principle.md)
-- [ ] [里氏替换原则](liskov-s-substitution-principle.md)
+- [ ] [开闭原则](document/open-close-principle.md)
+- [ ] [依赖性倒置原则](document/dependency-inversion-principle.md)
+- [ ] [接口隔离原则](document/interface-segregation-principle.md)
+- [ ] [单一职责原则](document/single-responsibility-principle.md)
+- [ ] [里氏替换原则](document/liskov-s-substitution-principle.md)
 
 *创建型模式*
 ------
-- [x] [单例模式](singleton-pattern.md)
-- [x] [工厂模式](factory-pattern.md)
-- [x] [工厂方法模式](factory-method-pattern.md)
-- [x] [抽象工厂模式](abstract-factory-pattern.md)
-- [ ] [建造者模式](builder-pattern.md)
-- [x] [原型模式](prototype-pattern.md)
-- [ ] [Object Pool](object-pool-pattern.md)
+- [x] [单例模式](document/singleton-pattern.md)
+- [x] [工厂模式](document/factory-pattern.md)
+- [x] [工厂方法模式](document/factory-method-pattern.md)
+- [x] [抽象工厂模式](document/abstract-factory-pattern.md)
+- [ ] [建造者模式](document/builder-pattern.md)
+- [x] [原型模式](document/prototype-pattern.md)
+- [ ] [Object Pool](document/object-pool-pattern.md)
 
 *行为模式*
 ------
-- [ ] [Chain of Responsibility](chain-of-responsibility-pattern.md)
-- [ ] [Command](command-pattern.md)
-- [ ] [Interpreter](interpreter-pattern.md)
-- [ ] [Iterator](iterator-pattern.md)
-- [ ] [Mediator](mediator-pattern.md)
-- [ ] [Memento](memento-pattern.md)
-- [ ] [Observer](observer-pattern.md)
-- [ ] [Strategy](strategy-pattern.md)
-- [ ] [模版方法](template-method-pattern.md)
-- [ ] [Visitor](visitor-pattern.md)
-- [ ] [Null Object](null-object-pattern)
+- [ ] [Chain of Responsibility](document/chain-of-responsibility-pattern.md)
+- [ ] [Command](document/command-pattern.md)
+- [ ] [Interpreter](document/interpreter-pattern.md)
+- [ ] [Iterator](document/iterator-pattern.md)
+- [ ] [Mediator](document/mediator-pattern.md)
+- [ ] [Memento](document/memento-pattern.md)
+- [ ] [Observer](document/observer-pattern.md)
+- [ ] [Strategy](document/strategy-pattern.md)
+- [ ] [模版方法](document/template-method-pattern.md)
+- [ ] [Visitor](document/visitor-pattern.md)
+- [ ] [Null Object](document/null-object-pattern)
 
-*[结构模式](structural-patterns.md)*
+*[结构模式](document/structural-patterns.md)*
 ------
-- [x] [适配器模式](adapter-pattern.md)
-- [x] [桥接模式](bridge-pattern.md)
-- [ ] [Composite](composite-pattern.md)
-- [ ] [Decorator](decorator-pattern.md)
-- [ ] [Flyweight](flyweight-pattern.md)
-- [ ] [Proxy](proxy-pattern.md)
+- [x] [适配器模式](document/adapter-pattern.md)
+- [x] [桥接模式](document/bridge-pattern.md)
+- [ ] [Composite](document/composite-pattern.md)
+- [ ] [Decorator](document/decorator-pattern.md)
+- [ ] [Flyweight](document/flyweight-pattern.md)
+- [ ] [Proxy](document/proxy-pattern.md)
 
 # [设计模式](http://www.oodesign.com/) #
 

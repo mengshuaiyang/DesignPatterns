@@ -21,21 +21,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.设计原则", "1.设计�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.单一职责原则(Single Responsibility Principle)", "1.单一职责原则(Single Responsibility Principle)", "{9E485207-65E0-4F5B-BA1E-D0C518BDDE57}"
 	ProjectSection(SolutionItems) = preProject
-		single-responsibility-principle.md = single-responsibility-principle.md
+		document\single-responsibility-principle.md = document\single-responsibility-principle.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.开闭原则(Open Closed Principle)", "2.开闭原则(Open Closed Principle)", "{5D8F214B-6CFE-4BD7-9DF7-9844CDE6C5EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.里氏替换原则（Liskov Substitution Principle，LSP）", "3.里氏替换原则（Liskov Substitution Principle，LSP）", "{3B41B889-C644-4CF6-8383-96C4C07EC1F8}"
 	ProjectSection(SolutionItems) = preProject
-		LSP\liskov-s-substitution-principle.md = LSP\liskov-s-substitution-principle.md
+		document\liskov-s-substitution-principle.md = document\liskov-s-substitution-principle.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.接口隔离原则(Interface Segregation Principle，ISP)", "4.接口隔离原则(Interface Segregation Principle，ISP)", "{7768AA4C-040E-4B71-A7F0-6E8AA1625069}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "{4ADEBD81-B3B5-4684-A9A5-FB28E9B60C37}"
 	ProjectSection(SolutionItems) = preProject
-		dependency-inversion-principle.md = dependency-inversion-principle.md
+		document\dependency-inversion-principle.md = document\dependency-inversion-principle.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.设计模式", "2.设计模式", "{E0F6CDD3-8088-40E4-ADAC-65D5942DE2EE}"
@@ -47,7 +47,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.文档", "3.文档", "{71
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.单例模式", "1.单例模式", "{4E647C76-C4E5-4A1C-B1CE-BDC8A194A718}"
 	ProjectSection(SolutionItems) = preProject
-		singleton-pattern.md = singleton-pattern.md
+		document\singleton-pattern.md = document\singleton-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{BFCA1AF3-3C86-4CE8-9D18-9ED12CE7315D}"
@@ -60,33 +60,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.行为型模式", "3.行�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.简单工厂模式", "2.简单工厂模式", "{03943A86-28BC-4FE2-9439-426C25F584CD}"
 	ProjectSection(SolutionItems) = preProject
-		factory-pattern.md = factory-pattern.md
+		document\factory-pattern.md = document\factory-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "SimpleFactory\SimpleFactory.csproj", "{0FD25E84-8C5F-423C-A295-133CEC71BC2E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.工厂方法模式", "3.工厂方法模式", "{551DEC74-BDF3-467E-8AA4-D02BBC6CBEB0}"
 	ProjectSection(SolutionItems) = preProject
-		factory-method-pattern.md = factory-method-pattern.md
+		document\factory-method-pattern.md = document\factory-method-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{ED7CE58A-5C4D-44FF-AB2F-1056FDC10368}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.抽象工厂模式", "4.抽象工厂模式", "{780CAE09-E133-4BA0-860D-8D5531B5FCB6}"
 	ProjectSection(SolutionItems) = preProject
-		abstract-factory-pattern.md = abstract-factory-pattern.md
+		document\abstract-factory-pattern.md = document\abstract-factory-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{8E79325F-69F7-4BD1-831F-E0AF466F038D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.建造者模式", "5.建造者模式", "{1C4227C6-27A0-4356-BF35-9630A555D426}"
 	ProjectSection(SolutionItems) = preProject
-		builder-pattern.md = builder-pattern.md
+		document\builder-pattern.md = document\builder-pattern.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.原型模式", "6.原型模式", "{6B314D7F-1809-433C-BA74-2971D61475E4}"
 	ProjectSection(SolutionItems) = preProject
-		prototype-pattern.md = prototype-pattern.md
+		document\prototype-pattern.md = document\prototype-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPattern", "PropertyPattern\PropertyPattern.csproj", "{A27A6B6B-A22D-4EED-86F5-80D37DB23B45}"
@@ -95,21 +95,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.适配器模式", "1.适配器模式", "{11C47C78-5DDE-4859-AADF-0EA9C7C80114}"
 	ProjectSection(SolutionItems) = preProject
-		adapter-pattern.md = adapter-pattern.md
+		document\adapter-pattern.md = document\adapter-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{68D39211-9A6B-4DB7-A15A-AC83AB9EA69D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.桥接模式", "2.桥接模式", "{0C2622EA-6B08-4CF7-8528-7E01E6700968}"
 	ProjectSection(SolutionItems) = preProject
-		bridge-pattern.md = bridge-pattern.md
+		document\bridge-pattern.md = document\bridge-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgePattern", "BridgePattern\BridgePattern.csproj", "{51303CC6-3F34-4AAC-A25C-D6E2A19379BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.组合模式", "3.组合模式", "{B1104630-2F66-4A62-986F-4F348F5ACD52}"
 	ProjectSection(SolutionItems) = preProject
-		composite-pattern.md = composite-pattern.md
+		document\composite-pattern.md = document\composite-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA}"
