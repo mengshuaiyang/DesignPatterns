@@ -13,7 +13,7 @@
 ## 意图 ##
 <!-- ## Intent ## -->
 
-类，模块和函数之类的软件实体应**开放扩展**，但应**关闭修改**。
+一个软件实体如类、模块和函数应该对**扩展开放**，对**修改关闭**。
 <!-- Software entities like classes, modules and functions should be **open for extension** but **closed for modifications**. -->
 
 ## 例子 ##
@@ -81,7 +81,6 @@
 > * since the drawing code is moved to the concrete shape classes, it's a reduced risk to affect old functionallity when new functionallity is added. -->
  
 ```java
-Open Close Principle(OCP) - good
 // 开闭原理-好的示例
 // Open-Close Principle - Good example
  class GraphicEditor {
