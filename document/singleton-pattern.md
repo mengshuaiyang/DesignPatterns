@@ -24,7 +24,7 @@
 实现包括“单例”类的静态成员,一个私有构造函数和静态公共静态成员方法返回一个引用。
 <!-- The implementation involves a static member in the "Singleton" class, a private constructor and a static public method that returns a reference to the static member. -->
 
-![单例实现——UML类图](imgaes/singleton_implementation_-_uml_class_diagram.gif)
+![单例实现——UML类图](images/singleton_implementation_-_uml_class_diagram.gif)
 <!-- Singleton Implementation - UML Class Diagram -->
 
 单例模式定义了一个getInstance操作暴露了独特的实例访问的客户。getInstance()是负责创建类的实例的情况下,还没有创建和返回实例。

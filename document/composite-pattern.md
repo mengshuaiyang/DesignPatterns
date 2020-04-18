@@ -21,8 +21,8 @@
 下图显示了一个组合模式的UML类图:
 <!-- The figure below shows a UML class diagram for the Composite Pattern: -->
 
-![组合模式实现——UML类图](imgaes/composite-design-pattern-implementation-uml-class-diagram.png)
-<!-- ![Composite Pattern Implementation - UML Class Diagram](imgaes/composite-design-pattern-implementation-uml-class-diagram.png) -->
+![组合模式实现——UML类图](images/composite-design-pattern-implementation-uml-class-diagram.png)
+<!-- ![Composite Pattern Implementation - UML Class Diagram](images/composite-design-pattern-implementation-uml-class-diagram.png) -->
 
 * **根节点(Component)** - Component是树叶节点和树枝节点的抽象。它定义了组合中的对象必须实现的接口。例如，文件系统资源定义了文件和文件夹的移动，复制，重命名和获取大小方法。
 <!-- * **Component** - Component is the abstraction for leafs and composites. It defines the interface that must be implemented by the objects in the composition. For example a file system resource defines move, copy, rename, and getSize methods for files and folders. -->
@@ -63,8 +63,8 @@
 **替代实现**: 请注意，在前面的示例中，有时我们避免通过Shape接口处理复合对象，而专门将它们作为复合对象处理（使用addToShape()方法时）。为了避免这种情况并进一步提高一致性，可以添加一些方法来添加，删除以及将子部件添加到Shape接口。下面的UML图显示了它：
 <!-- **Alternative Implementation**: Note that in the previous example there were times when we have avoided dealing with composite objects through the Shape interface and we have specifically dealt with them as composites (when using the method addToShape()). To avoid such situations and to further increase uniformity one can add methods to add, remove, as well as get child components to the Shape interface. The UML diagram below shows it: -->
 
-![复合模式替代实现——UML类图](imgaes/composite-design-pattern-alternative-implementation-uml-class-diagram.png)
-<!-- ![Composite Pattern Alternative Implementation - UML Class Diagram](imgaes/composite-design-pattern-alternative-implementation-uml-class-diagram.png) -->
+![复合模式替代实现——UML类图](images/composite-design-pattern-alternative-implementation-uml-class-diagram.png)
+<!-- ![Composite Pattern Alternative Implementation - UML Class Diagram](images/composite-design-pattern-alternative-implementation-uml-class-diagram.png) -->
 
 源：[点击这里查看java源代码](https://www.oodesign.com/composite-pattern-shapes-example-java-sourcecode.html)
 <!-- Source:  [Click here to see java source code](https://www.oodesign.com/composite-pattern-shapes-example-java-sourcecode.html) -->

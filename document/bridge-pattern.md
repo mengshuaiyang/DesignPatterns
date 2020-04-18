@@ -19,8 +19,8 @@
 下图显示了一个UML类图的桥模式:
 <!-- The figure below shows a UML class diagram for the Bridge Pattern: -->
 
-![桥模式实现——UML类图](imgaes/bridge-pattern.png)
-<!-- ![Bridge Pattern Implementation - UML Class Diagram](imgaes/bridge-pattern.png) -->
+![桥模式实现——UML类图](images/bridge-pattern.png)
+<!-- ![Bridge Pattern Implementation - UML Class Diagram](images/bridge-pattern.png) -->
 
 桥接模式的参与者类有:
 <!-- The participants classes in the bridge pattern are: -->
@@ -52,8 +52,8 @@
 如前所述，根据是否存在关系数据库，文件系统以及基础操作系统，持久性API可以具有许多实现。
 <!-- As discussed previously a persistence API can have many implementations depending on the presence or absence of a relational database, a file system, as well as on the underlying operating system. -->
 
-![桥接模式的例子——UML类图](imgaes/bridge-pattern-example.png)
-<!-- ![Bridge Pattern Example - UML Class Diagram](imgaes/bridge-pattern-example.png) -->
+![桥接模式的例子——UML类图](images/bridge-pattern-example.png)
+<!-- ![Bridge Pattern Example - UML Class Diagram](images/bridge-pattern-example.png) -->
 
 来源:点击这里查看java源代码
 <!-- Source:  [Click here to see java source code](https://www.oodesign.com/bridge-pattern-object-persistence-api-example-java-sourcecode.html) -->

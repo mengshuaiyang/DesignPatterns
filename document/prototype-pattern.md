@@ -25,8 +25,8 @@
 该模式使用抽象类，我们将在下面看到，实现相当容易只使用三种类就可以。
 <!-- The pattern uses abstract classes, as we will see below and only three types of classes making its implementation rather easy. -->
 
-![原型实现——UML类图](imgaes/prototype&#32;implementation&#32;-&#32;uml&#32;class&#32;diagram.gif)
-<!-- ![Prototype Implementation - UML Class Diagram](imgaes/prototype&#32;implementation&#32;-&#32;uml&#32;class&#32;diagram.gif) -->
+![原型实现——UML类图](images/prototype&#32;implementation&#32;-&#32;uml&#32;class&#32;diagram.gif)
+<!-- ![Prototype Implementation - UML Class Diagram](images/prototype&#32;implementation&#32;-&#32;uml&#32;class&#32;diagram.gif) -->
 
 参与原型模式的类:
 <!-- The classes participating to the Prototype Pattern are: -->

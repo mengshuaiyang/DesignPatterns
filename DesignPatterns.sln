@@ -19,14 +19,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCP", "OCP\OCP.csproj", "{6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.设计原则", "1.设计原则", "{72C22548-BF73-4D37-A01C-C15B6670D295}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.单一职责原则(Single Responsibility Principle)", "1.单一职责原则(Single Responsibility Principle)", "{9E485207-65E0-4F5B-BA1E-D0C518BDDE57}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.单一职责原则(Single Responsibility Principle,SRP)", "1.单一职责原则(Single Responsibility Principle,SRP)", "{9E485207-65E0-4F5B-BA1E-D0C518BDDE57}"
 	ProjectSection(SolutionItems) = preProject
 		document\single-responsibility-principle.md = document\single-responsibility-principle.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.开闭原则(Open Closed Principle)", "2.开闭原则(Open Closed Principle)", "{5D8F214B-6CFE-4BD7-9DF7-9844CDE6C5EF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.开闭原则(Open Closed Principle,OCP)", "6.开闭原则(Open Closed Principle,OCP)", "{5D8F214B-6CFE-4BD7-9DF7-9844CDE6C5EF}"
+	ProjectSection(SolutionItems) = preProject
+		document\open-close-principle.md = document\open-close-principle.md
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.里氏替换原则（Liskov Substitution Principle，LSP）", "3.里氏替换原则（Liskov Substitution Principle，LSP）", "{3B41B889-C644-4CF6-8383-96C4C07EC1F8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.里氏替换原则（Liskov Substitution Principle，LSP）", "2.里氏替换原则（Liskov Substitution Principle，LSP）", "{3B41B889-C644-4CF6-8383-96C4C07EC1F8}"
 	ProjectSection(SolutionItems) = preProject
 		document\liskov-s-substitution-principle.md = document\liskov-s-substitution-principle.md
 	EndProjectSection
@@ -36,7 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.接口隔离原则(Interf
 		document\interface-segregation-principle.md = document\interface-segregation-principle.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "5.依赖倒置原则(Dependence Inversion Principle，DIP)", "{4ADEBD81-B3B5-4684-A9A5-FB28E9B60C37}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.依赖倒置原则(Dependence Inversion Principle，DIP)", "3.依赖倒置原则(Dependence Inversion Principle，DIP)", "{4ADEBD81-B3B5-4684-A9A5-FB28E9B60C37}"
 	ProjectSection(SolutionItems) = preProject
 		document\dependency-inversion-principle.md = document\dependency-inversion-principle.md
 	EndProjectSection
@@ -118,6 +121,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP", "SRP\SRP.csproj", "{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.迪米特原则(Law of Demeter,LoD)", "5.迪米特原则(Law of Demeter,LoD)", "{383BC449-0228-4EFB-BDDC-DBA9619757DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +206,8 @@ Global
 		{99939CE7-BD3F-4A97-96EE-4A603E2B719E} = {3B41B889-C644-4CF6-8383-96C4C07EC1F8}
 		{3E26176A-5207-422C-A4C6-CB1AA65298F5} = {4ADEBD81-B3B5-4684-A9A5-FB28E9B60C37}
 		{E804726E-F141-413D-84BD-2C4A54ECD44A} = {7768AA4C-040E-4B71-A7F0-6E8AA1625069}
+		{6FA53DB2-9F08-4CDD-B119-17B5AD97F5DE} = {383BC449-0228-4EFB-BDDC-DBA9619757DD}
+		{8E112998-30E2-4AD3-8B32-A14C5DCAD55A} = {383BC449-0228-4EFB-BDDC-DBA9619757DD}
 		{69158A34-5FFF-4BFD-9C9B-2941DDEA7752} = {5D8F214B-6CFE-4BD7-9DF7-9844CDE6C5EF}
 		{9E485207-65E0-4F5B-BA1E-D0C518BDDE57} = {72C22548-BF73-4D37-A01C-C15B6670D295}
 		{5D8F214B-6CFE-4BD7-9DF7-9844CDE6C5EF} = {72C22548-BF73-4D37-A01C-C15B6670D295}
@@ -229,6 +236,7 @@ Global
 		{B1104630-2F66-4A62-986F-4F348F5ACD52} = {C6EF936B-E206-4108-9B0C-DD7229001E1D}
 		{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA} = {B1104630-2F66-4A62-986F-4F348F5ACD52}
 		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F} = {9E485207-65E0-4F5B-BA1E-D0C518BDDE57}
+		{383BC449-0228-4EFB-BDDC-DBA9619757DD} = {72C22548-BF73-4D37-A01C-C15B6670D295}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818C37D-216A-4538-96A3-217C85DC0D67}

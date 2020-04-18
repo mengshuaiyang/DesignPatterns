@@ -25,7 +25,7 @@
 该模式工作原理基本上如下UML图中所示:
 <!-- The pattern basically works as shown below, in the UML diagram: -->
 
-![工厂方法实现——UML类图](imgaes/factory%20method%20implementation%20-%20uml%20class%20diagram.gif)
+![工厂方法实现——UML类图](images/factory%20method%20implementation%20-%20uml%20class%20diagram.gif)
 <!-- Factory Method Implementation - UML Class Diagram  -->
 
 此模式中的参与者类是：
@@ -98,7 +98,7 @@ public class Client
 工厂方法设计模式通过将与需要实例化的类相关的所有信息放入对象并在框架外部使用它来解决问题，如下所示
 <!-- The Factory Method design pattern solves the problem by putting all the information related to the class that needs to be instantiated into an object and using them outside the framework, as you can see below -->
 
-![工厂方法的例子——UML类图](imgaes/factory%20method%20example%20-%20uml%20class%20diagram.gif)
+![工厂方法的例子——UML类图](images/factory%20method%20example%20-%20uml%20class%20diagram.gif)
 <!-- Factory Method Example - UML Class Diagram -->
 
 在Application类中，CreateDocument方法要么具有默认实现，要么根本没有任何实现，此操作在MyApplication子类中重新定义，以便创建MyDocument对象并返回对它的引用。

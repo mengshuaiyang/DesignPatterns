@@ -20,7 +20,7 @@
 ## 实现 ##
 <!-- ## Implementation ##-->
 
-![工厂实现——UML类图](imgaes/factory%20implementation.gif)
+![工厂实现——UML类图](images/factory%20implementation.gif)
 <!-- Factory Implementation - UML Class Diagram -->
 
 实现非常简单
@@ -51,7 +51,7 @@
 ### 程序解决方案- switch/case 新手实例化 ###
 <!-- ### Procedural Solution - switch/case noob instantiation. ### -->
 
-![工厂新手实现——UML类图](imgaes/factory%20noob%20implementation.gif)
+![工厂新手实现——UML类图](images/factory%20noob%20implementation.gif)
 <!-- Factory Noob Implementation - UML Class Diagram -->
 
 这些也被称为参数化的工厂。可以编写生成方法，以便它可以使用条件（作为方法参数输入或从某些全局配置参数读取 - 请参阅抽象工厂模式）生成更多类型的Product对象，以标识应创建的对象的类型， 如下：
@@ -203,7 +203,7 @@ class ProductFactory
 ### 更高级的解决方案 - 带抽象的工厂设计模式（工厂方法） ###
 <!-- ### A more advanced solution - Factory design pattern with abstractions(Factory Method) ### -->
 
-![抽象工厂设计模式——UML类图](imgaes/factory%20design%20pattern%20with%20abstractions.gif)
+![抽象工厂设计模式——UML类图](images/factory%20design%20pattern%20with%20abstractions.gif)
 <!-- Factory Design Pattern With Abstractions - UML Class Diagram -->
 
 此实现代表了类注册实现的替代方案。我们假设我们需要向应用程序添加新产品。对于程序切换案例实现，我们需要更改Factory类，而在类注册实现中，我们需要的是将类注册到工厂而不实际修改工厂类。当然这是一个灵活的解决方案。

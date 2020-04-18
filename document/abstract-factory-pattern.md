@@ -24,7 +24,7 @@
 该模式基本上如下所示，在UML图中：
 <!-- The pattern basically works as shown below, in the UML diagram: -->
 
-![抽象工厂实现——UML类图](imgaes/abstract-factory-pattern.png)
+![抽象工厂实现——UML类图](images/abstract-factory-pattern.png)
 <!-- Abstract Factory Implementation - UML Class Diagram  -->
 
 参与抽象工厂模式的类是：
@@ -174,7 +174,7 @@ ConcreteFactory和ConcreteProduct类将实现上面定义的接口，并将以US
 
 <!-- Look & Feel Abstract Factory is the most common example. For example, a GUI framework should support several look and feel themes, such as Motif and Windows look. Each style defines different looks and behaviors for each type of controls: Buttons and Edit Boxes. In order to avoid the hardociding it for each type of control we define an abstract class LookAndFeel. This calls will instantiate, depending on a configuration parameter in the application one of the concrete factories: WindowsLookAndFeel or MotifLookAndFeel. Each request for a new object will be delegated to the instatiated concrete factory which will return the controls with the specific flavor -->
 
-![抽象工厂的例子——UML类图](imgaes/abstract-factory-pattern-example.png)
+![抽象工厂的例子——UML类图](images/abstract-factory-pattern-example.png)
 <!-- Abstract Factory Example - UML Class Diagram  -->
 
 ## 具体问题和实现 ##

@@ -17,7 +17,7 @@ Refers to the newly created object through a common interface
 
 The Builder design pattern uses the Factory Builder pattern to decide which concrete class to initiate in order to build the desired type of object, as we will see below in the UML diagram:
 
-![Builder Pattern - UML Class Diagram](imgaes/builder-pattern.png)
+![Builder Pattern - UML Class Diagram](images/builder-pattern.png)
 
 The participants classes in this pattern are:
 
@@ -30,7 +30,7 @@ The client, that may be either another object or the actual client that calls th
 
 The following example discusses the case of a text converting application:
 
-![Builder Pattern Example - UML Class Diagram](imgaes/builder-pattern-example.png)
+![Builder Pattern Example - UML Class Diagram](images/builder-pattern-example.png)
 
 The Client needs to convert a document from RTF format to ASCII format. There for, it calls the method createASCIIText that takes as a parameter the document that will be converted. This method calls the concrete builder, ASCIIConverter, that extends the Builder, TextConverter, and overrides its two methods for converting characters and paragraphs, and also the Director, RTFReader, that parses the document and calls the builder�s methods depending on the type of token encountered. The product, the ASCIIText, is built step by step, by appending converted characters.
 

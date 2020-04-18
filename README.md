@@ -1,6 +1,6 @@
 *[设计原则](document/design-principles.md)*
 ------
-- [ ] [开闭原则](document/open-close-principle.md)
+- [x] [开闭原则](document/open-close-principle.md)
 - [x] [依赖性倒置原则](document/dependency-inversion-principle.md)
 - [x] [接口隔离原则](document/interface-segregation-principle.md)
 - [x] [单一职责原则](document/single-responsibility-principle.md)

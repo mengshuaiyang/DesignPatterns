@@ -24,8 +24,8 @@
 下图显示了适配器模式的UML类图：
 <!-- The figure below shows a UML class diagram for the Adapter Pattern: -->
 
-![适配器模式实现——UML类图](imgaes/adapter-pattern.png)
-<!-- ![Adapter  Pattern Implementation - UML Class Diagram](imgaes/adapter-pattern.png) -->
+![适配器模式实现——UML类图](images/adapter-pattern.png)
+<!-- ![Adapter  Pattern Implementation - UML Class Diagram](images/adapter-pattern.png) -->
 
 参与适配器模式的类/对象：
 <!-- The classes/objects participating in adapter pattern: -->
@@ -71,8 +71,8 @@
 ### 类适配器——基于(多个)继承 ###
 <!-- ### Class Adapters - Based on (Multiple) Inheritance ### -->
 
-![适配器模式实现——UML类图](imgaes/adapter-pattern-multiple-inheritance.png)
-<!-- ![Adapter  Pattern Implementation - UML Class Diagram](imgaes/adapter-pattern-multiple-inheritance.png) -->
+![适配器模式实现——UML类图](images/adapter-pattern-multiple-inheritance.png)
+<!-- ![Adapter  Pattern Implementation - UML Class Diagram](images/adapter-pattern-multiple-inheritance.png) -->
 
 类适配器可以用支持多继承的语言实现（Java，C#器使用继承而不是组合。这意味着它不是将调用委托给Adaptee，而是将其子类化。总之，它必须是目标和适应者的子类。有利有弊：
 <!-- Class adapters can be implemented in languages supporting multiple inheritance(Java, C# or PHP does not support multiple inheritance). Thus, such adapters can not be easy implemented in Java, C# or VB.NET. Class adapter uses inheritance instead of composition. It means that instead of delegating the calls to the Adaptee, it subclasses it. In conclusion it must subclass both the Target and the Adaptee. There are advantages and disadvantages: -->
