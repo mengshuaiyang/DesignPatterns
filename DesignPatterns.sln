@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29230.47
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP", "LSP\LSP.csproj", "{99939CE7-BD3F-4A97-96EE-4A603E2B719E}"
 EndProject
@@ -124,6 +124,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP", "SRP\SRP.csproj", "{C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.迪米特原则(Law of Demeter,LoD)", "5.迪米特原则(Law of Demeter,LoD)", "{383BC449-0228-4EFB-BDDC-DBA9619757DD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9策略模式", "9策略模式", "{0BCFA28D-CF4A-4ECD-84F2-BF0E4BBE66D8}"
+	ProjectSection(SolutionItems) = preProject
+		strategy-pattern.md = strategy-pattern.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{B508AE6C-83F6-4E5C-A296-36CABB59AE09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -198,6 +205,10 @@ Global
 		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B508AE6C-83F6-4E5C-A296-36CABB59AE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B508AE6C-83F6-4E5C-A296-36CABB59AE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B508AE6C-83F6-4E5C-A296-36CABB59AE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B508AE6C-83F6-4E5C-A296-36CABB59AE09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -237,6 +248,8 @@ Global
 		{F5454D92-64F0-4CFE-921C-70E5F8A8C5AA} = {B1104630-2F66-4A62-986F-4F348F5ACD52}
 		{CFE6155B-143F-442D-9C6B-92AAA49D4B1F} = {9E485207-65E0-4F5B-BA1E-D0C518BDDE57}
 		{383BC449-0228-4EFB-BDDC-DBA9619757DD} = {72C22548-BF73-4D37-A01C-C15B6670D295}
+		{0BCFA28D-CF4A-4ECD-84F2-BF0E4BBE66D8} = {79835CF0-48B3-49DD-860E-495301D2D721}
+		{B508AE6C-83F6-4E5C-A296-36CABB59AE09} = {0BCFA28D-CF4A-4ECD-84F2-BF0E4BBE66D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818C37D-216A-4538-96A3-217C85DC0D67}
