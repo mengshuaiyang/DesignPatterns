@@ -24,9 +24,9 @@
 - [ ] [4迭代器模式](document/iterator-pattern.md)
 - [ ] [5中介者模式](document/mediator-pattern.md)
 - [ ] [6备忘录模式](document/memento-pattern.md)
-- [ ] [7观察者模式](document/observer-pattern.md)
+- [x] [7观察者模式](document/observer-pattern.md)
 - [ ] 8状态模式
-- [ ] [9策略模式](document/strategy-pattern.md)
+- [x] [9策略模式](document/strategy-pattern.md)
 - [ ] [10模版方法模式](document/template-method-pattern.md)
 - [ ] [11访问者模式](document/visitor-pattern.md)
 - [ ] [空对象模式](document/null-object-pattern)
