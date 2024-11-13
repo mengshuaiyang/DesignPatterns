@@ -35,8 +35,8 @@
 ------
 - [x] [1适配器模式](document/adapter-pattern.md)
 - [x] [2桥梁模式模式](document/bridge-pattern.md)
-- [ ] [3组合模式](document/composite-pattern.md)
-- [ ] [4装饰模式](document/decorator-pattern.md)
+- [x] [3组合模式](document/composite-pattern.md)
+- [x] [4装饰模式](document/decorator-pattern.md)
 - [ ] 5外观模式
 - [ ] [6享元模式](document/flyweight-pattern.md)
 - [ ] [7代理模式](document/proxy-pattern.md)
