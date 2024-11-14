@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public class CircularFactory: ICreator
+    public class CircularFactory : ICreator
     {
         public IShape CreateShape()
         {
