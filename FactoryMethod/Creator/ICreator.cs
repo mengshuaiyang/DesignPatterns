@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public class SquareFactory
+    interface ICreator
     {
-        public IShape CreateShape()
-        {
-            return new Square();
-        }
+        IShape CreateShape();
     }
 }

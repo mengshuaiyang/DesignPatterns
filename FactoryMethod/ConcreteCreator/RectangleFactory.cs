@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public class RectangleFactory
+    public class RectangleFactory: ICreator
     {
         public IShape CreateShape()
         {

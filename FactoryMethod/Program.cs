@@ -13,6 +13,11 @@ namespace FactoryMethod
             CircularFactory circularFactory = new CircularFactory();
             IShape shape = circularFactory.CreateShape();
             shape.ShapeInfo();
+
+
+            ICreator creator = new RectangleFactory();
+            IShape shape2 = creator.CreateShape();
+            shape2.ShapeInfo();
             Console.ReadKey();
         }
     }

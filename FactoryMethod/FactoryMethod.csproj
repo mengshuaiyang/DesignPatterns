@@ -43,15 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circular.cs" />
-    <Compile Include="CircularFactory.cs" />
-    <Compile Include="IShape.cs" />
+    <Compile Include="ConcreteProduct\Circular.cs" />
+    <Compile Include="ConcreteCreator\CircularFactory.cs" />
+    <Compile Include="Creator\ICreator.cs" />
+    <Compile Include="Product\IShape.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="RectangleFactory.cs" />
-    <Compile Include="Square.cs" />
-    <Compile Include="SquareFactory.cs" />
+    <Compile Include="ConcreteProduct\Rectangle.cs" />
+    <Compile Include="ConcreteCreator\RectangleFactory.cs" />
+    <Compile Include="ConcreteProduct\Square.cs" />
+    <Compile Include="ConcreteCreator\SquareFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
