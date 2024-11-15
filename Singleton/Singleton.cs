@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
+    /// <summary>
+    /// 双重检查锁定模式
+    /// </summary>
     public class Singleton
     {
         public static Singleton instance;
 
         public static object Singleton_Lock=new object();
+
+        private static int i = 10;
         private Singleton()
         {
             Thread.Sleep(1000);
@@ -39,7 +44,7 @@ namespace Singleton
         public void doSomething()
         {
             Thread.Sleep(1000);
-            Console.WriteLine("调用doSomething()方法;线程编号{0}", Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine("调用doSomething()方法;线程编号{0} i={1}", Thread.CurrentThread.ManagedThreadId,i--);
         }
     }
 }

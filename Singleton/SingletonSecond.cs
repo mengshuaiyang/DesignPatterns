@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
+    /// <summary>
+    /// 静态构造函数（static构造函数）来实现单例模式
+    /// </summary>
     public class SingletonSecond
     {
         public static SingletonSecond instance;
