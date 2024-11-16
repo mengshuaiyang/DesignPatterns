@@ -154,6 +154,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2命令模式", "2命令模
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{652429ED-F656-4981-B001-8A538BF1B750}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5外观模式", "5外观模式", "{44A0541E-1C7A-4AC2-9E45-0CB85887530D}"
+	ProjectSection(SolutionItems) = preProject
+		facade-pattern.md = facade-pattern.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -296,6 +301,7 @@ Global
 		{66AD8002-44D3-4A69-833A-10D28BCF8BCF} = {551DEC74-BDF3-467E-8AA4-D02BBC6CBEB0}
 		{1A4B9256-E634-49BF-9E70-3D74AE1F038E} = {79835CF0-48B3-49DD-860E-495301D2D721}
 		{652429ED-F656-4981-B001-8A538BF1B750} = {1A4B9256-E634-49BF-9E70-3D74AE1F038E}
+		{44A0541E-1C7A-4AC2-9E45-0CB85887530D} = {C6EF936B-E206-4108-9B0C-DD7229001E1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818C37D-216A-4538-96A3-217C85DC0D67}

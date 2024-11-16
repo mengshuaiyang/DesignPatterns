@@ -24,6 +24,10 @@ namespace AdapterPattern
             shape2.BoundIngBox();
             shape2.CreateManipuator();
 
+            Shape shape3 = new TextAdapter();
+            shape2.BoundIngBox();
+            shape2.CreateManipuator();
+
             Console.ReadKey();
         }
     }

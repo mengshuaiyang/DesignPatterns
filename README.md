@@ -37,7 +37,7 @@
 - [x] [2桥梁模式模式](document/bridge-pattern.md)
 - [x] [3组合模式](document/composite-pattern.md)
 - [x] [4装饰模式](document/decorator-pattern.md)
-- [ ] 5外观模式
+- [x] [5外观模式](document/facade-pattern.md)
 - [ ] [6享元模式](document/flyweight-pattern.md)
 - [ ] [7代理模式](document/proxy-pattern.md)
 - [ ] 门面模式
