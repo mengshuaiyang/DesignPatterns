@@ -19,7 +19,7 @@
 *行为模式*
 ------
 - [ ] [1职责链模式](document/chain-of-responsibility-pattern.md)
-- [ ] [2命令模式](document/command-pattern.md)
+- [x] [2命令模式](document/command-pattern.md)
 - [ ] [3解释器模式](document/interpreter-pattern.md)
 - [ ] [4迭代器模式](document/iterator-pattern.md)
 - [ ] [5中介者模式](document/mediator-pattern.md)
