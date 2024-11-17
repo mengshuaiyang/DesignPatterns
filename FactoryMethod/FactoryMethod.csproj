@@ -43,16 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConcreteProduct\Circular.cs" />
-    <Compile Include="ConcreteCreator\CircularFactory.cs" />
-    <Compile Include="Creator\ICreator.cs" />
-    <Compile Include="Product\IShape.cs" />
+    <Compile Include="2.ConcreteProduct具体产品\Circular.cs" />
+    <Compile Include="4.ConcreteCreator具体创建者\CircularFactory.cs" />
+    <Compile Include="3.Creator工厂方法接口\ICreator.cs" />
+    <Compile Include="1.Product产品接口\IShape.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ConcreteProduct\Rectangle.cs" />
-    <Compile Include="ConcreteCreator\RectangleFactory.cs" />
-    <Compile Include="ConcreteProduct\Square.cs" />
-    <Compile Include="ConcreteCreator\SquareFactory.cs" />
+    <Compile Include="2.ConcreteProduct具体产品\Rectangle.cs" />
+    <Compile Include="4.ConcreteCreator具体创建者\RectangleFactory.cs" />
+    <Compile Include="2.ConcreteProduct具体产品\Square.cs" />
+    <Compile Include="4.ConcreteCreator具体创建者\SquareFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

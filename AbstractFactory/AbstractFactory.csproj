@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="1.AbstractFactory抽象工厂\FurnitureFactory.cs" />
+    <Compile Include="2.ConcreteFactory具体工厂\ClassicFurnitureFactory.cs" />
+    <Compile Include="2.ConcreteFactory具体工厂\ModernFurnitureFactory.cs" />
+    <Compile Include="3.AbstractProduct抽象产品\Furniture.cs" />
+    <Compile Include="3.AbstractProduct抽象产品\Sofa.cs" />
+    <Compile Include="3.AbstractProduct抽象产品\Table.cs" />
+    <Compile Include="4.ConcreteProduct具体产品\ClassicSofa.cs" />
+    <Compile Include="4.ConcreteProduct具体产品\ClassicTable.cs" />
+    <Compile Include="4.ConcreteProduct具体产品\ModernSofa.cs" />
+    <Compile Include="4.ConcreteProduct具体产品\ModernTable.cs" />
+    <Compile Include="5.Client客户端\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

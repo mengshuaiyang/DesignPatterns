@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
-    class Program
+    // 具体抽象产品：Sofa
+    public interface Sofa : Furniture
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
