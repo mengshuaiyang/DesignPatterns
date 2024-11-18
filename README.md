@@ -21,7 +21,7 @@
 - [ ] [1职责链模式](document/chain-of-responsibility-pattern.md)
 - [x] [2命令模式](document/command-pattern.md)
 - [ ] [3解释器模式](document/interpreter-pattern.md)
-- [ ] [4迭代器模式](document/iterator-pattern.md)
+- [x] [4迭代器模式](document/iterator-pattern.md)
 - [ ] [5中介者模式](document/mediator-pattern.md)
 - [ ] [6备忘录模式](document/memento-pattern.md)
 - [x] [7观察者模式](document/observer-pattern.md)
