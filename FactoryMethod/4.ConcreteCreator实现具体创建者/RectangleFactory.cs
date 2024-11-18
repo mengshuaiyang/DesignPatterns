@@ -1,5 +1,4 @@
-﻿using FactoryMethod;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public class CircularFactory: ICreator
+    public class RectangleFactory : ICreator
     {
-        public IShape CreateShape()
+        public override IShape CreateShape()
         {
-            return new Circular();
+            return new Rectangle();
         }
     }
 }
