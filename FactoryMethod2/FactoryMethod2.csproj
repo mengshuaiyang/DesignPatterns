@@ -4,14 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E79325F-69F7-4BD1-831F-E0AF466F038D}</ProjectGuid>
+    <ProjectGuid>{66AD8002-44D3-4A69-833A-10D28BCF8BCF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AbstractFactory</RootNamespace>
-    <AssemblyName>AbstractFactory</AssemblyName>
+    <RootNamespace>FactoryMethod2</RootNamespace>
+    <AssemblyName>FactoryMethod2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,17 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1.AbstractFactory抽象工厂\FurnitureFactory.cs" />
-    <Compile Include="2.ConcreteFactory具体工厂\ClassicFurnitureFactory.cs" />
-    <Compile Include="2.ConcreteFactory具体工厂\ModernFurnitureFactory.cs" />
-    <Compile Include="3.AbstractProduct抽象产品\Furniture.cs" />
-    <Compile Include="3.AbstractProduct抽象产品\Sofa.cs" />
-    <Compile Include="3.AbstractProduct抽象产品\Table.cs" />
-    <Compile Include="4.ConcreteProduct具体产品\ClassicSofa.cs" />
-    <Compile Include="4.ConcreteProduct具体产品\ClassicTable.cs" />
-    <Compile Include="4.ConcreteProduct具体产品\ModernSofa.cs" />
-    <Compile Include="4.ConcreteProduct具体产品\ModernTable.cs" />
-    <Compile Include="5.Client客户端\Program.cs" />
+    <Compile Include="ConcreteFactory\ChicagoPizzaFactory.cs" />
+    <Compile Include="ConcreteFactory\NYPizzaFactory.cs" />
+    <Compile Include="ConcreteFactory\SimplePizzaFactory.cs" />
+    <Compile Include="ConcreteProduct\ChessePizza.cs" />
+    <Compile Include="ConcreteProduct\ClamPizza.cs" />
+    <Compile Include="ConcreteProduct\PepperoniPizza.cs" />
+    <Compile Include="ConcreteProduct\VegglePizza.cs" />
+    <Compile Include="Factory\PizzaFactory.cs" />
+    <Compile Include="PizzaStore.cs" />
+    <Compile Include="Product\Pizza.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -25,7 +25,7 @@ namespace Singleton
             {
                 tasks.Add(taskFactory.StartNew(() =>
                 {
-                    Singleton.getInstance().doSomething();
+                    SingletonBug.getInstance().doSomething();
                 }));
             }
             Task.WaitAll(tasks.ToArray());
@@ -34,13 +34,17 @@ namespace Singleton
             {
                 tasks.Add(taskFactory.StartNew(() =>
                 {
-                    Singleton.getInstance().doSomething();
+                    SingletonBug.getInstance().doSomething();
                 }));
             }
             Task.WaitAll(tasks.ToArray());
 
             stopwatch.Stop();
             Console.WriteLine("一共耗时 {0}毫秒", stopwatch.ElapsedMilliseconds);
+
+            //Singleton singleton1 = Singleton.getInstance();
+            //Singleton singleton2 = Singleton.getInstance();
+            //Console.WriteLine(singleton1 == singleton2);
 
 
             Console.ReadKey();

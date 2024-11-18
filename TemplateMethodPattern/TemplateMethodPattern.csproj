@@ -4,14 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E79325F-69F7-4BD1-831F-E0AF466F038D}</ProjectGuid>
+    <ProjectGuid>{1B2D754C-C59A-4C63-B450-2DE92C3FF2BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AbstractFactory</RootNamespace>
-    <AssemblyName>AbstractFactory</AssemblyName>
+    <RootNamespace>TemplateMethodPattern</RootNamespace>
+    <AssemblyName>TemplateMethodPattern</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,22 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1.AbstractFactory抽象工厂\FurnitureFactory.cs" />
-    <Compile Include="2.ConcreteFactory具体工厂\ClassicFurnitureFactory.cs" />
-    <Compile Include="2.ConcreteFactory具体工厂\ModernFurnitureFactory.cs" />
-    <Compile Include="3.AbstractProduct抽象产品\Furniture.cs" />
-    <Compile Include="3.AbstractProduct抽象产品\Sofa.cs" />
-    <Compile Include="3.AbstractProduct抽象产品\Table.cs" />
-    <Compile Include="4.ConcreteProduct具体产品\ClassicSofa.cs" />
-    <Compile Include="4.ConcreteProduct具体产品\ClassicTable.cs" />
-    <Compile Include="4.ConcreteProduct具体产品\ModernSofa.cs" />
-    <Compile Include="4.ConcreteProduct具体产品\ModernTable.cs" />
-    <Compile Include="5.Client客户端\Program.cs" />
+    <Compile Include="1.AbstractClass\Coffee.cs" />
+    <Compile Include="2.ConcreteClass\Espresso.cs" />
+    <Compile Include="2.ConcreteClass\Latte.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

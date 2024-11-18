@@ -19,7 +19,7 @@
 *行为模式*
 ------
 - [ ] [1职责链模式](document/chain-of-responsibility-pattern.md)
-- [ ] [2命令模式](document/command-pattern.md)
+- [x] [2命令模式](document/command-pattern.md)
 - [ ] [3解释器模式](document/interpreter-pattern.md)
 - [ ] [4迭代器模式](document/iterator-pattern.md)
 - [ ] [5中介者模式](document/mediator-pattern.md)
@@ -27,7 +27,7 @@
 - [x] [7观察者模式](document/observer-pattern.md)
 - [ ] 8状态模式
 - [x] [9策略模式](document/strategy-pattern.md)
-- [ ] [10模版方法模式](document/template-method-pattern.md)
+- [x] [10模版方法模式](document/template-method-pattern.md)
 - [ ] [11访问者模式](document/visitor-pattern.md)
 - [ ] [空对象模式](document/null-object-pattern)
 
@@ -37,7 +37,7 @@
 - [x] [2桥梁模式模式](document/bridge-pattern.md)
 - [x] [3组合模式](document/composite-pattern.md)
 - [x] [4装饰模式](document/decorator-pattern.md)
-- [ ] 5外观模式
+- [x] [5外观模式](document/facade-pattern.md)
 - [ ] [6享元模式](document/flyweight-pattern.md)
 - [ ] [7代理模式](document/proxy-pattern.md)
 - [ ] 门面模式
