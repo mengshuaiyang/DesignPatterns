@@ -175,6 +175,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4迭代器模式", "4迭代
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorPattern", "IteratorPattern\IteratorPattern.csproj", "{1330093A-7CCA-4BC9-9B4E-713149BD19E4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8状态模式", "8状态模式", "{FE91BA9D-C6C7-4A99-A93A-768711692EE3}"
+	ProjectSection(SolutionItems) = preProject
+		state-pattern.md = state-pattern.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatePattern", "StatePattern\StatePattern.csproj", "{0B982482-4A49-4483-A58A-6A935B881FBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -281,6 +288,10 @@ Global
 		{1330093A-7CCA-4BC9-9B4E-713149BD19E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1330093A-7CCA-4BC9-9B4E-713149BD19E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1330093A-7CCA-4BC9-9B4E-713149BD19E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B982482-4A49-4483-A58A-6A935B881FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B982482-4A49-4483-A58A-6A935B881FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B982482-4A49-4483-A58A-6A935B881FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B982482-4A49-4483-A58A-6A935B881FBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -335,6 +346,8 @@ Global
 		{1B2D754C-C59A-4C63-B450-2DE92C3FF2BB} = {71E5A5C6-7D00-47C8-9ACE-268854061F56}
 		{7072D557-76C3-429C-9DC4-36F41410F55A} = {79835CF0-48B3-49DD-860E-495301D2D721}
 		{1330093A-7CCA-4BC9-9B4E-713149BD19E4} = {7072D557-76C3-429C-9DC4-36F41410F55A}
+		{FE91BA9D-C6C7-4A99-A93A-768711692EE3} = {79835CF0-48B3-49DD-860E-495301D2D721}
+		{0B982482-4A49-4483-A58A-6A935B881FBF} = {FE91BA9D-C6C7-4A99-A93A-768711692EE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818C37D-216A-4538-96A3-217C85DC0D67}

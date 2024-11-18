@@ -25,7 +25,7 @@
 - [ ] [5中介者模式](document/mediator-pattern.md)
 - [ ] [6备忘录模式](document/memento-pattern.md)
 - [x] [7观察者模式](document/observer-pattern.md)
-- [ ] 8状态模式
+- [x] [8状态模式](document/state-pattern.md)
 - [x] [9策略模式](document/strategy-pattern.md)
 - [x] [10模版方法模式](document/template-method-pattern.md)
 - [ ] [11访问者模式](document/visitor-pattern.md)
