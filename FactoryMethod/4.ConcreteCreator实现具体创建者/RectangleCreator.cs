@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public class SquareFactory: ICreator
+    public class RectangleCreator : ICreator
     {
         public override IShape CreateShape()
         {
-            return new Square();
+            return new Rectangle();
         }
     }
 }

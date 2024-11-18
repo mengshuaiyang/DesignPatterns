@@ -10,13 +10,13 @@ namespace FactoryMethod
     {
         static void Main(string[] args)
         {
-            CircularFactory circularFactory = new CircularFactory();
-            IShape shape = circularFactory.CreateShape();
+            ICreator creatorA = new CircularCreator();
+            IShape shape = creatorA.CreateShape();
             shape.ShapeInfo();
 
 
-            ICreator creator = new RectangleFactory();
-            IShape shape2 = creator.CreateShape();
+            ICreator productA = new RectangleCreator();
+            IShape shape2 = productA.CreateShape();
             shape2.ShapeInfo();
             Console.ReadKey();
         }
