@@ -10,6 +10,11 @@ namespace ProxyPattern
     {
         static void Main(string[] args)
         {
+            ProxyImage proxyImage = new ProxyImage("我是一只鱼");
+            proxyImage.display();
+            proxyImage = new ProxyImage("我是一只鸟");
+            proxyImage.display();
+            Console.ReadKey();
         }
     }
 }
