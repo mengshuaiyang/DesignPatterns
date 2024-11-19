@@ -16,7 +16,18 @@
 - [x] [5原型模式](document/prototype-pattern.md)
 - [ ] [对象池模式](document/object-pool-pattern.md)
 
-*行为模式*
+*[结构型模式](document/structural-patterns.md)*
+------
+- [x] [1适配器模式](document/adapter-pattern.md)
+- [x] [2桥梁模式模式](document/bridge-pattern.md)
+- [x] [3组合模式](document/composite-pattern.md)
+- [x] [4装饰模式](document/decorator-pattern.md)
+- [x] [5外观模式](document/facade-pattern.md)
+- [ ] [6享元模式](document/flyweight-pattern.md)
+- [x] [7代理模式](document/proxy-pattern.md)
+- [ ] 门面模式
+
+*[行为型模式]*
 ------
 - [ ] [1职责链模式](document/chain-of-responsibility-pattern.md)
 - [x] [2命令模式](document/command-pattern.md)
@@ -31,16 +42,6 @@
 - [ ] [11访问者模式](document/visitor-pattern.md)
 - [ ] [空对象模式](document/null-object-pattern)
 
-*[结构模式](document/structural-patterns.md)*
-------
-- [x] [1适配器模式](document/adapter-pattern.md)
-- [x] [2桥梁模式模式](document/bridge-pattern.md)
-- [x] [3组合模式](document/composite-pattern.md)
-- [x] [4装饰模式](document/decorator-pattern.md)
-- [x] [5外观模式](document/facade-pattern.md)
-- [ ] [6享元模式](document/flyweight-pattern.md)
-- [x] [7代理模式](document/proxy-pattern.md)
-- [ ] 门面模式
 
 # [设计模式](http://www.oodesign.com/) #
 
