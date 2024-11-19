@@ -39,7 +39,7 @@
 - [x] [4装饰模式](document/decorator-pattern.md)
 - [x] [5外观模式](document/facade-pattern.md)
 - [ ] [6享元模式](document/flyweight-pattern.md)
-- [ ] [7代理模式](document/proxy-pattern.md)
+- [x] [7代理模式](document/proxy-pattern.md)
 - [ ] 门面模式
 
 # [设计模式](http://www.oodesign.com/) #

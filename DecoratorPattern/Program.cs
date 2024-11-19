@@ -18,6 +18,7 @@ namespace DecoratorPattern
             beverage2 = new Mocha(beverage2);
             beverage2 = new Soy(beverage2);
             Console.WriteLine($"{beverage2.GetDesciption()} $ {beverage2.Cost()}");
+
             Beverage beverageMilk = new Milk(beverage2);
             Beverage beverageMocha = new Mocha(beverageMilk);
             Beverage beverageSoy = new Soy(beverageMocha);

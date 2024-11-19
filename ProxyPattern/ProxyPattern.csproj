@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4B9569E6-30A7-46B4-928B-5F2742F94E3A}</ProjectGuid>
+    <ProjectGuid>{FEA167D1-544B-47CE-B1D9-5A3711D8DB9E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DecoratorPattern</RootNamespace>
-    <AssemblyName>DecoratorPattern</AssemblyName>
+    <RootNamespace>ProxyPattern</RootNamespace>
+    <AssemblyName>ProxyPattern</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3.Decorator装饰者\ComponentDecorator.cs" />
-    <Compile Include="4.ConcreteDecorator具体装饰者\Soy.cs" />
-    <Compile Include="4.ConcreteDecorator具体装饰者\Whip.cs" />
-    <Compile Include="4.ConcreteDecorator具体装饰者\Mocha.cs" />
-    <Compile Include="4.ConcreteDecorator具体装饰者\Milk.cs" />
-    <Compile Include="1.Component组件\Beverage.cs" />
-    <Compile Include="2.ConcreteComponent具体组件\Decaf.cs" />
-    <Compile Include="2.ConcreteComponent具体组件\DarkRoast.cs" />
-    <Compile Include="2.ConcreteComponent具体组件\HouseBlend.cs" />
-    <Compile Include="2.ConcreteComponent具体组件\Expresso.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
