@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F895694F-5AB7-48DB-AF9E-53EB40D584D9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MultipleDesignPatterns</RootNamespace>
+    <AssemblyName>MultipleDesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviors\Ducks\DuckCall.cs" />
+    <Compile Include="Behaviors\Ducks\RubberDuck.cs" />
+    <Compile Include="Behaviors\Ducks\RedheadDuck.cs" />
+    <Compile Include="Behaviors\Gooses\Gooses.cs" />
+    <Compile Include="Behaviors\Gooses\GoosesAdapter.cs" />
+    <Compile Include="Behaviors\QuackCounter .cs" />
+    <Compile Include="Behaviors\Quackable.cs" />
+    <Compile Include="Behaviors\Ducks\MallardDuck.cs" />
+    <Compile Include="DuckSimulator.cs" />
+    <Compile Include="Factory\AbstractDuckFactory.cs" />
+    <Compile Include="Factory\AbstractGooseFactory.cs" />
+    <Compile Include="Factory\DuckCounterFactory.cs" />
+    <Compile Include="Factory\DuckFactory.cs" />
+    <Compile Include="Factory\GooseFactory.cs" />
+    <Compile Include="Flock\Flock.cs" />
+    <Compile Include="Flock\Iterator\Iterator.cs" />
+    <Compile Include="Flock\Iterator\IteratorDuckShelf.cs" />
+    <Compile Include="Observer\Iterator\IteratorObserver.cs" />
+    <Compile Include="Observer\Iterator\IteratorObserverShelf.cs" />
+    <Compile Include="Observer\Observable.cs" />
+    <Compile Include="Observer\Observer.cs" />
+    <Compile Include="Observer\QuackObservable.cs" />
+    <Compile Include="Observer\Quackologist .cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
