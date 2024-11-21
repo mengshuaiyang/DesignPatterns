@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace MultipleDesignPatterns
 {
     /// <summary>
-    /// 定义一个接口，用于观察者模式，包含注册和通知观察者的方法
+    /// 定义一个接口，用于观察者模式，包含注册和通知观察者的方法，需要给所有被观察者继承实现
     /// </summary>
     public interface QuackObservable
     {

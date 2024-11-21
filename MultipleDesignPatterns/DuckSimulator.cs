@@ -47,6 +47,8 @@ namespace MultipleDesignPatterns
             flockOfDucks.Add(flockOfMallards);
 
             Console.WriteLine("鸭子模拟器：整个鸭群模拟");
+            Quackologist quackologist = new Quackologist();
+            flockOfDucks.RegisterObserver(quackologist);
             Simulate(flockOfDucks);
             Console.WriteLine();
             Console.WriteLine("鸭子模拟器：野鸭群模拟");

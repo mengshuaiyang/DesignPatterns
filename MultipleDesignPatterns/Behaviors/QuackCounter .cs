@@ -25,12 +25,22 @@ namespace MultipleDesignPatterns
         {
             _duck.Quack(); // 调用被装饰的鸭子的Quack方法
             _numberOfQuacks++; // 每次调用时，叫声次数加一
+            //NotifyObservers();
         }
 
         // 静态方法，用于获取所有鸭子的叫声次数
         public static int GetQuacks()
         {
             return _numberOfQuacks;
+        }
+        public void RegisterObserver(Observer observer)
+        {
+            _duck.RegisterObserver(observer);
+        }
+
+        public void NotifyObservers()
+        {
+            _duck.NotifyObservers();
         }
     }
 }

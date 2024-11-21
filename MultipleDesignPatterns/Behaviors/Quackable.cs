@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MultipleDesignPatterns
 {
-    public interface Quackable
+    public interface Quackable: QuackObservable
     {
         void Quack();
     }

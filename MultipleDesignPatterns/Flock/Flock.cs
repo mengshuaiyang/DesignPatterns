@@ -29,11 +29,28 @@ namespace MultipleDesignPatterns
             {
                 Quackable quackable = (Quackable)iterator.Next();
                 quackable.Quack();
+                //NotifyObservers();
             }
             //foreach (var quacker in quackers)
             //{
             //    quacker.Quack();
             //}
+        }
+        public void RegisterObserver(Observer observer)
+        {
+            //这里使用迭代器模式注册
+            Iterator iterator = new IteratorDuckShelf(quackers);
+            while (iterator.HasNext())
+            {
+                Quackable quackable = (Quackable)iterator.Next();
+                quackable.RegisterObserver(observer);
+            }
+           
+        }
+
+        public void NotifyObservers()
+        {
+            //Console.WriteLine("Flock 的通知");
         }
     }
 }

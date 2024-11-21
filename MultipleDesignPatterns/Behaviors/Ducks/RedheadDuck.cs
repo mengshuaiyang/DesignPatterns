@@ -11,9 +11,27 @@ namespace MultipleDesignPatterns
     /// </summary>
     public class RedheadDuck : Quackable
     {
+        Observable _observable;
+
+        public RedheadDuck()
+        {
+            _observable = new Observable(this);
+        }
+
         public void Quack()
         {
             Console.WriteLine("红头鸭：嘎嘎叫");
+            NotifyObservers();
+        }
+
+        public void RegisterObserver(Observer observer)
+        {
+            _observable.RegisterObserver(observer);
+        }
+
+        public void NotifyObservers()
+        {
+            _observable.NotifyObservers();
         }
     }
 }

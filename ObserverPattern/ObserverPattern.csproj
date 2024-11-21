@@ -44,14 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Others\IDisplayElement.cs" />
-    <Compile Include="Observers\IObserver.cs" />
-    <Compile Include="Subjects\ISubject.cs" />
+    <Compile Include="2.Observers观察者\IObserver.cs" />
+    <Compile Include="1.Subjects主题\ISubject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ConcreteObservers\TJDisplay.cs" />
-    <Compile Include="ConcreteSubjects\WeatherData.cs" />
-    <Compile Include="ConcreteObservers\YCDisplay.cs" />
-    <Compile Include="ConcreteObservers\ZKDisplay.cs" />
+    <Compile Include="4.ConcreteObservers具体观察者\TJDisplay.cs" />
+    <Compile Include="3.ConcreteSubjects具体主题\WeatherData.cs" />
+    <Compile Include="4.ConcreteObservers具体观察者\YCDisplay.cs" />
+    <Compile Include="4.ConcreteObservers具体观察者\ZKDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

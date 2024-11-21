@@ -11,16 +11,29 @@ namespace MultipleDesignPatterns
     /// </summary>
     public class GoosesAdapter : Quackable
     {
+        Observable _observable;
         Gooses gooses;
 
         public GoosesAdapter(Gooses gooses)
         {
             this.gooses = gooses;
+            _observable = new Observable(this);
         }
 
         public void Quack()
         {
             gooses.Huck();
+            NotifyObservers();
+        }
+
+        public void RegisterObserver(Observer observer)
+        {
+            _observable.RegisterObserver(observer);
+        }
+
+        public void NotifyObservers()
+        {
+            _observable.NotifyObservers();
         }
     }
 }
