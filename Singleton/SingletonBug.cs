@@ -17,7 +17,7 @@ namespace Singleton
         private SingletonBug()
         {
             Thread.Sleep(1000);
-            Console.WriteLine("SingletonFour(): 初始化实例");
+            Console.WriteLine("SingletonBug(): 初始化实例");
         }
 
         public static SingletonBug getInstance()

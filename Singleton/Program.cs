@@ -25,7 +25,7 @@ namespace Singleton
             {
                 tasks.Add(taskFactory.StartNew(() =>
                 {
-                    SingletonBug.getInstance().doSomething();
+                    Singleton.getInstance().doSomething();
                 }));
             }
             Task.WaitAll(tasks.ToArray());
