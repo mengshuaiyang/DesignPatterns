@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1.Builder（建造者）\IComputerBuilder.cs" />
+    <Compile Include="2.ConcreteBuilder（具体建造者）\ComputerBuilder.cs" />
+    <Compile Include="3.Product（产品）\Computer.cs" />
+    <Compile Include="4.Director（指挥者）\ComputerDirector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

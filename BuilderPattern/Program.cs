@@ -10,6 +10,12 @@ namespace BuilderPattern
     {
         static void Main(string[] args)
         {
+            IComputerBuilder builder = new ComputerBuilder();
+            ComputerDirector computerDirector = new ComputerDirector(builder);
+
+            computerDirector.Construct();
+            
+            Console.ReadKey();
         }
     }
 }
