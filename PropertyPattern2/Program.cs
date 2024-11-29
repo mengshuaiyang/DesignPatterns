@@ -11,8 +11,8 @@ namespace PropertyPattern2
         static void Main(string[] args)
         {
             var originalGraphic = new Graphic("Circle");
-            var clonedGraphic = originalGraphic.Clone(); // 这里clonedGraphic是IPrototype类型
-                                                         // 向下转型以访问Property属性
+            var clonedGraphic = originalGraphic.Clone(); 
+                                                         
             var graphicClone = clonedGraphic as Graphic;
             graphicClone.Property = "Modified Circle";
 
