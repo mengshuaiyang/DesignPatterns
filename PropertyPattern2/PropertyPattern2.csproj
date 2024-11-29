@@ -4,14 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A27A6B6B-A22D-4EED-86F5-80D37DB23B45}</ProjectGuid>
+    <ProjectGuid>{43C2BB87-3E22-4807-92A2-42545A33B09F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PropertyPattern</RootNamespace>
-    <AssemblyName>PropertyPattern</AssemblyName>
+    <RootNamespace>PropertyPattern2</RootNamespace>
+    <AssemblyName>PropertyPattern2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,15 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConcretePrototypeDeep.cs" />
-    <Compile Include="ConcretePrototype.cs" />
-    <Compile Include="Other.cs" />
+    <Compile Include="1.Prototype（原型）\IPrototype.cs" />
+    <Compile Include="2.ConcretePrototype（具体原型）\Graphic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
