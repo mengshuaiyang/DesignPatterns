@@ -43,16 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstraction.cs" />
-    <Compile Include="AbstractionImpl.cs" />
-    <Compile Include="ConcreteImplementor1.cs" />
-    <Compile Include="ConcreteImplementor2.cs" />
-    <Compile Include="Implementor.cs" />
+    <Compile Include="1.Abstraction（抽象类）\Abstraction.cs" />
+    <Compile Include="4.RefinedAbstraction（改进的抽象类）\AbstractionImpl.cs" />
+    <Compile Include="3.ConcreteImplementor（具体实现类）\ConcreteImplementor1.cs" />
+    <Compile Include="3.ConcreteImplementor（具体实现类）\ConcreteImplementor2.cs" />
+    <Compile Include="2.Implementor（实现类接口）\Implementor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

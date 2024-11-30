@@ -11,7 +11,6 @@ namespace BridgePattern
         static void Main(string[] args)
         {
             Abstraction ab = new AbstractionImpl();
-
             ab.SetImplementor(new ConcreteImplementor1());
             ab.Operation();
 

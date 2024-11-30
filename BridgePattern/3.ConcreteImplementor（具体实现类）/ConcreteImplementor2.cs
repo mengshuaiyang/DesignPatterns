@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace BridgePattern
 {
-    public class ConcreteImplementor1 : Implementor
+    /// <summary>
+    /// 实现Implementor接口的具体类。
+    /// </summary>
+    public class ConcreteImplementor2 : Implementor
     {
         public override void Operation()
         {
-            Console.WriteLine("第一种具体实现方法");
+            Console.WriteLine("第二种具体实现方法");
         }
     }
 }
