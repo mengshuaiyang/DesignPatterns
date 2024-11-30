@@ -200,6 +200,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleDesignPatterns", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPattern2", "PropertyPattern2\PropertyPattern2.csproj", "{43C2BB87-3E22-4807-92A2-42545A33B09F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.享元模式", "6.享元模式", "{67F9AF40-D3BC-4CE1-90BF-4F61D9113497}"
+	ProjectSection(SolutionItems) = preProject
+		flyweight-pattern.md = flyweight-pattern.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightPattern", "FlyweightPattern\FlyweightPattern.csproj", "{ADE7236C-41F8-48E7-9FCE-01EFBDF61439}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -322,6 +329,10 @@ Global
 		{43C2BB87-3E22-4807-92A2-42545A33B09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43C2BB87-3E22-4807-92A2-42545A33B09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43C2BB87-3E22-4807-92A2-42545A33B09F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE7236C-41F8-48E7-9FCE-01EFBDF61439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE7236C-41F8-48E7-9FCE-01EFBDF61439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE7236C-41F8-48E7-9FCE-01EFBDF61439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE7236C-41F8-48E7-9FCE-01EFBDF61439}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -383,6 +394,8 @@ Global
 		{97A3D729-6B44-4CA9-9D4A-507870F4CAFD} = {F330708A-1E62-4128-A557-43F9789D622D}
 		{F895694F-5AB7-48DB-AF9E-53EB40D584D9} = {97A3D729-6B44-4CA9-9D4A-507870F4CAFD}
 		{43C2BB87-3E22-4807-92A2-42545A33B09F} = {6B314D7F-1809-433C-BA74-2971D61475E4}
+		{67F9AF40-D3BC-4CE1-90BF-4F61D9113497} = {C6EF936B-E206-4108-9B0C-DD7229001E1D}
+		{ADE7236C-41F8-48E7-9FCE-01EFBDF61439} = {67F9AF40-D3BC-4CE1-90BF-4F61D9113497}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818C37D-216A-4538-96A3-217C85DC0D67}

@@ -12,20 +12,18 @@
 - [x] [简单工厂模式](document/factory-pattern.md)
 - [x] [2工厂方法模式](document/factory-method-pattern.md)
 - [x] [3抽象工厂模式](document/abstract-factory-pattern.md)
-- [ ] [4建造者模式](document/builder-pattern.md)
+- [x] [4建造者模式](document/builder-pattern.md)
 - [x] [5原型模式](document/prototype-pattern.md)
-- [ ] [对象池模式](document/object-pool-pattern.md)
 
 *[结构型模式](document/structural-patterns.md)*
 ------
 - [x] [1适配器模式](document/adapter-pattern.md)
-- [x] [2桥梁模式模式](document/bridge-pattern.md)
+- [x] [2桥接模式](document/bridge-pattern.md)
 - [x] [3组合模式](document/composite-pattern.md)
 - [x] [4装饰模式](document/decorator-pattern.md)
 - [x] [5外观模式](document/facade-pattern.md)
-- [ ] [6享元模式](document/flyweight-pattern.md)
+- [x] [6享元模式](document/flyweight-pattern.md)
 - [x] [7代理模式](document/proxy-pattern.md)
-- [ ] 门面模式
 
 *[行为型模式]*
 ------
