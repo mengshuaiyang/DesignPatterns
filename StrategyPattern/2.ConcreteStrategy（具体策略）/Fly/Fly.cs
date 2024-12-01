@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern.Behaviors.Fly
 {
+    /// <summary>
+    /// 具体策略
+    /// 实现策略接口的具体算法
+    /// </summary>
     internal class Fly : FlyBehavior
     {
         public void fly()

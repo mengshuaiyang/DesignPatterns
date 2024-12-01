@@ -43,19 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behaviors\FlyBehavior.cs" />
-    <Compile Include="Behaviors\Fly\Fly.cs" />
-    <Compile Include="Behaviors\Fly\NoFly.cs" />
-    <Compile Include="Behaviors\Fly\RocketFly.cs" />
-    <Compile Include="Behaviors\QuackBehavior.cs" />
-    <Compile Include="Behaviors\Quack\NoQuack.cs" />
-    <Compile Include="Behaviors\Quack\Quack.cs" />
-    <Compile Include="Behaviors\Quack\SQuack.cs" />
-    <Compile Include="Ducks\Duck.cs" />
-    <Compile Include="Ducks\MallardDuck.cs" />
-    <Compile Include="Ducks\ModelDuck.cs" />
-    <Compile Include="Ducks\RedHeadedDuck.cs" />
-    <Compile Include="Ducks\RubberDuck.cs" />
+    <Compile Include="1.Strategy（策略）\FlyBehavior.cs" />
+    <Compile Include="2.ConcreteStrategy（具体策略）\Fly\Fly.cs" />
+    <Compile Include="2.ConcreteStrategy（具体策略）\Fly\NoFly.cs" />
+    <Compile Include="2.ConcreteStrategy（具体策略）\Fly\RocketFly.cs" />
+    <Compile Include="1.Strategy（策略）\QuackBehavior.cs" />
+    <Compile Include="2.ConcreteStrategy（具体策略）\Quack\NoQuack.cs" />
+    <Compile Include="2.ConcreteStrategy（具体策略）\Quack\Quack.cs" />
+    <Compile Include="2.ConcreteStrategy（具体策略）\Quack\SQuack.cs" />
+    <Compile Include="3.Context（上下文）\Duck.cs" />
+    <Compile Include="3.Context（上下文）\MallardDuck.cs" />
+    <Compile Include="3.Context（上下文）\ModelDuck.cs" />
+    <Compile Include="3.Context（上下文）\RedHeadedDuck.cs" />
+    <Compile Include="3.Context（上下文）\RubberDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

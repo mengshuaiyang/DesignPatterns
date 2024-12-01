@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern.Ducks
 {
+    /// <summary>
+    /// 上下文
+    /// 持有一个策略类的引用，可以动态调用策略对象的算法。
+    /// </summary>
     public abstract class Duck
     {
         public FlyBehavior flyBehavior;
