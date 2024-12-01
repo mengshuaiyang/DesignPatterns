@@ -32,7 +32,7 @@
 - [x] [3解释器模式](document/interpreter-pattern.md)
 - [x] [4迭代器模式](document/iterator-pattern.md)
 - [x] [5中介者模式](document/mediator-pattern.md)
-- [ ] [6备忘录模式](document/memento-pattern.md)
+- [x] [6备忘录模式](document/memento-pattern.md)
 - [x] [7观察者模式](document/observer-pattern.md)
 - [x] [8状态模式](document/state-pattern.md)
 - [x] [9策略模式](document/strategy-pattern.md)
