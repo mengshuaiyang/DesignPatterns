@@ -19,10 +19,6 @@ namespace TemplateMethodPattern
             Console.WriteLine("Brewing in a French Press");
         }
 
-        protected override void PourInCup()
-        {
-            Console.WriteLine("Pouring into a large cup");
-        }
 
         protected override void AddCondiments()
         {

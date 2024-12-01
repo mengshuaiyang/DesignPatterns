@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B2D754C-C59A-4C63-B450-2DE92C3FF2BB}</ProjectGuid>
+    <ProjectGuid>{EAF60730-830B-4F1A-89D5-484E07554FA3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TemplateMethodPattern</RootNamespace>
-    <AssemblyName>TemplateMethodPattern</AssemblyName>
+    <RootNamespace>VisitorPattern</RootNamespace>
+    <AssemblyName>VisitorPattern</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1.AbstractClass（抽象类）\Coffee.cs" />
-    <Compile Include="2.ConcreteClass（具体类）\Espresso.cs" />
-    <Compile Include="2.ConcreteClass（具体类）\Latte.cs" />
+    <Compile Include="1.Visitor（访问者）\IDocumentVisitor.cs" />
+    <Compile Include="2.ConcreteVisitor（具体访问者）\HighlightVisitor.cs" />
+    <Compile Include="2.ConcreteVisitor（具体访问者）\WordCountVisitor.cs" />
+    <Compile Include="3.Element（元素）\IDocumentElement.cs" />
+    <Compile Include="4.ConcreteElement（具体元素）\ImageElement.cs" />
+    <Compile Include="4.ConcreteElement（具体元素）\Paragraph.cs" />
+    <Compile Include="5.ObjectStructure（对象结构）\Document.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

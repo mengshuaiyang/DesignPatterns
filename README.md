@@ -37,7 +37,7 @@
 - [x] [8状态模式](document/state-pattern.md)
 - [x] [9策略模式](document/strategy-pattern.md)
 - [x] [10模版方法模式](document/template-method-pattern.md)
-- [ ] [11访问者模式](document/visitor-pattern.md)
+- [x] [11访问者模式](document/visitor-pattern.md)
 - [ ] [空对象模式](document/null-object-pattern)
 
 
