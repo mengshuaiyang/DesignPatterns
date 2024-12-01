@@ -12,15 +12,15 @@ namespace CommandPattern
         static void Main(string[] args)
         {
             RemoteControl remoteControl = new RemoteControl();
-            Light light=new Light();
-            ICommand command = new LightCommand(light);
+
+            ICommand command = new LightCommand(new Light());
             remoteControl.SetCommand(command);
 
             remoteControl.PressButton();
             remoteControl.PressButton();
 
-            Stereo stereo = new Stereo();
-            ICommand command2 = new StereoCommand(stereo);
+
+            ICommand command2 = new StereoCommand(new Stereo());
             remoteControl.SetCommand(command2);
 
             remoteControl.PressButton();

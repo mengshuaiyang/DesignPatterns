@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{652429ED-F656-4981-B001-8A538BF1B750}</ProjectGuid>
+    <ProjectGuid>{146BF180-48AF-4FD3-B282-2793E380B7A3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CommandPattern</RootNamespace>
-    <AssemblyName>CommandPattern</AssemblyName>
+    <RootNamespace>InterpreterPattern</RootNamespace>
+    <AssemblyName>InterpreterPattern</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3.Client（客户端）\RemoteControl.cs" />
-    <Compile Include="2.ConcreteCommand（具体命令）\StereoCommand.cs" />
-    <Compile Include="1.Command（命令）\ICommand.cs" />
-    <Compile Include="2.ConcreteCommand（具体命令）\LightCommand.cs" />
+    <Compile Include="1.AbstractExpression（抽象表达式）\Expression.cs" />
+    <Compile Include="2.TerminalExpression（终结符表达式）\AddExpression.cs" />
+    <Compile Include="2.TerminalExpression（终结符表达式）\NumberExpression.cs" />
+    <Compile Include="3.NonterminalExpression（非终结符表达式）\MultiplyExpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="4.Receiver（接收者）\Light.cs" />
-    <Compile Include="4.Receiver（接收者）\Stereo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="4.Context（上下文）\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
