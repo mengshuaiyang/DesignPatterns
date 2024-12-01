@@ -124,14 +124,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP", "SRP\SRP.csproj", "{C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.迪米特原则(Law of Demeter,LoD)", "5.迪米特原则(Law of Demeter,LoD)", "{383BC449-0228-4EFB-BDDC-DBA9619757DD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9策略模式", "9策略模式", "{0BCFA28D-CF4A-4ECD-84F2-BF0E4BBE66D8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09.策略模式", "09.策略模式", "{0BCFA28D-CF4A-4ECD-84F2-BF0E4BBE66D8}"
 	ProjectSection(SolutionItems) = preProject
 		strategy-pattern.md = strategy-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{B508AE6C-83F6-4E5C-A296-36CABB59AE09}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7观察者模式", "7观察者模式", "{05167596-F918-4FC5-9C55-848B5920F4B1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07.观察者模式", "07.观察者模式", "{05167596-F918-4FC5-9C55-848B5920F4B1}"
 	ProjectSection(SolutionItems) = preProject
 		observer-pattern.md = observer-pattern.md
 	EndProjectSection
@@ -147,7 +147,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "Decorat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod2", "FactoryMethod2\FactoryMethod2.csproj", "{66AD8002-44D3-4A69-833A-10D28BCF8BCF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2命令模式", "2命令模式", "{1A4B9256-E634-49BF-9E70-3D74AE1F038E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.命令模式", "02.命令模式", "{1A4B9256-E634-49BF-9E70-3D74AE1F038E}"
 	ProjectSection(SolutionItems) = preProject
 		command-pattern.md = command-pattern.md
 	EndProjectSection
@@ -161,21 +161,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5外观模式", "5外观模
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePattern", "FacadePattern\FacadePattern.csproj", "{190B3E8A-EEFC-4F20-B0E9-C029A897C22E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10模版方法模式", "10模版方法模式", "{71E5A5C6-7D00-47C8-9ACE-268854061F56}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.模版方法模式", "10.模版方法模式", "{71E5A5C6-7D00-47C8-9ACE-268854061F56}"
 	ProjectSection(SolutionItems) = preProject
 		template-method-pattern.md = template-method-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodPattern", "TemplateMethodPattern\TemplateMethodPattern.csproj", "{1B2D754C-C59A-4C63-B450-2DE92C3FF2BB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4迭代器模式", "4迭代器模式", "{7072D557-76C3-429C-9DC4-36F41410F55A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.迭代器模式", "04.迭代器模式", "{7072D557-76C3-429C-9DC4-36F41410F55A}"
 	ProjectSection(SolutionItems) = preProject
 		iterator-pattern.md = iterator-pattern.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorPattern", "IteratorPattern\IteratorPattern.csproj", "{1330093A-7CCA-4BC9-9B4E-713149BD19E4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8状态模式", "8状态模式", "{FE91BA9D-C6C7-4A99-A93A-768711692EE3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08.状态模式", "08.状态模式", "{FE91BA9D-C6C7-4A99-A93A-768711692EE3}"
 	ProjectSection(SolutionItems) = preProject
 		state-pattern.md = state-pattern.md
 	EndProjectSection
