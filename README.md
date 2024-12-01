@@ -27,7 +27,7 @@
 
 *[行为型模式]*
 ------
-- [ ] [1职责链模式](document/chain-of-responsibility-pattern.md)
+- [x] [1职责链模式](document/chain-of-responsibility-pattern.md)
 - [x] [2命令模式](document/command-pattern.md)
 - [ ] [3解释器模式](document/interpreter-pattern.md)
 - [x] [4迭代器模式](document/iterator-pattern.md)
