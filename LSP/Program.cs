@@ -20,13 +20,13 @@ namespace LSP
             Soldier sanMao = new Soldier();
             //给三毛一支枪
             sanMao.setGun(new ToyGun());
-            sanMao.killEnemy(new ToyGun());
+            sanMao.killEnemy();
 
             //产生李四这个士兵
             Soldier liSi = new Soldier();
             //给李四一把机枪
             liSi.setGun(new AUG());
-            liSi.killEnemy(new AUG());
+            liSi.killEnemy();
             Console.ReadKey();
         }
     }
