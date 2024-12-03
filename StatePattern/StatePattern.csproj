@@ -50,7 +50,7 @@
     <Compile Include="3.ConcreteState具体状态\WinnerState.cs" />
     <Compile Include="3.ConcreteState具体状态\SoldOutState.cs" />
     <Compile Include="3.ConcreteState具体状态\SoldState.cs" />
-    <Compile Include="GumballMachine.cs" />
+    <Compile Include="1.Context上下文\GumballMachine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
