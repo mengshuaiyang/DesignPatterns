@@ -46,7 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingletonBug.cs" />
-    <Compile Include="Singleton.cs" />
+    <Compile Include="SingletonFirst.cs" />
     <Compile Include="SingletonSecond.cs" />
     <Compile Include="SingletonThird.cs" />
   </ItemGroup>
