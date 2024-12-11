@@ -12,9 +12,9 @@ namespace ObserverPattern
         {
             WeatherData weatherData = new WeatherData();
 
-            TJDisplay d1 = new TJDisplay(weatherData);
-            YCDisplay d2 = new YCDisplay(weatherData);
-            ZKDisplay d3 = new ZKDisplay(weatherData);
+            IObserver d1 = new TJDisplay(weatherData);
+            IObserver d2 = new YCDisplay(weatherData);
+            IObserver d3 = new ZKDisplay(weatherData);
 
             //weatherData.RegisterObserver(d1);
             //weatherData.RegisterObserver(d2);
