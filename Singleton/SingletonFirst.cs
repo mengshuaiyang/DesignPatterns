@@ -10,20 +10,20 @@ namespace Singleton
     /// <summary>
     /// 双重检查锁定模式
     /// </summary>
-    public class Singleton
+    public class SingletonFirst
     {
-        public static Singleton instance;
+        public static SingletonFirst instance;
 
         public static object Singleton_Lock=new object();
 
         private static int i = 10;
-        private Singleton()
+        private SingletonFirst()
         {
             Thread.Sleep(1000);
             Console.WriteLine("Singleton(): 初始化实例");
         }
 
-        public static Singleton getInstance()
+        public static SingletonFirst getInstance()
         {
             if (instance == null)
             {
@@ -33,7 +33,7 @@ namespace Singleton
                     if (instance == null)
                     {
                         Console.WriteLine("getInstance(): 第一次调用getInstance();线程编号{0}", Thread.CurrentThread.ManagedThreadId);
-                        instance = new Singleton();
+                        instance = new SingletonFirst();
                     }
                 }
             }

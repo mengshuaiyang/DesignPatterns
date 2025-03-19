@@ -25,19 +25,19 @@ namespace Singleton
             {
                 tasks.Add(taskFactory.StartNew(() =>
                 {
-                    Singleton.getInstance().doSomething();
+                    SingletonSecond.getInstance().doSomething();
                 }));
             }
             Task.WaitAll(tasks.ToArray());
 
-            for (int i = 0; i < 10; i++)
-            {
-                tasks.Add(taskFactory.StartNew(() =>
-                {
-                    SingletonBug.getInstance().doSomething();
-                }));
-            }
-            Task.WaitAll(tasks.ToArray());
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    tasks.Add(taskFactory.StartNew(() =>
+            //    {
+            //        SingletonBug.getInstance().doSomething();
+            //    }));
+            //}
+            //Task.WaitAll(tasks.ToArray());
 
             stopwatch.Stop();
             Console.WriteLine("一共耗时 {0}毫秒", stopwatch.ElapsedMilliseconds);
